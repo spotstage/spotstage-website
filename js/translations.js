@@ -22,6 +22,14 @@
       a11y: {
         skipToMain: 'Zum Hauptinhalt springen',
       },
+      notFound: {
+        meta: '404 | SPOTSTAGE',
+        metaDescription: 'Seite nicht gefunden – SPOTSTAGE',
+        imageAlt: 'Heruntergefallener, kaputter Bühnenscheinwerfer auf dunkler Bühne',
+        headline: 'Hier spielt nicht die Show!',
+        text: 'Die Seite, die du suchst, ist nicht mehr hier – oder hat ihren Auftritt noch nicht.',
+        cta: 'Zur Startseite',
+      },
       nav: {
         ariaLabel: 'Hauptnavigation',
         open: 'Menü öffnen',
@@ -444,6 +452,14 @@
       },
       a11y: {
         skipToMain: 'Skip to main content',
+      },
+      notFound: {
+        meta: '404 | SPOTSTAGE',
+        metaDescription: 'Page not found – SPOTSTAGE',
+        imageAlt: 'A fallen, broken stage spotlight on a dark stage floor',
+        headline: 'The show doesn’t go on here!',
+        text: 'The page you\u2019re looking for is no longer here \u2013 or hasn\u2019t made its entrance yet.',
+        cta: 'Back to home',
       },
       nav: {
         ariaLabel: 'Main navigation',
