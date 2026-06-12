@@ -125,20 +125,29 @@
     var badges = getTranslations(currentLocale);
     if (!badges || !badges.badges) return;
 
-    document.querySelectorAll('[data-store]').forEach(function (link) {
-      var store = link.getAttribute('data-store');
+    document.querySelectorAll('[data-store]').forEach(function (el) {
+      var store = el.getAttribute('data-store');
       var badge = badges.badges[store];
       if (!badge) return;
 
-      link.setAttribute('aria-label', badge.aria);
+      var storeUrl =
+        window.Spotstage && window.Spotstage.getStoreUrl
+          ? window.Spotstage.getStoreUrl(store)
+          : null;
+      var isUnavailable = !storeUrl || storeUrl === '#';
+      var label = isUnavailable ? badge.unavailableAria : badge.aria;
 
-      var img = link.querySelector('img');
+      if (label) {
+        el.setAttribute('aria-label', label);
+      }
+
+      var img = el.querySelector('img');
       if (!img) return;
 
       img.src = badge.src;
       img.setAttribute('width', String(badge.width));
       img.setAttribute('height', String(badge.height));
-      img.setAttribute('alt', badge.alt);
+      img.setAttribute('alt', badge.alt || '');
     });
   }
 
@@ -148,6 +157,16 @@
       var isActive = locale === currentLocale;
       btn.classList.toggle('is-active', isActive);
       btn.setAttribute('aria-pressed', String(isActive));
+
+      var labelKey =
+        locale === 'de'
+          ? isActive
+            ? 'lang.activeDe'
+            : 'lang.labelDe'
+          : isActive
+            ? 'lang.activeEn'
+            : 'lang.labelEn';
+      btn.setAttribute('aria-label', t(labelKey, currentLocale));
     });
   }
 

@@ -9,16 +9,19 @@
   <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
   <link rel="manifest" href="images/favicon/site.webmanifest">
   <meta name="theme-color" content="#0d0719">
-  <meta name="description" content="Barrierefreiheit – SPOTSTAGE" data-i18n-attr="legal.accessibilityMeta:content">
-  <title data-i18n="legal.accessibilityMeta">Barrierefreiheit – SPOTSTAGE</title>
+  <meta name="description" content="Barrierefreiheit | SPOTSTAGE" data-i18n-attr="legal.accessibilityMeta:content">
+  <title data-i18n="legal.accessibilityMeta">Barrierefreiheit | SPOTSTAGE</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skipToMain">Zum Hauptinhalt springen</a>
+
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="site-header__logo" data-i18n-attr="logo.ariaHome:aria-label">
-        <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE Logo" width="160" height="46">
+        <img src="images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+        <span class="sr-only">SPOTSTAGE</span>
       </a>
 
       <div class="site-header__actions">
@@ -30,8 +33,8 @@
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
           </span>
-          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true">DE</button>
-          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true" data-i18n-attr="lang.activeDe:aria-label">DE</button>
+          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false" data-i18n-attr="lang.labelEn:aria-label">EN</button>
         </div>
       </div>
     </div>
@@ -39,7 +42,7 @@
 
   <main id="main-content">
     <section class="section section--legal">
-      <div class="container container--narrow">
+      <div class="container container--narrow legal-page__content">
         <p class="legal-page__back">
           <a href="index.html" class="legal-page__back-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -48,32 +51,56 @@
             <span data-i18n="legal.backToHome">Zurück zur Startseite</span>
           </a>
         </p>
-        <h1 data-i18n="legal.accessibilityTitle">Barrierefreiheit</h1>
+
+        <h1 data-i18n="legal.accessibilityTitle">Informationen zur Barrierefreiheit</h1>
         <p data-i18n="legal.accessibilityIntro">
-          SPOTSTAGE möchte die Website und die App für möglichst viele Menschen gut zugänglich und nutzbar gestalten.
+          SPOTSTAGE möchte seine Website für möglichst viele Menschen zugänglich und nutzbar machen.
         </p>
 
-        <h2 class="section--legal__subheading" data-i18n="legal.accessibilityCommitmentHeading">Unser Anspruch</h2>
-        <p data-i18n="legal.accessibilityCommitmentText">
-          Wir achten bei der Weiterentwicklung unter anderem auf verständliche Inhalte, ausreichende Kontraste, sichtbare Fokuszustände, Tastaturbedienbarkeit und sinnvolle Beschriftungen für unterstützende Technologien.
-        </p>
+        <section class="legal-page__section">
+          <h2 class="section--legal__subheading" data-i18n="legal.accessibilityComplianceHeading">Stand der Vereinbarkeit</h2>
+          <p data-i18n="legal.accessibilityComplianceText">
+            Die Website wurde intern anhand zentraler Anforderungen der WCAG 2.1 auf Konformitätsstufe A und AA geprüft und wird fortlaufend verbessert.
+          </p>
+        </section>
 
-        <h2 class="section--legal__subheading" data-i18n="legal.accessibilityReportHeading">Barriere melden</h2>
-        <p data-i18n="legal.accessibilityReportText">
-          Ist dir eine Barriere aufgefallen oder kannst du einen Bereich nicht wie erwartet nutzen? Schreib uns gerne. Dein Feedback hilft uns, SPOTSTAGE weiter zu verbessern.
-        </p>
-        <p>
-          <a
-            class="legal-page__link"
-            href="mailto:hello@spotstage.app?subject=Hinweis%20zur%20Barrierefreiheit%20bei%20SPOTSTAGE"
-            data-i18n="legal.accessibilityReportLink"
-            data-i18n-attr="legal.accessibilityMailto:href"
-          >Barriere melden</a>
-        </p>
+        <section class="legal-page__section">
+          <h2 class="section--legal__subheading" data-i18n="legal.accessibilityCommitmentHeading">Unser Anspruch</h2>
+          <p data-i18n="legal.accessibilityCommitmentText">
+            Wir achten bei der Weiterentwicklung unter anderem auf verständliche Inhalte, ausreichende Kontraste, sichtbare Fokuszustände, Tastaturbedienbarkeit und sinnvolle Beschriftungen für unterstützende Technologien.
+          </p>
+        </section>
 
-        <p class="section--legal__note" data-i18n="legal.accessibilityNote">
-          SPOTSTAGE befindet sich im Aufbau. Die Zugänglichkeit wird im Zuge der Weiterentwicklung regelmäßig geprüft und verbessert.
-        </p>
+        <section class="legal-page__section">
+          <h2 class="section--legal__subheading" data-i18n="legal.accessibilityReportHeading">Feedback und Kontakt</h2>
+          <p data-i18n="legal.accessibilityReportText">
+            Sind Ihnen Barrieren auf unserer Website aufgefallen? Schreiben Sie uns bitte an hello@spotstage.app.
+          </p>
+          <p>
+            <a
+              class="legal-page__link"
+              href="mailto:hello@spotstage.app?subject=Hinweis%20zur%20Barrierefreiheit%20bei%20SPOTSTAGE"
+              data-i18n="legal.accessibilityReportLink"
+              data-i18n-attr="legal.accessibilityMailto:href"
+            >hello@spotstage.app</a>
+          </p>
+        </section>
+
+        <section class="legal-page__section">
+          <h2 class="section--legal__subheading" data-i18n="legal.accessibilityKnownHeading">Bekannte Einschränkungen</h2>
+          <p data-i18n="legal.accessibilityKnownText">
+            App-Store-Links sind derzeit noch nicht aktiv, da die Veröffentlichung in den Stores aussteht.
+          </p>
+        </section>
+
+        <section class="legal-page__section">
+          <h2 class="section--legal__subheading" data-i18n="legal.accessibilityStandardHeading">Prüfgrundlage</h2>
+          <p data-i18n="legal.accessibilityStandardText">
+            Orientierung bei der Entwicklung und Prüfung: WCAG 2.1 Stufen A und AA, EN 301 549 sowie die Anforderungen des Barrierefreiheitsstärkungsgesetzes (BFSG).
+          </p>
+        </section>
+
+        <p class="section--legal__note" data-i18n="legal.accessibilityUpdated">Stand: Juni 2026</p>
       </div>
     </section>
   </main>
@@ -82,7 +109,8 @@
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
         <a href="index.html" class="site-footer__logo" data-i18n-attr="logo.ariaHome:aria-label">
-          <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE" width="160" height="46">
+          <img src="images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+          <span class="sr-only">SPOTSTAGE</span>
         </a>
         <p class="site-footer__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
       </div>

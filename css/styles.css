@@ -2,6 +2,8 @@
    SPOTSTAGE Website – Styles Foundation
    ========================================================================== */
 
+@import url("fonts.css");
+
 /* --------------------------------------------------------------------------
    CSS Custom Properties
    -------------------------------------------------------------------------- */
@@ -106,6 +108,11 @@
 
   --header-height: 4rem;
 
+  /* Focus (WCAG 2.4.7) */
+  --focus-ring-color: var(--color-purple-light);
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+
   /* Borders & Radius */
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
@@ -171,8 +178,85 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-bg-primary);
   min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#main-content {
+  flex: 1 0 auto;
+}
+
+#main-content:focus {
+  outline: none;
+}
+
+:where(section[id], [id="hero"], [id="benefits"], [id="how-it-works"], [id="future-categories"], [id="download"]) {
+  scroll-margin-top: calc(var(--header-height) + 0.75rem);
+}
+
+/* Skip link – first focusable element */
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 200;
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-bg-primary);
+  background: var(--color-gold-light);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  clip: auto;
+  clip-path: none;
+  overflow: visible;
+  outline: var(--focus-ring-width) solid var(--color-text-primary);
+  outline-offset: var(--focus-ring-offset);
+}
+
+/* Shared focus ring for controls without bespoke styles */
+.nav-toggle:focus-visible,
+.lang-switch__btn:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+  border-radius: var(--radius-sm);
+}
+
+@media (forced-colors: active) {
+  .skip-link:focus-visible,
+  .nav-toggle:focus-visible,
+  .lang-switch__btn:focus-visible,
+  .site-nav__link:focus-visible,
+  .site-footer__link:focus-visible,
+  .legal-page__link:focus-visible,
+  .legal-page__back-link:focus-visible,
+  .howto__switch-btn:focus-visible,
+  .how-showcase__arrow:focus-visible,
+  .how-showcase__dot:focus-visible,
+  .vision__cta-btn:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .howto__switch-btn.is-active,
+  .lang-switch__btn.is-active,
+  .how-showcase__dot.is-active {
+    border: 2px solid Highlight;
+  }
 }
 
 img,
@@ -235,7 +319,7 @@ p {
 }
 
 .legal-page__back {
-  margin-bottom: var(--space-lg);
+  margin-bottom: clamp(1.5rem, 4vw, 2rem);
 }
 
 .legal-page__back-link {
@@ -272,25 +356,105 @@ p {
   background: rgba(124, 58, 237, 0.1);
 }
 
-.section--legal h1 {
+.legal-page__intro {
+  margin-top: calc(var(--space-sm) * -1);
   margin-bottom: var(--space-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.legal-page__address {
+  margin-bottom: var(--space-md);
+  font-style: normal;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+.legal-page__section {
+  margin-bottom: clamp(1.75rem, 3.5vw, 2.35rem);
+}
+
+.legal-page__section .section--legal__subheading {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.legal-page__section .section--legal__subheading:first-child {
+  margin-top: 0;
+}
+
+.legal-page__content {
+  max-width: 50rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(228, 218, 245, 0.94);
+}
+
+.container--narrow.legal-page__content {
+  max-width: 50rem;
+}
+
+.legal-page__list {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+  color: rgba(228, 218, 245, 0.94);
+}
+
+.legal-page__list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+  padding-left: 0.15rem;
+}
+
+.legal-page__list li:last-child {
+  margin-bottom: 0;
+}
+
+.legal-page__content p,
+.legal-page__content li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(228, 218, 245, 0.94);
+}
+
+.legal-page__content .legal-page__link {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.legal-page__optional:empty {
+  display: none;
+}
+
+.section--legal h1 {
+  margin-bottom: clamp(1.5rem, 3.5vw, 2.25rem);
+  font-size: clamp(1.875rem, 4.5vw, 2.375rem);
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.section--legal .legal-page__content > h1 {
+  margin-top: 0;
 }
 
 .section--legal h2,
 .section--legal__subheading {
   margin-top: var(--space-xl);
   margin-bottom: var(--space-sm);
-  font-size: var(--font-size-lg);
+  font-size: clamp(1.125rem, 2.2vw, 1.35rem);
   font-weight: var(--font-weight-semibold);
+  line-height: 1.35;
   color: var(--color-text-primary);
+  overflow-wrap: break-word;
 }
 
 .section--legal p {
-  margin-bottom: var(--space-md);
+  margin-bottom: 1rem;
 }
 
 .section--legal__note {
-  margin-top: var(--space-lg);
+  margin-top: clamp(2rem, 4vw, 2.75rem);
+  padding-top: var(--space-sm);
   font-size: var(--font-size-sm);
   color: var(--color-text-muted);
 }
@@ -517,8 +681,8 @@ p {
 }
 
 .section--legal {
-  padding-block: var(--space-3xl);
-  min-height: 50vh;
+  padding-block: clamp(2.5rem, 6vw, 4rem);
+  padding-bottom: clamp(3.25rem, 8vw, 5.5rem);
 }
 
 .section__header {
@@ -1037,10 +1201,11 @@ p {
   flex: 0 0 auto;
   order: 3;
   gap: 5px;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
   padding: var(--space-sm);
   z-index: 110;
+  border-radius: var(--radius-sm);
 }
 
 .nav-toggle__bar {
@@ -1556,8 +1721,9 @@ body.nav-open .site-header {
 }
 
 .lang-switch__btn {
-  min-width: 2.25rem;
-  padding: 0.3rem 0.55rem;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0.35rem 0.55rem;
   font-size: var(--font-size-xs);
   font-weight: var(--font-weight-semibold);
   letter-spacing: 0.04em;
@@ -1915,6 +2081,17 @@ body.nav-open .site-header {
     transform var(--transition-base),
     box-shadow var(--transition-base),
     filter var(--transition-base);
+}
+
+.hero-section__store-badge--unavailable {
+  cursor: default;
+  opacity: 0.92;
+}
+
+.hero-section__store-badge--unavailable:hover {
+  transform: none;
+  box-shadow: none;
+  filter: none;
 }
 
 .hero-section__store-badge img {
@@ -3535,13 +3712,18 @@ body.nav-open .site-header {
   padding: 0.35rem 0.5rem;
   font-size: var(--font-size-sm);
   color: var(--color-text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  text-decoration-color: rgba(196, 181, 216, 0.55);
   transition:
     color 180ms ease,
-    text-shadow 220ms ease;
+    text-shadow 220ms ease,
+    text-decoration-color 180ms ease;
 }
 
 .site-footer__link:hover {
   color: var(--color-gold-light);
+  text-decoration-color: currentColor;
   text-shadow: 0 0 12px rgba(254, 207, 57, 0.18);
 }
 

@@ -299,7 +299,7 @@
       '<span class="how-step-number" aria-hidden="true">' +
       escapeHtml(step.number) +
       '</span>' +
-      '<h3 class="how-step-title">' +
+      '<h3 class="how-step-title" id="howto-step-title">' +
       escapeHtml(step.title) +
       '</h3>' +
       '<p class="how-step-text">' +
@@ -322,11 +322,15 @@
 
     for (var i = 0; i < totalSteps; i++) {
       var button = document.createElement('button');
+      var isActive = i === activeStepIndex;
       button.type = 'button';
-      button.className = 'how-showcase__dot' + (i === activeStepIndex ? ' is-active' : '');
-      button.setAttribute('role', 'tab');
-      button.setAttribute('aria-selected', String(i === activeStepIndex));
+      button.className = 'how-showcase__dot' + (isActive ? ' is-active' : '');
       button.setAttribute('aria-label', dotLabel + ' ' + (i + 1));
+
+      if (isActive) {
+        button.setAttribute('aria-current', 'step');
+      }
+
       button.setAttribute('data-step', String(i));
 
       button.addEventListener('click', function () {
@@ -354,7 +358,11 @@
     document.querySelectorAll('.how-showcase__dot').forEach(function (dot, index) {
       var isActive = index === activeStepIndex;
       dot.classList.toggle('is-active', isActive);
-      dot.setAttribute('aria-selected', String(isActive));
+      if (isActive) {
+        dot.setAttribute('aria-current', 'step');
+      } else {
+        dot.removeAttribute('aria-current');
+      }
     });
   }
 
@@ -463,10 +471,67 @@
   }
 
   function initSwitch() {
-    document.querySelectorAll('.howto__switch-btn').forEach(function (btn) {
+    var buttons = Array.prototype.slice.call(
+      document.querySelectorAll('.howto__switch-btn')
+    );
+
+    buttons.forEach(function (btn, index) {
       btn.addEventListener('click', function () {
         setAudience(btn.getAttribute('data-audience'));
       });
+
+      btn.addEventListener('keydown', function (event) {
+        var targetIndex = index;
+
+        if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+          targetIndex = (index + 1) % buttons.length;
+        } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+          targetIndex = (index - 1 + buttons.length) % buttons.length;
+        } else if (event.key === 'Home') {
+          targetIndex = 0;
+        } else if (event.key === 'End') {
+          targetIndex = buttons.length - 1;
+        } else {
+          return;
+        }
+
+        event.preventDefault();
+        buttons[targetIndex].focus();
+        setAudience(buttons[targetIndex].getAttribute('data-audience'));
+      });
+    });
+  }
+
+  function initDotKeyboard() {
+    var container = document.getElementById('howto-dots');
+    if (!container) return;
+
+    container.addEventListener('keydown', function (event) {
+      var dots = Array.prototype.slice.call(
+        container.querySelectorAll('.how-showcase__dot')
+      );
+      if (!dots.length) return;
+
+      var currentIndex = dots.indexOf(document.activeElement);
+      if (currentIndex === -1) return;
+
+      var targetIndex = currentIndex;
+
+      if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+        targetIndex = (currentIndex + 1) % dots.length;
+      } else if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+        targetIndex = (currentIndex - 1 + dots.length) % dots.length;
+      } else if (event.key === 'Home') {
+        targetIndex = 0;
+      } else if (event.key === 'End') {
+        targetIndex = dots.length - 1;
+      } else {
+        return;
+      }
+
+      event.preventDefault();
+      goToStep(targetIndex, targetIndex > activeStepIndex ? 1 : -1);
+      dots[targetIndex].focus();
     });
   }
 
@@ -536,6 +601,7 @@
     updateNavState();
     initSwitch();
     initNav();
+    initDotKeyboard();
   }
 
   document.addEventListener('DOMContentLoaded', init);

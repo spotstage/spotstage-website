@@ -15,10 +15,13 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skipToMain">Zum Hauptinhalt springen</a>
+
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="site-header__logo" data-i18n-attr="logo.ariaHome:aria-label">
-        <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE Logo" width="160" height="46">
+        <img src="images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+        <span class="sr-only">SPOTSTAGE</span>
       </a>
 
       <div class="site-header__actions">
@@ -30,8 +33,8 @@
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
           </span>
-          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true">DE</button>
-          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true" data-i18n-attr="lang.activeDe:aria-label">DE</button>
+          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false" data-i18n-attr="lang.labelEn:aria-label">EN</button>
         </div>
       </div>
     </div>
@@ -39,7 +42,7 @@
 
   <main id="main-content">
     <section class="section section--legal">
-      <div class="container container--narrow">
+      <div class="container container--narrow legal-page__content">
         <p class="legal-page__back">
           <a href="index.html" class="legal-page__back-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -49,7 +52,36 @@
           </a>
         </p>
         <h1 data-i18n="legal.imprintTitle">Impressum</h1>
-        <p data-i18n="legal.imprintPlaceholder">Placeholder – Impressumsinhalte werden hier eingefügt.</p>
+        <p class="legal-page__intro" data-i18n="legal.imprintIntro">Angaben gemäß § 5 DDG</p>
+
+        <address class="legal-page__address" data-i18n-html="legal.imprintCompany">
+          SPOTSTAGE UG (haftungsbeschränkt)<br>
+          Hugo-Weiss-Str. 25<br>
+          81827 München<br>
+          Deutschland
+        </address>
+
+        <h2 class="section--legal__subheading" data-i18n="legal.imprintRepresentationHeading">Vertreten durch</h2>
+        <p data-i18n-html="legal.imprintRepresentationText">Geschäftsführer: Christian Peter Sigel</p>
+
+        <h2 class="section--legal__subheading" data-i18n="legal.imprintContactHeading">Kontakt</h2>
+        <p data-i18n-html="legal.imprintContact">
+          E-Mail: <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>
+        </p>
+
+        <h2 class="section--legal__subheading" data-i18n="legal.imprintRegisterHeading">Handelsregister</h2>
+        <p class="legal-page__optional" data-i18n="legal.imprintRegisterIntro"></p>
+        <p data-i18n-html="legal.imprintRegisterDetails">
+          Registergericht: Amtsgericht München<br>
+          Registernummer: HRB 313304
+        </p>
+
+        <h2 class="section--legal__subheading" data-i18n="legal.imprintDisputeHeading">Verbraucherstreitbeilegung</h2>
+        <p data-i18n="legal.imprintDisputeText">
+          Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+
+        <p class="section--legal__note legal-page__optional" data-i18n="legal.imprintDisclaimer"></p>
       </div>
     </section>
   </main>
@@ -58,7 +90,8 @@
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
         <a href="index.html" class="site-footer__logo" data-i18n-attr="logo.ariaHome:aria-label">
-          <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE" width="160" height="46">
+          <img src="images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+          <span class="sr-only">SPOTSTAGE</span>
         </a>
         <p class="site-footer__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
       </div>

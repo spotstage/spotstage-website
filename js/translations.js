@@ -14,15 +14,22 @@
       },
       lang: {
         switchAria: 'Sprache wählen',
+        labelDe: 'Deutsch auswählen',
+        labelEn: 'Englisch auswählen',
+        activeDe: 'Deutsch, aktuelle Sprache',
+        activeEn: 'Englisch, aktuelle Sprache',
+      },
+      a11y: {
+        skipToMain: 'Zum Hauptinhalt springen',
       },
       nav: {
         ariaLabel: 'Hauptnavigation',
-        open: 'Navigation öffnen',
-        close: 'Navigation schließen',
+        open: 'Menü öffnen',
+        close: 'Menü schließen',
         benefits: 'Vorteile',
         howItWorks: "So funktioniert's",
         outlook: 'Ausblick',
-        download: 'Download die App',
+        download: 'App herunterladen',
       },
       logo: {
         ariaHome: 'SPOTSTAGE Startseite',
@@ -43,21 +50,23 @@
           src: 'images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg',
           width: 162,
           height: 54,
-          aria: 'SPOTSTAGE im App Store laden',
+          aria: 'SPOTSTAGE im Apple App Store öffnen',
+          unavailableAria: 'SPOTSTAGE im Apple App Store – demnächst verfügbar',
           alt: 'Laden im App Store',
         },
         google: {
           src: 'images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg',
           width: 182,
           height: 54,
-          aria: 'SPOTSTAGE bei Google Play laden',
+          aria: 'SPOTSTAGE bei Google Play öffnen',
+          unavailableAria: 'SPOTSTAGE bei Google Play – demnächst verfügbar',
           alt: 'Jetzt bei Google Play',
         },
       },
       comparison: {
         heading:
           '<span class="comparison__accent comparison__accent--artists">Talente</span> treffen <span class="comparison__accent comparison__accent--organizers">Hosts</span>',
-        subline: 'SPOTSTAGE bringt Bewerbung, Planung und Line-up an einen Ort.',
+        subline: 'SPOTSTAGE vereint Bewerbungen, Planung und Line-up in einer App.',
         artistTitle: 'Für Künstler:innen',
         artistSubline: 'Mehr passende Auftritte. Weniger Aufwand.',
         organizerTitle: 'Für Veranstalter:innen',
@@ -71,12 +80,12 @@
           items: [
             {
               title: 'Passende Shows finden',
-              text: 'Entdecke Open Mics, Club Shows und Events in deiner Nähe.',
+              text: 'Entdecke Open Mics, Mixed Shows und passende Events in deiner Nähe.',
               icon: 'search',
             },
             {
               title: 'Einfach bewerben',
-              text: 'Bewirb dich in wenigen Klicks und behalte deinen Status im Blick.',
+              text: 'Bewirb dich in wenigen Schritten und behalte den Status deiner Bewerbung im Blick.',
               icon: 'send',
             },
             {
@@ -96,7 +105,7 @@
           items: [
             {
               title: 'Shows organisieren',
-              text: 'Plane Events mit Datum, Location, Slots und klarer Struktur.',
+              text: 'Erstelle Shows mit allen wichtigen Details und einer klaren Slot-Struktur.',
               icon: 'mic',
             },
             {
@@ -121,18 +130,19 @@
         eyebrow: "So funktioniert's",
         title: 'Von der Bewerbung bis zum Line-up',
         subtitle:
-          'SPOTSTAGE bringt Künstler:innen und Veranstalter:innen in einen einfachen Ablauf — von der ersten Show-Idee bis zur finalen Besetzung.',
+          'Von der ersten Show-Idee bis zum fertigen Line-up: SPOTSTAGE verbindet alle Schritte in einem einfachen Ablauf.',
         switchAria: 'Zielgruppe auswählen',
         switchArtists: 'Für Künstler:innen',
         switchOrganizers: 'Für Veranstalter:innen',
         prevStep: 'Vorheriger Schritt',
         nextStep: 'Nächster Schritt',
+        stepsAria: 'Schritte',
         dotLabel: 'Schritt',
         artists: [
           {
             number: '01',
             title: 'Profil erstellen',
-            text: 'Zeige deine Erfahrung, Vorlieben und Auftrittsdetails, damit Veranstalter:innen schnell einschätzen können, ob du zur Show passt.',
+            text: 'Zeige deine Erfahrung, Präferenzen und Auftrittsdetails, damit Veranstalter:innen schnell sehen, ob du zu ihrer Show passt.',
             visual: 'artist-profile',
             ui: {
               primary: {
@@ -155,7 +165,7 @@
           },
           {
             number: '02',
-            title: 'Shows finden & bewerben',
+            title: 'Shows finden & sich bewerben',
             text: 'Entdecke passende Shows in deiner Stadt oder dort, wo du auftreten möchtest — und bewirb dich direkt auf freie Slots.',
             visual: 'artist-discover',
             ui: {
@@ -201,7 +211,7 @@
           {
             number: '01',
             title: 'Show anlegen',
-            text: 'Erstelle deine Show mit allen wichtigen Details — egal ob einmaliges Event oder regelmäßiges Format.',
+            text: 'Erstelle deine Show mit allen wichtigen Details – als einmaliges Event oder wiederkehrendes Format.',
             visual: 'org-create',
             ui: {
               primary: {
@@ -254,7 +264,7 @@
           {
             number: '03',
             title: 'Line-up finalisieren',
-            text: 'Besetze Slots, bestätige Künstler:innen und bringe dein Line-up sicher auf die Bühne.',
+            text: 'Besetze deine Slots, bestätige Künstler:innen und mach dein Line-up bereit für die Bühne.',
             visual: 'org-lineup',
             ui: {
               primary: {
@@ -293,7 +303,7 @@
           {
             title: 'Comedy',
             status: 'Live zum Start',
-            description: 'Open Mics, Mixed Shows, Stand-up und Comedy-Events.',
+            description: 'Open Mics, Mixed Shows, Impro und weitereComedy-Events.',
             type: 'live',
             icon: 'comedy',
           },
@@ -307,14 +317,14 @@
           {
             title: 'Kleinkunst',
             status: 'Geplant',
-            description: 'Für Live-Acts, Shows und kreative Bühnenmomente.',
+            description: 'Für Zauberei, Kabarett, Artistik und weitere Kleinkunstformate',
             type: 'planned',
             icon: 'variety',
           },
           {
             title: 'Musik',
             status: 'Geplant',
-            description: 'Für Sänger:innen, Bands und kleine Bühnenformate.',
+            description: 'Für Sänger:innen, Bands und weitere Live-Musikformate.',
             type: 'planned',
             icon: 'music',
           },
@@ -337,26 +347,48 @@
       legal: {
         backToHome: 'Zurück zur Startseite',
         imprintTitle: 'Impressum',
-        imprintPlaceholder: 'Placeholder – Impressumsinhalte werden hier eingefügt.',
+        imprintIntro: 'Angaben gemäß § 5 DDG',
+        imprintCompany:
+          'SPOTSTAGE UG (haftungsbeschränkt)<br>Hugo-Weiss-Str. 25<br>81827 München<br>Deutschland',
+        imprintRepresentationHeading: 'Vertreten durch',
+        imprintRepresentationText: 'Geschäftsführer: Christian Peter Sigel',
+        imprintContactHeading: 'Kontakt',
+        imprintContact:
+          'E-Mail: <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>',
+        imprintRegisterHeading: 'Handelsregister',
+        imprintRegisterIntro: '',
+        imprintRegisterDetails:
+          'Registergericht: Amtsgericht München<br>Registernummer: HRB 313304',
+        imprintDisputeHeading: 'Verbraucherstreitbeilegung',
+        imprintDisputeText:
+          'Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+        imprintDisclaimer: '',
         privacyTitle: 'Datenschutzerklärung',
-        privacyPlaceholder: 'Placeholder – Datenschutzinhalte werden hier eingefügt.',
-        imprintMeta: 'Impressum – SPOTSTAGE',
-        privacyMeta: 'Datenschutzerklärung – SPOTSTAGE',
-        accessibilityMeta: 'Barrierefreiheit – SPOTSTAGE',
-        accessibilityTitle: 'Barrierefreiheit',
+        imprintMeta: 'Impressum | SPOTSTAGE',
+        privacyMeta: 'Datenschutz | SPOTSTAGE',
+        accessibilityMeta: 'Barrierefreiheit | SPOTSTAGE',
+        accessibilityTitle: 'Informationen zur Barrierefreiheit',
         accessibilityIntro:
-          'SPOTSTAGE möchte die Website und die App für möglichst viele Menschen gut zugänglich und nutzbar gestalten.',
+          'SPOTSTAGE möchte seine Website für möglichst viele Menschen zugänglich und nutzbar machen. Wir arbeiten daran, die Website im Einklang mit den Anforderungen des Barrierefreiheitsstärkungsgesetzes und den einschlägigen technischen Standards barrierefrei zu gestalten.',
+        accessibilityComplianceHeading: 'Stand der Vereinbarkeit',
+        accessibilityComplianceText:
+          'Die Website wurde intern anhand zentraler Anforderungen der WCAG 2.1 auf Konformitätsstufe A und AA geprüft und wird fortlaufend verbessert. Eine vollständige Konformität mit allen Anforderungen des Barrierefreiheitsstärkungsgesetzes kann derzeit nicht zugesichert werden.',
         accessibilityCommitmentHeading: 'Unser Anspruch',
         accessibilityCommitmentText:
           'Wir achten bei der Weiterentwicklung unter anderem auf verständliche Inhalte, ausreichende Kontraste, sichtbare Fokuszustände, Tastaturbedienbarkeit und sinnvolle Beschriftungen für unterstützende Technologien.',
-        accessibilityReportHeading: 'Barriere melden',
+        accessibilityReportHeading: 'Feedback und Kontakt',
         accessibilityReportText:
-          'Ist dir eine Barriere aufgefallen oder kannst du einen Bereich nicht wie erwartet nutzen? Schreib uns gerne. Dein Feedback hilft uns, SPOTSTAGE weiter zu verbessern.',
-        accessibilityReportLink: 'Barriere melden',
+          'Sind Ihnen Barrieren auf unserer Website aufgefallen? Schreiben Sie uns bitte an hello@spotstage.app. Beschreiben Sie möglichst genau, auf welcher Seite und bei welcher Funktion das Problem auftritt.',
+        accessibilityReportLink: 'hello@spotstage.app',
         accessibilityMailto:
           'mailto:hello@spotstage.app?subject=Hinweis%20zur%20Barrierefreiheit%20bei%20SPOTSTAGE',
-        accessibilityNote:
-          'SPOTSTAGE befindet sich im Aufbau. Die Zugänglichkeit wird im Zuge der Weiterentwicklung regelmäßig geprüft und verbessert.',
+        accessibilityKnownHeading: 'Bekannte Einschränkungen',
+        accessibilityKnownText:
+          'App-Store-Links sind derzeit noch nicht aktiv, da die Veröffentlichung in den Stores aussteht. Einzelne Animationen und Spotlight-Effekte dienen der visuellen Gestaltung und können bei aktivierter Einstellung „Bewegung reduzieren“ abgeschwächt werden.',
+        accessibilityStandardHeading: 'Prüfgrundlage',
+        accessibilityStandardText:
+          'Orientierung bei der Entwicklung und Prüfung: WCAG 2.1 Stufen A und AA, EN 301 549 sowie die Anforderungen des Barrierefreiheitsstärkungsgesetzes (BFSG).',
+        accessibilityUpdated: 'Stand: Juni 2026',
       },
     },
     en: {
@@ -367,11 +399,18 @@
       },
       lang: {
         switchAria: 'Choose language',
+        labelDe: 'Select German',
+        labelEn: 'Select English',
+        activeDe: 'German, current language',
+        activeEn: 'English, current language',
+      },
+      a11y: {
+        skipToMain: 'Skip to main content',
       },
       nav: {
         ariaLabel: 'Main navigation',
-        open: 'Open navigation',
-        close: 'Close navigation',
+        open: 'Open menu',
+        close: 'Close menu',
         benefits: 'Benefits',
         howItWorks: 'How it works',
         outlook: 'Outlook',
@@ -396,25 +435,27 @@
           src: 'images/badges/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg',
           width: 162,
           height: 54,
-          aria: 'Download SPOTSTAGE on the App Store',
+          aria: 'Open SPOTSTAGE in the Apple App Store',
+          unavailableAria: 'SPOTSTAGE on the Apple App Store – coming soon',
           alt: 'Download on the App Store',
         },
         google: {
           src: 'images/badges/GetItOnGooglePlay_Badge_Web_color_English.svg',
           width: 182,
           height: 54,
-          aria: 'Get SPOTSTAGE on Google Play',
+          aria: 'Open SPOTSTAGE on Google Play',
+          unavailableAria: 'SPOTSTAGE on Google Play – coming soon',
           alt: 'Get it on Google Play',
         },
       },
       comparison: {
         heading:
           '<span class="comparison__accent comparison__accent--artists">Artists</span> meet <span class="comparison__accent comparison__accent--organizers">Organizers</span>',
-        subline: 'SPOTSTAGE brings applications, planning, and line-ups together in one place.',
+        subline: 'From applications to the final line-up — everything in one place.',
         artistTitle: 'For Artists',
-        artistSubline: 'More fitting gigs. Less effort.',
+        artistSubline: 'More opportunities. Less hassle.',
         organizerTitle: 'For Organizers',
-        organizerSubline: 'Better shows. Less organizational stress.',
+        organizerSubline: 'Better shows. Less coordination.',
         ctaHeading: 'Get SPOTSTAGE now',
         ctaText: 'For artists and organizers.',
       },
@@ -424,22 +465,22 @@
           items: [
             {
               title: 'Find the right shows',
-              text: 'Discover open mics, club shows, and events near you.',
+              text: 'Discover open mics, mixed shows, and events near you.',
               icon: 'search',
             },
             {
               title: 'Apply with ease',
-              text: 'Apply in a few taps and keep track of your status.',
+              text: 'Apply in just a few taps, and track your application status.',
               icon: 'send',
             },
             {
               title: 'Gigs at a glance',
-              text: 'All confirmations, dates, and show details in one place.',
+              text: 'All your confirmed gigs, dates, and show details in one place.',
               icon: 'calendar',
             },
             {
               title: 'More visibility',
-              text: 'Build your profile and get discovered for more shows.',
+              text: 'Build your profile and get discovered by more organizers.',
               icon: 'visibility',
             },
           ],
@@ -449,7 +490,7 @@
           items: [
             {
               title: 'Organize shows',
-              text: 'Plan events with date, location, slots, and clear structure.',
+              text: 'Create shows with all the essential details and a clear slot structure.',
               icon: 'mic',
             },
             {
@@ -459,12 +500,12 @@
             },
             {
               title: 'Plan the line-up',
-              text: 'Fill slots faster and stay on top of things until showtime.',
+              text: 'Fill slots faster and keep your line-up organized until showtime.',
               icon: 'lineup',
             },
             {
               title: 'Focus on what matters',
-              text: 'Less coordination, more time for a great event.',
+              text: 'Less coordination, more time for a great show.',
               icon: 'focus',
             },
           ],
@@ -474,18 +515,19 @@
         eyebrow: 'How it works',
         title: 'From application to line-up',
         subtitle:
-          'SPOTSTAGE brings artists and organizers into one simple flow — from the first show idea to the final line-up.',
+          'From the first show idea to the final line-up, SPOTSTAGE brings every step together in one simple flow.',
         switchAria: 'Select audience',
         switchArtists: 'For Artists',
         switchOrganizers: 'For Organizers',
         prevStep: 'Previous step',
         nextStep: 'Next step',
+        stepsAria: 'Steps',
         dotLabel: 'Step',
         artists: [
           {
             number: '01',
             title: 'Create your profile',
-            text: 'Show your experience, preferences and performance details so organizers can quickly see if you fit their show.',
+            text: 'Show your experience, preferences and performance details so organizers can quickly see whether you are a good fit for their show.',
             visual: 'artist-profile',
             ui: {
               primary: {
@@ -509,7 +551,7 @@
           {
             number: '02',
             title: 'Find shows & apply',
-            text: 'Discover fitting shows in your city or wherever you want to perform — and apply directly for open slots.',
+            text: 'Find shows that match your profile, wherever you want to perform, and apply directly for open slots.',
             visual: 'artist-discover',
             ui: {
               primary: {
@@ -554,7 +596,7 @@
           {
             number: '01',
             title: 'Create a show',
-            text: 'Set up your show with all important details — whether it\'s a one-time event or a recurring format.',
+            text: 'Set up your show with all the important details — whether it is a one-time event or a recurring show.',
             visual: 'org-create',
             ui: {
               primary: {
@@ -582,7 +624,7 @@
           {
             number: '02',
             title: 'Manage applications',
-            text: 'Review applications in one place, stay organized and plan your line-up directly in SPOTSTAGE.',
+            text: 'Review applications in one place, stay organized, and plan your line-up directly in SPOTSTAGE.',
             visual: 'org-manage',
             ui: {
               primary: {
@@ -607,7 +649,7 @@
           {
             number: '03',
             title: 'Finalize the line-up',
-            text: 'Fill slots, confirm artists and get your line-up ready for the stage.',
+            text: 'Fill slots, confirm artists, and get your line-up ready for the stage.',
             visual: 'org-lineup',
             ui: {
               primary: {
@@ -646,28 +688,28 @@
           {
             title: 'Comedy',
             status: 'Live at launch',
-            description: 'Open mics, mixed shows, stand-up and comedy events.',
+            description: 'Open mics, mixed shows, stand-up, and comedy events.',
             type: 'live',
             icon: 'comedy',
           },
           {
             title: 'Poetry & Readings',
             status: 'Planned',
-            description: 'For poetry slams, reading stages and spoken-word formats.',
+            description: 'For poetry slams, live readings, and spoken-word events.',
             type: 'planned',
             icon: 'poetry',
           },
           {
             title: 'Variety',
             status: 'Planned',
-            description: 'For diverse live acts, shows and creative stage moments.',
+            description: 'For magic, cabaret, and other live music formats.',
             type: 'planned',
             icon: 'variety',
           },
           {
             title: 'Music',
             status: 'Planned',
-            description: 'For singer, bands and small stage formats.',
+            description: 'For singer, bands, and small stage formats.',
             type: 'planned',
             icon: 'music',
           },
@@ -689,28 +731,65 @@
       },
       legal: {
         backToHome: 'Back to home',
-        imprintTitle: 'Legal notice',
-        imprintPlaceholder: 'Placeholder – Legal notice content will be added here.',
-        privacyTitle: 'Privacy policy',
-        privacyPlaceholder: 'Placeholder – Privacy policy content will be added here.',
-        imprintMeta: 'Legal notice – SPOTSTAGE',
-        privacyMeta: 'Privacy policy – SPOTSTAGE',
-        accessibilityMeta: 'Accessibility – SPOTSTAGE',
-        accessibilityTitle: 'Accessibility',
+        imprintTitle: 'Legal Notice',
+        imprintIntro:
+          'Information pursuant to Section 5 of the German Digital Services Act (DDG)',
+        imprintCompany:
+          'SPOTSTAGE UG (haftungsbeschränkt)<br>Hugo-Weiss-Str. 25<br>81827 Munich<br>Germany',
+        imprintRepresentationHeading: 'Represented by',
+        imprintRepresentationText:
+          'Represented by its Managing Director:<br>Christian Peter Sigel',
+        imprintContactHeading: 'Contact',
+        imprintContact:
+          'Email: <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>',
+        imprintRegisterHeading: 'Commercial Register',
+        imprintRegisterIntro:
+          'Registered with the Commercial Register maintained by:',
+        imprintRegisterDetails:
+          'Amtsgericht München (Munich Local Court)<br><br>Registration number: HRB 313304',
+        imprintDisputeHeading: 'Consumer Dispute Resolution',
+        imprintDisputeText:
+          'We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.',
+        imprintDisclaimer:
+          'This English version is provided for convenience only. In the event of any discrepancies, the German version shall prevail.',
+        privacyTitle: 'Privacy Notice',
+        imprintMeta: 'Legal Notice | SPOTSTAGE',
+        privacyMeta: 'Privacy Notice | SPOTSTAGE',
+        accessibilityMeta: 'Accessibility | SPOTSTAGE',
+        accessibilityTitle: 'Accessibility information',
         accessibilityIntro:
-          'SPOTSTAGE aims to make its website and app accessible and easy to use for as many people as possible.',
+          'SPOTSTAGE aims to make its website accessible and usable for as many people as possible. We are working to align the website with the requirements of the German Accessibility Enhancement Act (BFSG) and applicable technical standards.',
+        accessibilityComplianceHeading: 'Conformance status',
+        accessibilityComplianceText:
+          'The website has been reviewed internally against key requirements of WCAG 2.1 Levels A and AA and is being improved continuously. Full conformance with all requirements of the Accessibility Enhancement Act cannot be assured at this time.',
         accessibilityCommitmentHeading: 'Our commitment',
         accessibilityCommitmentText:
-          'As we continue to develop SPOTSTAGE, we pay attention to clear content, sufficient contrast, visible focus states, keyboard accessibility and meaningful labels for assistive technologies.',
-        accessibilityReportHeading: 'Report an accessibility issue',
+          'As we continue to develop SPOTSTAGE, we pay attention to clear content, sufficient contrast, visible focus states, keyboard accessibility, and meaningful labels for assistive technologies.',
+        accessibilityReportHeading: 'Feedback and contact',
         accessibilityReportText:
-          'Have you encountered a barrier or are you unable to use part of SPOTSTAGE as expected? Please let us know. Your feedback helps us improve.',
-        accessibilityReportLink: 'Report an accessibility issue',
+          'Have you encountered a barrier on our website? Please email hello@spotstage.app. Describe as precisely as possible which page and which function is affected.',
+        accessibilityReportLink: 'hello@spotstage.app',
         accessibilityMailto:
           'mailto:hello@spotstage.app?subject=Accessibility%20feedback%20for%20SPOTSTAGE',
-        accessibilityNote:
-          'SPOTSTAGE is currently being developed. Accessibility will be reviewed and improved continuously.',
+        accessibilityKnownHeading: 'Known limitations',
+        accessibilityKnownText:
+          'App store links are not yet active because publication in the stores is pending. Some animations and spotlight effects are decorative and are reduced when “Reduce motion” is enabled.',
+        accessibilityStandardHeading: 'Review basis',
+        accessibilityStandardText:
+          'Development and review are guided by WCAG 2.1 Levels A and AA, EN 301 549, and the requirements of the German Accessibility Enhancement Act (BFSG).',
+        accessibilityUpdated: 'Last updated: June 2026',
       },
     },
   };
+
+  if (window.SpotstagePrivacyLegal) {
+    Object.assign(
+      window.SpotstageTranslations.de.legal,
+      window.SpotstagePrivacyLegal.de
+    );
+    Object.assign(
+      window.SpotstageTranslations.en.legal,
+      window.SpotstagePrivacyLegal.en
+    );
+  }
 })();

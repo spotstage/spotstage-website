@@ -54,7 +54,7 @@
       panelAccent +
       ' vision-card' +
       liveClass +
-      '" role="listitem" style="--reveal-delay: ' +
+      '" style="--reveal-delay: ' +
       index * 70 +
       'ms">' +
       '<div class="vision-card__icon" aria-hidden="true">' +

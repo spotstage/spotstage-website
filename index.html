@@ -11,22 +11,22 @@
   <meta name="theme-color" content="#0d0719">
   <meta name="description" content="SPOTSTAGE – Die App für Künstler und Veranstalter. Shows finden. Shows organisieren." data-i18n-attr="meta.description:content">
   <title data-i18n="meta.title">SPOTSTAGE – Deine Show. Deine Bühne. Dein Moment.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skipToMain">Zum Hauptinhalt springen</a>
 
   <!-- Header -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
       <a href="/" class="site-header__logo" data-i18n-attr="logo.ariaHome:aria-label">
-        <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE Logo" width="180" height="52">
+        <img src="images/logo/spotstage_logo.svg" alt="" width="180" height="52">
+        <span class="sr-only">SPOTSTAGE</span>
       </a>
 
       <div class="site-header__actions">
-        <nav class="site-nav" id="site-nav" data-i18n-attr="nav.ariaLabel:aria-label">
+        <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-i18n-attr="nav.ariaLabel:aria-label">
           <div class="site-nav__panel mobile-nav__inner">
             <div class="mobile-nav__primary">
               <ul class="site-nav__list site-nav__links mobile-nav__links">
@@ -39,9 +39,9 @@
                 <li><a href="#download" class="site-nav__link site-nav__link--cta" data-i18n="nav.download">App laden</a></li>
               </ul>
             </div>
-            <footer class="mobile-nav__footer">
+            <div class="mobile-nav__footer">
               <p class="mobile-nav__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
-              <nav class="mobile-nav__utility" data-i18n-attr="footer.navAria:aria-label">
+              <nav class="mobile-nav__utility" aria-label="Rechtliches und Kontakt" data-i18n-attr="footer.navAria:aria-label">
                 <ul class="mobile-nav__legal-links">
                   <li><a href="impressum.html" class="mobile-nav__legal-link" data-i18n="footer.legalNotice">Impressum</a></li>
                   <li><a href="datenschutz.html" class="mobile-nav__legal-link" data-i18n="footer.privacy">Datenschutz</a></li>
@@ -49,7 +49,7 @@
                   <li><a href="barrierefreiheit.html" class="mobile-nav__legal-link" data-i18n="footer.accessibility">Barrierefreiheit</a></li>
                 </ul>
               </nav>
-            </footer>
+            </div>
           </div>
         </nav>
 
@@ -61,8 +61,8 @@
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
             </svg>
           </span>
-          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true">DE</button>
-          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false">EN</button>
+          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true" data-i18n-attr="lang.activeDe:aria-label">DE</button>
+          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false" data-i18n-attr="lang.labelEn:aria-label">EN</button>
         </div>
 
         <button
@@ -71,11 +71,12 @@
           type="button"
           aria-expanded="false"
           aria-controls="site-nav"
+          aria-label="Menü öffnen"
           data-i18n-attr="nav.open:aria-label"
         >
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
         </button>
       </div>
     </div>
@@ -90,9 +91,8 @@
           <div class="hero-section__grid">
 
           <div class="hero-section__copy">
-            <div href="/" class="hero-section__logo" data-i18n-attr="logo.ariaHome:aria-label">
-              <img src="images/logo/spotstage_logo.svg" alt="" width="260" height="75">
-              <span class="sr-only">SPOTSTAGE</span>
+            <div class="hero-section__logo">
+              <img src="images/logo/spotstage_logo.svg" alt="" width="260" height="75" aria-hidden="true">
               <p class="hero-section__slogan" data-i18n="hero.slogan">Deine Show. Deine Bühne. Dein Moment.</p>
             </div>
 
@@ -105,22 +105,22 @@
             </h1>
 
             <div class="hero-section__stores" id="hero-stores">
-              <a
-                href="#"
-                class="hero-section__store-badge"
+              <span
+                class="hero-section__store-badge hero-section__store-badge--unavailable"
                 data-store="apple"
-                aria-label="SPOTSTAGE im App Store laden"
+                role="img"
+                aria-label="SPOTSTAGE im Apple App Store – demnächst verfügbar"
               >
                 <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
-              </a>
-              <a
-                href="#"
-                class="hero-section__store-badge"
+              </span>
+              <span
+                class="hero-section__store-badge hero-section__store-badge--unavailable"
                 data-store="google"
-                aria-label="SPOTSTAGE bei Google Play laden"
+                role="img"
+                aria-label="SPOTSTAGE bei Google Play – demnächst verfügbar"
               >
                 <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
-              </a>
+              </span>
             </div>
 
             <p class="hero-section__subheadline" data-i18n-html="hero.subheadline">
@@ -187,23 +187,23 @@
           </header>
 
           <div class="comparison">
-            <div class="comparison__panel comparison__panel--artist" id="artist-benefits" aria-labelledby="artist-benefits-heading">
+            <section class="comparison__panel comparison__panel--artist" id="artist-benefits" aria-labelledby="artist-benefits-heading">
               <header class="comparison__panel-header">
                 <h3 class="comparison__panel-title" id="artist-benefits-heading" data-i18n="comparison.artistTitle">Für Künstler</h3>
                 <p class="comparison__panel-subline" data-i18n="comparison.artistSubline">Mehr passende Auftritte. Weniger Aufwand.</p>
               </header>
               <div class="comparison__list" data-audience="artist"></div>
-            </div>
+            </section>
 
             <div class="comparison__divider" aria-hidden="true"></div>
 
-            <div class="comparison__panel comparison__panel--organizer" id="organizer-benefits" aria-labelledby="organizer-benefits-heading">
+            <section class="comparison__panel comparison__panel--organizer" id="organizer-benefits" aria-labelledby="organizer-benefits-heading">
               <header class="comparison__panel-header">
                 <h3 class="comparison__panel-title" id="organizer-benefits-heading" data-i18n="comparison.organizerTitle">Für Veranstalter</h3>
                 <p class="comparison__panel-subline" data-i18n="comparison.organizerSubline">Bessere Shows. Weniger Organisationsstress.</p>
               </header>
               <div class="comparison__list" data-audience="organizer"></div>
-            </div>
+            </section>
           </div>
         </div>
       </section>
@@ -216,22 +216,22 @@
               <p class="benefits-cta__text" data-i18n="comparison.ctaText">Für Künstler und Veranstalter.</p>
             </div>
             <div class="hero-section__stores benefits-cta__stores">
-              <a
-                href="#"
-                class="hero-section__store-badge"
+              <span
+                class="hero-section__store-badge hero-section__store-badge--unavailable"
                 data-store="apple"
-                aria-label="SPOTSTAGE im App Store laden"
+                role="img"
+                aria-label="SPOTSTAGE im Apple App Store – demnächst verfügbar"
               >
                 <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
-              </a>
-              <a
-                href="#"
-                class="hero-section__store-badge"
+              </span>
+              <span
+                class="hero-section__store-badge hero-section__store-badge--unavailable"
                 data-store="google"
-                aria-label="SPOTSTAGE bei Google Play laden"
+                role="img"
+                aria-label="SPOTSTAGE bei Google Play – demnächst verfügbar"
               >
                 <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
-              </a>
+              </span>
             </div>
           </div>
         </div>
@@ -275,26 +275,28 @@
             type="button"
             class="how-showcase__arrow how-showcase__arrow--prev"
             id="howto-prev"
+            aria-label="Vorheriger Schritt"
             data-i18n-attr="howItWorks.prevStep:aria-label"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
           </button>
 
-          <div class="how-showcase__content" id="howto-panel">
-            <div class="how-showcase__copy" id="howto-copy" aria-live="polite"></div>
+          <section class="how-showcase__content" id="howto-panel" aria-labelledby="howto-step-title">
+            <div class="how-showcase__copy" id="howto-copy"></div>
             <div class="how-showcase__visual" id="howto-visual" aria-hidden="true"></div>
-          </div>
+          </section>
 
           <button
             type="button"
             class="how-showcase__arrow how-showcase__arrow--next"
             id="howto-next"
+            aria-label="Nächster Schritt"
             data-i18n-attr="howItWorks.nextStep:aria-label"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
 
-          <div class="how-showcase__dots" id="howto-dots" role="tablist"></div>
+          <div class="how-showcase__dots" id="howto-dots" role="group" data-i18n-attr="howItWorks.stepsAria:aria-label"></div>
         </div>
       </div>
     </section>
@@ -311,7 +313,7 @@
           </p>
         </header>
 
-        <div class="vision__grid" id="future-categories-grid" role="list"></div>
+        <div class="vision__grid" id="future-categories-grid"></div>
 
         <div class="vision__cta benefits-cta" id="vision-cta">
           <div class="vision__cta-copy benefits-cta__copy">
@@ -344,28 +346,27 @@
             class="download-cta__heading"
             id="download-heading"
             data-i18n="downloadCta.title"
-            data-i18n-attr="downloadCta.titleAria:aria-label"
           >
             Jetzt kostenlos herunterladen
           </h2>
 
           <div class="hero-section__stores download-cta__stores">
-            <a
-              href="#"
-              class="hero-section__store-badge"
+            <span
+              class="hero-section__store-badge hero-section__store-badge--unavailable"
               data-store="apple"
-              aria-label="SPOTSTAGE im App Store laden"
+              role="img"
+              aria-label="SPOTSTAGE im Apple App Store – demnächst verfügbar"
             >
               <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
-            </a>
-            <a
-              href="#"
-              class="hero-section__store-badge"
+            </span>
+            <span
+              class="hero-section__store-badge hero-section__store-badge--unavailable"
               data-store="google"
-              aria-label="SPOTSTAGE bei Google Play laden"
+              role="img"
+              aria-label="SPOTSTAGE bei Google Play – demnächst verfügbar"
             >
               <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
-            </a>
+            </span>
           </div>
 
           <p class="download-cta__note">
@@ -387,11 +388,12 @@
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
         <a href="/" class="site-footer__logo" data-i18n-attr="logo.ariaHome:aria-label">
-          <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE" width="160" height="46">
+          <img src="images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+          <span class="sr-only">SPOTSTAGE</span>
         </a>
         <p class="site-footer__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
       </div>
-      <nav class="site-footer__nav" data-i18n-attr="footer.navAria:aria-label">
+      <nav class="site-footer__nav" aria-label="Footer-Navigation" data-i18n-attr="footer.navAria:aria-label">
         <ul class="site-footer__list">
           <li><a href="impressum.html" class="site-footer__link" data-i18n="footer.legalNotice">Impressum</a></li>
           <li><a href="datenschutz.html" class="site-footer__link" data-i18n="footer.privacy">Datenschutz</a></li>
