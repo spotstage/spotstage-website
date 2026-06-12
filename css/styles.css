@@ -2085,13 +2085,45 @@ body.nav-open .site-header {
 
 .hero-section__store-badge--unavailable {
   cursor: default;
-  opacity: 0.92;
 }
 
 .hero-section__store-badge--unavailable:hover {
   transform: none;
   box-shadow: none;
   filter: none;
+}
+
+.hero-section__store-badge__media {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  line-height: 0;
+}
+
+.hero-section__store-badge--unavailable .hero-section__store-badge__media img {
+  display: block;
+  filter: grayscale(1);
+  opacity: 0.42;
+}
+
+.hero-section__store-badge__label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 0.45rem;
+  font-size: clamp(0.5625rem, 1.8vw, 0.6875rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  background: rgba(10, 5, 18, 0.78);
+  border: 1px solid rgba(167, 139, 250, 0.28);
+  backdrop-filter: blur(2px);
 }
 
 .hero-section__store-badge img {
@@ -2104,6 +2136,14 @@ body.nav-open .site-header {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   filter: brightness(1.1);
+}
+
+.hero-section__store-badge--unavailable:hover,
+.download-cta__stores .hero-section__store-badge--unavailable:hover,
+.benefits-cta__stores .hero-section__store-badge--unavailable:hover {
+  transform: none;
+  box-shadow: none;
+  filter: none;
 }
 
 /* Phone mockups */
@@ -3616,6 +3656,10 @@ body.nav-open .site-header {
   height: clamp(2.75rem, 7vw, 3.35rem);
 }
 
+.download-cta__stores .hero-section__store-badge__label {
+  font-size: clamp(0.625rem, 2vw, 0.8125rem);
+}
+
 .download-cta__stores .hero-section__store-badge:hover {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
@@ -3665,6 +3709,7 @@ body.nav-open .site-header {
   gap: var(--space-xl);
   align-items: start;
   text-align: center;
+  max-width: var(--hero-container-max);
 }
 
 .site-footer__brand {
@@ -3681,14 +3726,6 @@ body.nav-open .site-header {
 .site-footer__logo img {
   height: 2rem;
   width: auto;
-}
-
-.site-footer__claim {
-  margin: 0;
-  max-width: 16rem;
-  font-size: var(--font-size-sm);
-  line-height: 1.45;
-  color: var(--color-text-muted);
 }
 
 .site-footer__nav {
@@ -3928,10 +3965,6 @@ body.nav-open .site-header {
 
   .site-footer__brand {
     align-items: flex-start;
-  }
-
-  .site-footer__claim {
-    max-width: 14rem;
   }
 
   .site-footer__list {

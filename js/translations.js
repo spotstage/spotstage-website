@@ -46,6 +46,7 @@
         phoneOrganizerCaption: 'Für Veranstalter:innen',
       },
       badges: {
+        comingSoon: 'Demnächst verfügbar',
         apple: {
           src: 'images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg',
           width: 162,
@@ -368,27 +369,64 @@
         privacyMeta: 'Datenschutz | SPOTSTAGE',
         accessibilityMeta: 'Barrierefreiheit | SPOTSTAGE',
         accessibilityTitle: 'Informationen zur Barrierefreiheit',
-        accessibilityIntro:
-          'SPOTSTAGE möchte seine Website für möglichst viele Menschen zugänglich und nutzbar machen. Wir arbeiten daran, die Website im Einklang mit den Anforderungen des Barrierefreiheitsstärkungsgesetzes und den einschlägigen technischen Standards barrierefrei zu gestalten.',
-        accessibilityComplianceHeading: 'Stand der Vereinbarkeit',
-        accessibilityComplianceText:
-          'Die Website wurde intern anhand zentraler Anforderungen der WCAG 2.1 auf Konformitätsstufe A und AA geprüft und wird fortlaufend verbessert. Eine vollständige Konformität mit allen Anforderungen des Barrierefreiheitsstärkungsgesetzes kann derzeit nicht zugesichert werden.',
         accessibilityCommitmentHeading: 'Unser Anspruch',
-        accessibilityCommitmentText:
-          'Wir achten bei der Weiterentwicklung unter anderem auf verständliche Inhalte, ausreichende Kontraste, sichtbare Fokuszustände, Tastaturbedienbarkeit und sinnvolle Beschriftungen für unterstützende Technologien.',
-        accessibilityReportHeading: 'Feedback und Kontakt',
-        accessibilityReportText:
-          'Sind Ihnen Barrieren auf unserer Website aufgefallen? Schreiben Sie uns bitte an hello@spotstage.app. Beschreiben Sie möglichst genau, auf welcher Seite und bei welcher Funktion das Problem auftritt.',
-        accessibilityReportLink: 'hello@spotstage.app',
-        accessibilityMailto:
-          'mailto:hello@spotstage.app?subject=Hinweis%20zur%20Barrierefreiheit%20bei%20SPOTSTAGE',
+        accessibilityCommitmentBody:
+          '<p>SPOTSTAGE möchte seine Website für möglichst viele Menschen zugänglich und nutzbar machen.</p>' +
+          '<p>Wir arbeiten daran, die Website im Einklang mit den Anforderungen des Barrierefreiheitsstärkungsgesetzes sowie den einschlägigen technischen Standards barrierefrei zu gestalten und fortlaufend zu verbessern.</p>',
+        accessibilityDescriptionHeading: 'Beschreibung der Website',
+        accessibilityDescriptionBody:
+          '<p>Die Website spotstage.app informiert über die mobile Anwendung SPOTSTAGE.</p>' +
+          '<p>SPOTSTAGE unterstützt Künstlerinnen und Künstler sowie Veranstalterinnen und Veranstalter dabei, Bühnenshows zu finden, zu planen und zu organisieren.</p>' +
+          '<p>Die Website stellt die wichtigsten Funktionen der App vor und enthält Informationen für die verschiedenen Zielgruppen sowie rechtliche Informationen.</p>' +
+          '<p>Über die Website selbst können derzeit keine Nutzerkonten erstellt, Verträge abgeschlossen, Zahlungen vorgenommen oder Daten über ein Kontaktformular eingegeben werden.</p>',
+        accessibilityComplianceHeading: 'Stand der Vereinbarkeit',
+        accessibilityComplianceBody:
+          '<p>Die Website wurde intern anhand zentraler Anforderungen der Web Content Accessibility Guidelines (WCAG) 2.1 auf den Konformitätsstufen A und AA geprüft und wird fortlaufend verbessert.</p>' +
+          '<p>Nach dem derzeitigen Stand ist die Website mit diesen Anforderungen voraussichtlich weitgehend vereinbar.</p>' +
+          '<p>Eine vollständige Konformität mit sämtlichen Anforderungen des Barrierefreiheitsstärkungsgesetzes kann derzeit nicht zugesichert werden. Eine unabhängige externe Prüfung oder Zertifizierung ist bislang nicht erfolgt.</p>',
+        accessibilityMeasuresHeading: 'Umgesetzte Maßnahmen',
+        accessibilityMeasuresBody:
+          '<p>Bei der Entwicklung und Überarbeitung der Website wurden insbesondere folgende Aspekte berücksichtigt:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>verständliche und semantisch strukturierte Inhalte</li>' +
+          '<li>logische Überschriftenhierarchien</li>' +
+          '<li>Bedienbarkeit mit der Tastatur</li>' +
+          '<li>sichtbare Fokuszustände</li>' +
+          '<li>ein Sprunglink zum Hauptinhalt</li>' +
+          '<li>zugängliche Navigation und mobile Menüführung</li>' +
+          '<li>verständliche Beschriftungen interaktiver Elemente</li>' +
+          '<li>Alternativtexte für informative Bilder</li>' +
+          '<li>ausreichende Farbkontraste</li>' +
+          '<li>ausreichend große Bedienflächen</li>' +
+          '<li>Unterstützung von Zoom und schmalen Bildschirmgrößen</li>' +
+          '<li>Berücksichtigung der Systemeinstellung „Bewegung reduzieren“</li>' +
+          '<li>Unterstützung von erzwungenen Systemfarben</li>' +
+          '<li>deutsch- und englischsprachige Inhalte</li>' +
+          '</ul>',
         accessibilityKnownHeading: 'Bekannte Einschränkungen',
-        accessibilityKnownText:
-          'App-Store-Links sind derzeit noch nicht aktiv, da die Veröffentlichung in den Stores aussteht. Einzelne Animationen und Spotlight-Effekte dienen der visuellen Gestaltung und können bei aktivierter Einstellung „Bewegung reduzieren“ abgeschwächt werden.',
+        accessibilityKnownBody:
+          '<p>Die App-Store-Links sind derzeit noch nicht aktiv, da die Veröffentlichung von SPOTSTAGE in den App Stores noch aussteht. Dieser Zustand wird auf der Website als „demnächst verfügbar“ gekennzeichnet.</p>' +
+          '<p>Einzelne Animationen und Spotlight-Effekte dienen ausschließlich der visuellen Gestaltung. Bei aktivierter Systemeinstellung „Bewegung reduzieren“ werden diese deaktiviert oder deutlich reduziert.</p>' +
+          '<p>Die Website wurde noch nicht abschließend mit allen Kombinationen aus Screenreadern, Browsern und Betriebssystemen getestet. Abweichungen bei Ansage oder Fokusführung können daher in Einzelfällen nicht vollständig ausgeschlossen werden.</p>',
+        accessibilityFeedbackHeading: 'Feedback und Kontakt',
+        accessibilityFeedbackBody:
+          '<p>Sind Ihnen Barrieren auf unserer Website aufgefallen oder haben Sie Schwierigkeiten bei der Nutzung?</p>' +
+          '<p>Schreiben Sie uns bitte unter:</p>' +
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app?subject=Hinweis%20zur%20Barrierefreiheit%20bei%20SPOTSTAGE">hello@spotstage.app</a></p>' +
+          '<p>Beschreiben Sie möglichst genau, auf welcher Seite und bei welcher Funktion das Problem auftritt. Hilfreich sind außerdem Angaben zum verwendeten Gerät, Browser und gegebenenfalls zur eingesetzten assistiven Technologie.</p>' +
+          '<p>Wir prüfen Ihren Hinweis und bemühen uns um eine zeitnahe Rückmeldung und eine geeignete Lösung.</p>',
         accessibilityStandardHeading: 'Prüfgrundlage',
-        accessibilityStandardText:
-          'Orientierung bei der Entwicklung und Prüfung: WCAG 2.1 Stufen A und AA, EN 301 549 sowie die Anforderungen des Barrierefreiheitsstärkungsgesetzes (BFSG).',
-        accessibilityUpdated: 'Stand: Juni 2026',
+        accessibilityStandardBody:
+          '<p>Die Entwicklung und interne Prüfung der Website orientiert sich insbesondere an:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>den Web Content Accessibility Guidelines (WCAG) 2.1 auf den Konformitätsstufen A und AA</li>' +
+          '<li>der europäischen Norm EN 301 549</li>' +
+          '<li>den Anforderungen des Barrierefreiheitsstärkungsgesetzes</li>' +
+          '<li>den Anforderungen der Barrierefreiheitsstärkungsverordnung</li>' +
+          '</ul>' +
+          '<p>Zur Prüfung wurden unter anderem eine HTML-Validierung, Google Lighthouse, codebasierte Kontrollen sowie manuelle Prüfungen der Tastatur- und Fokusführung eingesetzt.</p>' +
+          '<p>Automatisierte Prüfwerkzeuge können nicht alle Barrieren erkennen und ersetzen keine umfassende Prüfung mit unterschiedlichen assistiven Technologien.</p>',
+        accessibilityUpdated: 'Erstellt und zuletzt überprüft: Juni 2026',
       },
     },
     en: {
@@ -431,6 +469,7 @@
         phoneOrganizerCaption: 'For Organizers',
       },
       badges: {
+        comingSoon: 'Coming soon',
         apple: {
           src: 'images/badges/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg',
           width: 162,
@@ -756,28 +795,65 @@
         imprintMeta: 'Legal Notice | SPOTSTAGE',
         privacyMeta: 'Privacy Notice | SPOTSTAGE',
         accessibilityMeta: 'Accessibility | SPOTSTAGE',
-        accessibilityTitle: 'Accessibility information',
-        accessibilityIntro:
-          'SPOTSTAGE aims to make its website accessible and usable for as many people as possible. We are working to align the website with the requirements of the German Accessibility Enhancement Act (BFSG) and applicable technical standards.',
-        accessibilityComplianceHeading: 'Conformance status',
-        accessibilityComplianceText:
-          'The website has been reviewed internally against key requirements of WCAG 2.1 Levels A and AA and is being improved continuously. Full conformance with all requirements of the Accessibility Enhancement Act cannot be assured at this time.',
-        accessibilityCommitmentHeading: 'Our commitment',
-        accessibilityCommitmentText:
-          'As we continue to develop SPOTSTAGE, we pay attention to clear content, sufficient contrast, visible focus states, keyboard accessibility, and meaningful labels for assistive technologies.',
-        accessibilityReportHeading: 'Feedback and contact',
-        accessibilityReportText:
-          'Have you encountered a barrier on our website? Please email hello@spotstage.app. Describe as precisely as possible which page and which function is affected.',
-        accessibilityReportLink: 'hello@spotstage.app',
-        accessibilityMailto:
-          'mailto:hello@spotstage.app?subject=Accessibility%20feedback%20for%20SPOTSTAGE',
-        accessibilityKnownHeading: 'Known limitations',
-        accessibilityKnownText:
-          'App store links are not yet active because publication in the stores is pending. Some animations and spotlight effects are decorative and are reduced when “Reduce motion” is enabled.',
-        accessibilityStandardHeading: 'Review basis',
-        accessibilityStandardText:
-          'Development and review are guided by WCAG 2.1 Levels A and AA, EN 301 549, and the requirements of the German Accessibility Enhancement Act (BFSG).',
-        accessibilityUpdated: 'Last updated: June 2026',
+        accessibilityTitle: 'Accessibility Information',
+        accessibilityCommitmentHeading: 'Our Commitment',
+        accessibilityCommitmentBody:
+          '<p>SPOTSTAGE aims to make its website accessible and usable for as many people as possible.</p>' +
+          '<p>We are working to design and continuously improve the website in line with the requirements of the German Accessibility Strengthening Act (BFSG) and the applicable technical standards.</p>',
+        accessibilityDescriptionHeading: 'Description of the Website',
+        accessibilityDescriptionBody:
+          '<p>The website spotstage.app provides information about the SPOTSTAGE mobile application.</p>' +
+          '<p>SPOTSTAGE helps artists and organisers find, plan and organise live stage shows.</p>' +
+          '<p>The website presents the app’s key features and provides information for its different target audiences, as well as legal information.</p>' +
+          '<p>At present, users cannot create accounts, enter into contracts, make payments or submit personal data through a contact form on this website.</p>',
+        accessibilityComplianceHeading: 'Conformance Status',
+        accessibilityComplianceBody:
+          '<p>The website has been reviewed internally against key requirements of the Web Content Accessibility Guidelines (WCAG) 2.1 at conformance levels A and AA and is being continuously improved.</p>' +
+          '<p>Based on the current review, the website is expected to be largely conformant with these requirements.</p>' +
+          '<p>Full compliance with all applicable requirements of the German Accessibility Strengthening Act cannot currently be guaranteed. The website has not yet undergone an independent external audit or certification.</p>',
+        accessibilityMeasuresHeading: 'Measures Implemented',
+        accessibilityMeasuresBody:
+          '<p>When developing and improving the website, we have paid particular attention to the following aspects:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>clear and semantically structured content</li>' +
+          '<li>logical heading hierarchies</li>' +
+          '<li>keyboard accessibility</li>' +
+          '<li>clearly visible focus indicators</li>' +
+          '<li>a skip link to the main content</li>' +
+          '<li>accessible navigation and mobile menu behaviour</li>' +
+          '<li>clear labels for interactive elements</li>' +
+          '<li>alternative text for informative images</li>' +
+          '<li>sufficient colour contrast</li>' +
+          '<li>adequately sized touch targets</li>' +
+          '<li>support for zoom and narrow screen sizes</li>' +
+          '<li>support for the “Reduce Motion” system setting</li>' +
+          '<li>support for forced system colours</li>' +
+          '<li>German- and English-language content</li>' +
+          '</ul>',
+        accessibilityKnownHeading: 'Known Limitations',
+        accessibilityKnownBody:
+          '<p>The app store links are not yet active because SPOTSTAGE has not yet been published in the relevant app stores. This is clearly indicated on the website with a “Coming soon” notice.</p>' +
+          '<p>Some animations and spotlight effects are purely decorative. When the “Reduce Motion” system setting is enabled, these effects are disabled or significantly reduced.</p>' +
+          '<p>The website has not yet been fully tested with all combinations of screen readers, browsers and operating systems. In individual cases, variations in announcements or focus behaviour therefore cannot be completely ruled out.</p>',
+        accessibilityFeedbackHeading: 'Feedback and Contact',
+        accessibilityFeedbackBody:
+          '<p>Have you encountered a barrier on our website or experienced difficulties using it?</p>' +
+          '<p>Please contact us at:</p>' +
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app?subject=Accessibility%20feedback%20for%20SPOTSTAGE">hello@spotstage.app</a></p>' +
+          '<p>Please describe as precisely as possible which page and function are affected. It is also helpful to include details about your device, browser and, where applicable, the assistive technology you use.</p>' +
+          '<p>We will review your report and aim to respond promptly with an appropriate solution.</p>',
+        accessibilityStandardHeading: 'Review Basis',
+        accessibilityStandardBody:
+          '<p>The development and internal review of the website are guided in particular by:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>the Web Content Accessibility Guidelines (WCAG) 2.1 at conformance levels A and AA</li>' +
+          '<li>the European standard EN 301 549</li>' +
+          '<li>the requirements of the German Accessibility Strengthening Act (BFSG)</li>' +
+          '<li>the requirements of the German Accessibility Strengthening Ordinance (BFSGV)</li>' +
+          '</ul>' +
+          '<p>The review has included HTML validation, Google Lighthouse, code-based checks and manual testing of keyboard and focus behaviour.</p>' +
+          '<p>Automated testing tools cannot identify all accessibility barriers and do not replace comprehensive testing with different assistive technologies.</p>',
+        accessibilityUpdated: 'Created and last reviewed: June 2026',
       },
     },
   };
