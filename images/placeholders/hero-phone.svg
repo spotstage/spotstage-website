@@ -1,6 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 640" fill="none" aria-hidden="true">
   <rect width="320" height="640" rx="32" fill="#1e1033" stroke="#7c3aed" stroke-width="2"/>
   <rect x="24" y="80" width="272" height="480" rx="8" fill="#150a24"/>
-  <text x="160" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#8b7a9e">App Screenshot</text>
+  <text x="160" y="340" text-anchor="middle" font-family="system-ui,sans-serif" font-size="16" fill="#8b7a9e">App Screenshot</text>
   <rect x="120" y="24" width="80" height="8" rx="4" fill="#5b21b6"/>
 </svg>

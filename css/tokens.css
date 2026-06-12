@@ -1,0 +1,281 @@
+/**
+ * SPOTSTAGE Design Tokens
+ * Extracted from spotstage-mobile (canonical: src/design/, lib/theme/)
+ * Source repo: ../spotstage-mobile
+ *
+ * Import in HTML: <link rel="stylesheet" href="css/tokens.css">
+ * Or in CSS: @import url('tokens.css');
+ */
+
+:root {
+  /* -------------------------------------------------------------------------
+     Brand & core colors (src/design/colors.ts)
+     ------------------------------------------------------------------------- */
+
+  --color-primary: #3b1c85;           /* atmosphere — secondary brand purple */
+  --color-primary-rgb: 59, 28, 133;
+
+  --color-accent: #fecf39;            /* accent — gold CTA / highlights */
+  --color-accent-rgb: 254, 207, 57;
+
+  --color-background: #1c1550;         /* background — main app canvas */
+  --color-background-rgb: 28, 21, 80;
+
+  --color-surface: #231a4e;           /* surface — cards, tab bar */
+  --color-surface-rgb: 35, 26, 78;
+
+  --color-show-detail-card: #181246;  /* showDetailCard */
+  --color-show-detail-card-rgb: 24, 18, 70;
+
+  --color-cta-label: #120d36;         /* ctaLabel — text on gold buttons */
+  --color-cta-label-rgb: 18, 13, 54;
+
+  /* Text */
+  --color-text-primary: #ffffff;
+  --color-text-primary-rgb: 255, 255, 255;
+
+  --color-text-secondary: #d68eff;    /* lavender secondary */
+  --color-text-secondary-rgb: 214, 142, 255;
+
+  --color-text-meta: #cbcbcb;
+  --color-text-meta-rgb: 203, 203, 203;
+
+  --color-text-dark: #000000;
+  --color-text-dark-rgb: 0, 0, 0;
+
+  /* Semantic */
+  --color-success: #4ade80;
+  --color-success-rgb: 74, 222, 128;
+
+  --color-success-surface: rgba(34, 197, 94, 0.7);
+  --color-success-border: #22c55e;
+  --color-success-border-rgb: 34, 197, 94;
+
+  --color-error: #ff5a72;
+  --color-error-rgb: 255, 90, 114;
+
+  /* Status — applied / pending (warning) */
+  --color-status-applied-bg: rgba(255, 193, 7, 0.7);
+  --color-status-applied-border: #ffc107;
+  --color-status-applied-text: #ffffff;
+
+  /* Status — accepted */
+  --color-status-accepted-bg: rgba(34, 197, 94, 0.7);
+  --color-status-accepted-border: #22c55e;
+  --color-status-accepted-text: #ffffff;
+
+  /* Status — declined */
+  --color-status-declined-bg: rgba(244, 63, 94, 0.7);
+  --color-status-declined-border: #f43f5e;
+  --color-status-declined-text: #fff1f2;
+
+  /* Status — neutral */
+  --color-status-neutral-bg: rgba(139, 92, 246, 0.7);
+  --color-status-neutral-border: rgba(167, 139, 250, 0.75);
+  --color-status-neutral-text: #ffffff;
+
+  /* Borders */
+  --color-border: rgba(122, 100, 198, 0.26);
+  --color-border-card-rim: rgba(170, 144, 248, 0.28);
+  --color-border-focus: #ffd166;
+  --color-border-focus-rgb: 255, 209, 102;
+
+  /* Surfaces (lib/theme/surfaces.ts) */
+  --color-surface-panel: rgba(35, 26, 78, 0.72);
+  --color-surface-card: rgba(45, 33, 97, 0.82);
+  --color-surface-overlay: rgba(15, 10, 40, 0.92);
+  --color-surface-hero-overlay: rgba(16, 12, 44, 0.58);
+
+  /* Inputs (app forms) */
+  --color-input-background: #ffffff;
+  --color-input-border: #d68eff;
+  --color-input-border-focused: #ffd166;
+  --color-input-placeholder: #6d6d6d;
+
+  /* Role accents */
+  --color-role-organizer-accent: #f44eff;
+  --color-role-organizer-accent-rgb: 244, 78, 255;
+
+  /* Splash / native shell (app.json) */
+  --color-splash-background: #0f0a1f;
+  --color-splash-background-rgb: 15, 10, 31;
+
+  /* -------------------------------------------------------------------------
+     Gradients (lib/theme/gradients.ts + showCardLayout.ts)
+     ------------------------------------------------------------------------- */
+
+  --gradient-hero: linear-gradient(180deg, #09061f 0%, #16103a 50%, #241a56 100%);
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(9, 6, 31, 0.16) 0%, rgba(9, 6, 31, 0.62) 50%, rgba(22, 16, 58, 0.9) 100%);
+  --gradient-spotlight: linear-gradient(180deg, rgba(254, 207, 57, 0.34) 0%, rgba(254, 207, 57, 0.08) 50%, transparent 100%);
+  --gradient-button: linear-gradient(180deg, #fafd63 0%, #f4a958 100%);
+  --gradient-button-ring: linear-gradient(180deg, #d68eff 0%, #3b1c85 100%);
+  --gradient-card-glow: linear-gradient(180deg, rgba(214, 142, 255, 0.5) 0%, rgba(59, 28, 133, 0.7) 100%);
+  --gradient-card-image-border: linear-gradient(135deg, rgba(254, 207, 57, 0.38) 0%, rgba(244, 78, 255, 0.4) 50%, rgba(167, 139, 250, 0.34) 100%);
+
+  /* Logo SVG gradient (assets/brand/spotstage_logo.svg) */
+  --gradient-logo: linear-gradient(180deg, #fde263 0%, #f49e55 100%);
+
+  /* -------------------------------------------------------------------------
+     Typography (src/design/typography.ts, lib/theme/textStyles.ts)
+     Web stack maps Inter_* → Inter from Google Fonts
+     ------------------------------------------------------------------------- */
+
+  --font-family-base: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-family-brand: "Big Shoulders", var(--font-family-base); /* logo SVG only */
+
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-heading-xl: 2.125rem;   /* 34px — textStyles.heroTitle */
+  --font-size-heading-l: 1.625rem;    /* 26px — typography.title */
+  --font-size-heading-m: 1.25rem;     /* 20px — textStyles.sectionTitle */
+  --font-size-body: 1rem;             /* 16px — typography.body */
+  --font-size-label: 0.875rem;        /* 14px — typography.label */
+  --font-size-caption: 0.8125rem;     /* 13px — typography.caption */
+  --font-size-caption-sm: 0.6875rem;  /* 11px — textStyles.caption */
+  --font-size-button: 1rem;           /* 16px — Button.tsx */
+
+  --line-height-heading-xl: 2.5rem;   /* 40px */
+  --line-height-heading-l: 2rem;      /* 32px */
+  --line-height-heading-m: 1.75rem;   /* 28px */
+  --line-height-body: 1.5rem;         /* 24px */
+  --line-height-label: 1.25rem;       /* 20px */
+  --line-height-caption: 1.125rem;    /* 18px */
+  --line-height-caption-sm: 1rem;     /* 16px */
+  --line-height-button: 1.5rem;
+
+  --letter-spacing-heading-xl: -0.03125em;  /* -0.5px @ 16px base */
+  --letter-spacing-heading-m: -0.01875em;   /* -0.3px */
+  --letter-spacing-button: 0.08em;          /* uppercase buttons */
+
+  /* -------------------------------------------------------------------------
+     Spacing (src/design/spacing.ts)
+     ------------------------------------------------------------------------- */
+
+  --space-xxs: 0.25rem;   /* 4px */
+  --space-xs: 0.5rem;     /* 8px */
+  --space-sm: 0.75rem;    /* 12px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-xxl: 2.5rem;    /* 40px */
+
+  /* Layout rhythm (lib/theme/layout.ts) */
+  --layout-section-gap: var(--space-xl);
+  --layout-content-padding: var(--space-lg);
+  --layout-card-padding: var(--space-md);
+  --layout-cta-max-width: 26.25rem;   /* 420px */
+  --layout-hero-offset: var(--space-xl);
+  --layout-list-item-gap: var(--space-sm);
+  --layout-cluster-gap: var(--space-xs);
+
+  /* -------------------------------------------------------------------------
+     Border radius (src/design/radius.ts)
+     ------------------------------------------------------------------------- */
+
+  --radius-none: 0;
+  --radius-xs: 0.25rem;    /* 4px */
+  --radius-sm: 0.5rem;     /* 8px */
+  --radius-md: 0.875rem;   /* 14px — buttons */
+  --radius-lg: 1.125rem;   /* 18px — cards */
+  --radius-xl: 1.5rem;     /* 24px — show cards */
+  --radius-full: 9999px;
+  --radius-sheet: 2rem;    /* 32px — overlaySheetStyles.ts */
+
+  /* -------------------------------------------------------------------------
+     Shadows (src/design/shadows.ts, lib/theme/elevation.ts)
+     Converted from RN shadow presets → CSS box-shadow
+     ------------------------------------------------------------------------- */
+
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.18);
+  --shadow-lg: 0 6px 16px rgba(0, 0, 0, 0.22);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-card-active: 0 0 18px rgba(255, 209, 102, 0.45);
+  --shadow-spotlight: 0 0 16px rgba(255, 209, 102, 0.55);
+  --shadow-elevation-soft: 0 2px 8px rgba(11, 7, 31, 0.16);
+  --shadow-elevation-card: 0 4px 12px rgba(8, 5, 21, 0.24);
+  --shadow-elevation-glow: 0 0 18px rgba(254, 207, 57, 0.5);
+  --shadow-elevation-focus: 0 0 16px rgba(214, 142, 255, 0.58);
+  --shadow-sheet-lift: 0 -4px 16px rgba(0, 0, 0, 0.4);
+
+  /* -------------------------------------------------------------------------
+     Opacity (lib/theme/opacity.ts)
+     ------------------------------------------------------------------------- */
+
+  --opacity-disabled: 0.45;
+  --opacity-muted: 0.75;
+  --opacity-overlay: 0.82;
+  --opacity-overlay-light: 0.45;
+
+  /* -------------------------------------------------------------------------
+     Blur (from SVG / effects references)
+     ------------------------------------------------------------------------- */
+
+  --blur-spotlight-logo: 5px;  /* feGaussianBlur stdDeviation in spotstage_logo.svg */
+}
+
+/* ---------------------------------------------------------------------------
+   Typography utility classes
+   --------------------------------------------------------------------------- */
+
+.text-heading-xl {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-heading-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading-xl);
+  letter-spacing: var(--letter-spacing-heading-xl);
+  color: var(--color-text-primary);
+}
+
+.text-heading-l {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-heading-l);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading-l);
+  color: var(--color-text-primary);
+}
+
+.text-heading-m {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-heading-m);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-heading-m);
+  letter-spacing: var(--letter-spacing-heading-m);
+  color: var(--color-text-primary);
+}
+
+.text-body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+}
+
+.text-body-large {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+  color: var(--color-text-primary);
+}
+
+.text-caption {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-caption);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-caption);
+  color: var(--color-text-meta);
+}
+
+.text-button {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-button);
+  letter-spacing: var(--letter-spacing-button);
+  text-transform: uppercase;
+}

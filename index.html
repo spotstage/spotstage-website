@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SPOTSTAGE – Deine Show. Deine Bühne. Dein Moment. Die App für Künstler und Veranstalter.">
-  <title>SPOTSTAGE – Deine Show. Deine Bühne. Dein Moment.</title>
+  <link rel="icon" href="images/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon/favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <meta name="theme-color" content="#0d0719">
+  <meta name="description" content="SPOTSTAGE – Die App für Künstler und Veranstalter. Shows finden. Shows organisieren." data-i18n-attr="meta.description:content">
+  <title data-i18n="meta.title">SPOTSTAGE – Deine Show. Deine Bühne. Dein Moment.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,175 +21,361 @@
   <!-- Header -->
   <header class="site-header" id="site-header">
     <div class="container site-header__inner">
-      <a href="/" class="site-header__logo" aria-label="SPOTSTAGE Startseite">
-        <img src="images/logo/logo.svg" alt="SPOTSTAGE Logo" width="140" height="40">
+      <a href="/" class="site-header__logo" data-i18n-attr="logo.ariaHome:aria-label">
+        <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE Logo" width="180" height="52">
       </a>
 
-      <button
-        class="nav-toggle"
-        id="nav-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="site-nav"
-        aria-label="Navigation öffnen"
-      >
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-        <span class="nav-toggle__bar"></span>
-      </button>
+      <div class="site-header__actions">
+        <nav class="site-nav" id="site-nav" data-i18n-attr="nav.ariaLabel:aria-label">
+          <div class="site-nav__panel mobile-nav__inner">
+            <div class="mobile-nav__primary">
+              <ul class="site-nav__list site-nav__links mobile-nav__links">
+                <li><a href="#benefits" class="site-nav__link" data-i18n="nav.benefits">Vorteile</a></li>
+                <li><a href="#how-it-works" class="site-nav__link" data-i18n="nav.howItWorks">So funktioniert's</a></li>
+                <li><a href="#future-categories" class="site-nav__link" data-i18n="nav.outlook">Ausblick</a></li>
+              </ul>
+              <div class="mobile-nav__cta-divider" role="presentation"></div>
+              <ul class="site-nav__list mobile-nav__cta">
+                <li><a href="#download" class="site-nav__link site-nav__link--cta" data-i18n="nav.download">App laden</a></li>
+              </ul>
+            </div>
+            <footer class="mobile-nav__footer">
+              <p class="mobile-nav__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
+              <nav class="mobile-nav__utility" data-i18n-attr="footer.navAria:aria-label">
+                <ul class="mobile-nav__legal-links">
+                  <li><a href="impressum.html" class="mobile-nav__legal-link" data-i18n="footer.legalNotice">Impressum</a></li>
+                  <li><a href="datenschutz.html" class="mobile-nav__legal-link" data-i18n="footer.privacy">Datenschutz</a></li>
+                  <li><a href="mailto:hello@spotstage.app" class="mobile-nav__legal-link" data-i18n="footer.contact">Kontakt</a></li>
+                  <li><a href="barrierefreiheit.html" class="mobile-nav__legal-link" data-i18n="footer.accessibility">Barrierefreiheit</a></li>
+                </ul>
+              </nav>
+            </footer>
+          </div>
+        </nav>
 
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
-        <ul class="site-nav__list">
-          <li><a href="#artist-benefits" class="site-nav__link">Für Künstler</a></li>
-          <li><a href="#organizer-benefits" class="site-nav__link">Für Veranstalter</a></li>
-          <li><a href="#how-it-works" class="site-nav__link">So funktioniert's</a></li>
-          <li><a href="#download" class="site-nav__link site-nav__link--cta">App laden</a></li>
-        </ul>
-      </nav>
+        <div class="lang-switch" role="group" data-i18n-attr="lang.switchAria:aria-label">
+          <span class="lang-switch__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true">DE</button>
+          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false">EN</button>
+        </div>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-i18n-attr="nav.open:aria-label"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
     </div>
   </header>
 
   <main id="main-content">
 
     <!-- Hero -->
-    <section class="section section--hero spotlight-bg" id="hero" aria-labelledby="hero-heading">
-      <div class="container">
-        <div class="hero">
-          <div class="hero__content">
-            <p class="hero__eyebrow">SPOTSTAGE</p>
-            <h1 class="hero__heading" id="hero-heading">Deine Show. Deine Bühne. Dein Moment.</h1>
-            <p class="hero__subheading">Placeholder – Hero-Beschreibung für die SPOTSTAGE App.</p>
-            <div class="hero__actions">
-              <a href="#download" class="btn btn--primary">App herunterladen</a>
-              <a href="#how-it-works" class="btn btn--secondary">Mehr erfahren</a>
+    <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+      <div class="container hero-section__container">
+        <div class="hero-section__content">
+          <div class="hero-section__grid">
+
+          <div class="hero-section__copy">
+            <div href="/" class="hero-section__logo" data-i18n-attr="logo.ariaHome:aria-label">
+              <img src="images/logo/spotstage_logo.svg" alt="" width="260" height="75">
+              <span class="sr-only">SPOTSTAGE</span>
+              <p class="hero-section__slogan" data-i18n="hero.slogan">Deine Show. Deine Bühne. Dein Moment.</p>
+            </div>
+
+            <h1 class="hero-section__headline" id="hero-heading" data-i18n-html="hero.headline">
+              Die App für
+              <br>
+              <span class="hero-section__accent hero-section__accent--gold">Künstler</span> &amp;
+              <br>
+              <span class="hero-section__accent hero-section__accent--purple">Veranstalter</span>
+            </h1>
+
+            <div class="hero-section__stores" id="hero-stores">
+              <a
+                href="#"
+                class="hero-section__store-badge"
+                data-store="apple"
+                aria-label="SPOTSTAGE im App Store laden"
+              >
+                <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
+              </a>
+              <a
+                href="#"
+                class="hero-section__store-badge"
+                data-store="google"
+                aria-label="SPOTSTAGE bei Google Play laden"
+              >
+                <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
+              </a>
+            </div>
+
+            <p class="hero-section__subheadline" data-i18n-html="hero.subheadline">
+              <span>Mehr Bühne. Weniger Aufwand.</span><br>
+              Einfacher planen, bewerben und besetzen.
+            </p>
+          </div>
+
+          <div class="hero-section__phones">
+            <div class="hero-section__spotlight" aria-hidden="true">
+              <div class="hero-section__spotlight-layer hero-section__spotlight-layer--gold"></div>
+              <div class="hero-section__spotlight-layer hero-section__spotlight-layer--purple"></div>
+              <div class="hero-section__spotlight-layer hero-section__spotlight-layer--stage"></div>
+            </div>
+            <figure class="hero-section__phone hero-section__phone--artist">
+              <div class="hero-section__phone-frame">
+                <img
+                  src="images/placeholders/phoneMockUpLeft.webp"
+                  data-i18n-attr="hero.phoneArtistAlt:alt"
+                  alt="SPOTSTAGE App – Künstler-Ansicht mit Auftrittsübersicht"
+                  class="hero-section__phone-screen"
+                  width="560"
+                  height="1120"
+                  loading="eager"
+                >
+              </div>
+              <figcaption class="hero-section__phone-label sr-only" data-i18n="hero.phoneArtistCaption">Für Künstler</figcaption>
+            </figure>
+
+            <figure class="hero-section__phone hero-section__phone--organizer">
+              <div class="hero-section__phone-frame">
+                <img
+                  src="images/placeholders/phoneMockUpRight.webp"
+                  data-i18n-attr="hero.phoneOrganizerAlt:alt"
+                  alt="SPOTSTAGE App – Veranstalter-Ansicht mit Show-Besetzung"
+                  class="hero-section__phone-screen"
+                  width="560"
+                  height="1120"
+                  loading="eager"
+                >
+              </div>
+              <figcaption class="hero-section__phone-label sr-only" data-i18n="hero.phoneOrganizerCaption">Für Veranstalter</figcaption>
+            </figure>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <div class="benefits-area" id="benefits">
+      <div class="benefits-area__atmosphere" aria-hidden="true"></div>
+      <section class="section section--comparison" aria-labelledby="benefits-heading">
+        <div class="container container--wide">
+          <header class="comparison__intro">
+            <h2 class="comparison__heading" id="benefits-heading" data-i18n-html="comparison.heading">
+              <span class="comparison__accent comparison__accent--artists">Künstler</span> treffen
+              <span class="comparison__accent comparison__accent--organizers">Veranstalter</span>
+            </h2>
+            <p class="comparison__subline" data-i18n="comparison.subline">
+              SPOTSTAGE bringt Bewerbung, Planung und Line-up an einen Ort.
+            </p>
+          </header>
+
+          <div class="comparison">
+            <div class="comparison__panel comparison__panel--artist" id="artist-benefits" aria-labelledby="artist-benefits-heading">
+              <header class="comparison__panel-header">
+                <h3 class="comparison__panel-title" id="artist-benefits-heading" data-i18n="comparison.artistTitle">Für Künstler</h3>
+                <p class="comparison__panel-subline" data-i18n="comparison.artistSubline">Mehr passende Auftritte. Weniger Aufwand.</p>
+              </header>
+              <div class="comparison__list" data-audience="artist"></div>
+            </div>
+
+            <div class="comparison__divider" aria-hidden="true"></div>
+
+            <div class="comparison__panel comparison__panel--organizer" id="organizer-benefits" aria-labelledby="organizer-benefits-heading">
+              <header class="comparison__panel-header">
+                <h3 class="comparison__panel-title" id="organizer-benefits-heading" data-i18n="comparison.organizerTitle">Für Veranstalter</h3>
+                <p class="comparison__panel-subline" data-i18n="comparison.organizerSubline">Bessere Shows. Weniger Organisationsstress.</p>
+              </header>
+              <div class="comparison__list" data-audience="organizer"></div>
             </div>
           </div>
-          <div class="hero__visual">
-            <img
-              src="images/placeholders/hero-phone.svg"
-              alt="SPOTSTAGE App Vorschau"
-              class="hero__image"
-              width="320"
-              height="640"
-            >
+        </div>
+      </section>
+
+      <section class="section section--benefits-cta" id="benefits-download" aria-labelledby="benefits-download-heading">
+        <div class="container container--wide">
+          <div class="benefits-cta">
+            <div class="benefits-cta__copy">
+              <h2 class="benefits-cta__heading" id="benefits-download-heading" data-i18n="comparison.ctaHeading">Hol dir jetzt SPOTSTAGE</h2>
+              <p class="benefits-cta__text" data-i18n="comparison.ctaText">Für Künstler und Veranstalter.</p>
+            </div>
+            <div class="hero-section__stores benefits-cta__stores">
+              <a
+                href="#"
+                class="hero-section__store-badge"
+                data-store="apple"
+                aria-label="SPOTSTAGE im App Store laden"
+              >
+                <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
+              </a>
+              <a
+                href="#"
+                class="hero-section__store-badge"
+                data-store="google"
+                aria-label="SPOTSTAGE bei Google Play laden"
+              >
+                <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Artist Benefits -->
-    <section class="section" id="artist-benefits" aria-labelledby="artist-benefits-heading">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__heading" id="artist-benefits-heading">Für Künstler</h2>
-          <p class="section__subheading">Placeholder – Vorteile für Künstler und Performer.</p>
-        </header>
-        <div class="grid grid--3">
-          <article class="card">
-            <h3 class="card__title">Vorteil 1</h3>
-            <p class="card__text">Placeholder – Beschreibung des ersten Künstler-Vorteils.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Vorteil 2</h3>
-            <p class="card__text">Placeholder – Beschreibung des zweiten Künstler-Vorteils.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Vorteil 3</h3>
-            <p class="card__text">Placeholder – Beschreibung des dritten Künstler-Vorteils.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Organizer Benefits -->
-    <section class="section section--alt" id="organizer-benefits" aria-labelledby="organizer-benefits-heading">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__heading" id="organizer-benefits-heading">Für Veranstalter</h2>
-          <p class="section__subheading">Placeholder – Vorteile für Veranstalter und Event-Organisatoren.</p>
-        </header>
-        <div class="grid grid--3">
-          <article class="card">
-            <h3 class="card__title">Vorteil 1</h3>
-            <p class="card__text">Placeholder – Beschreibung des ersten Veranstalter-Vorteils.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Vorteil 2</h3>
-            <p class="card__text">Placeholder – Beschreibung des zweiten Veranstalter-Vorteils.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Vorteil 3</h3>
-            <p class="card__text">Placeholder – Beschreibung des dritten Veranstalter-Vorteils.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- How It Works -->
-    <section class="section" id="how-it-works" aria-labelledby="how-it-works-heading">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__heading" id="how-it-works-heading">So funktioniert's</h2>
-          <p class="section__subheading">Placeholder – Schritt-für-Schritt Erklärung der App.</p>
+    <section class="section section--howto" id="how-it-works" aria-labelledby="how-it-works-heading">
+      <div class="container container--wide">
+        <header class="howto__header">
+          <p class="howto__eyebrow" data-i18n="howItWorks.eyebrow">So funktioniert's</p>
+          <h2 class="howto__title" id="how-it-works-heading" data-i18n="howItWorks.title">Von der Bewerbung bis zum Line-up</h2>
+          <p class="howto__subtitle" data-i18n="howItWorks.subtitle">
+            SPOTSTAGE bringt Künstler:innen und Veranstalter:innen in einen einfachen Ablauf — von der ersten Show-Idee bis zur finalen Besetzung.
+          </p>
         </header>
-        <ol class="steps">
-          <li class="steps__item">
-            <span class="steps__number" aria-hidden="true">1</span>
-            <h3 class="steps__title">Schritt 1</h3>
-            <p class="steps__text">Placeholder – Erster Schritt.</p>
-          </li>
-          <li class="steps__item">
-            <span class="steps__number" aria-hidden="true">2</span>
-            <h3 class="steps__title">Schritt 2</h3>
-            <p class="steps__text">Placeholder – Zweiter Schritt.</p>
-          </li>
-          <li class="steps__item">
-            <span class="steps__number" aria-hidden="true">3</span>
-            <h3 class="steps__title">Schritt 3</h3>
-            <p class="steps__text">Placeholder – Dritter Schritt.</p>
-          </li>
-        </ol>
+
+        <div class="howto__switch" role="group" data-i18n-attr="howItWorks.switchAria:aria-label">
+          <button
+            type="button"
+            class="howto__switch-btn is-active"
+            data-audience="artist"
+            aria-pressed="true"
+            data-i18n="howItWorks.switchArtists"
+          >
+            Für Künstler:innen
+          </button>
+          <button
+            type="button"
+            class="howto__switch-btn"
+            data-audience="organizer"
+            aria-pressed="false"
+            data-i18n="howItWorks.switchOrganizers"
+          >
+            Für Veranstalter:innen
+          </button>
+        </div>
+
+        <div class="how-showcase" id="howto-showcase">
+          <button
+            type="button"
+            class="how-showcase__arrow how-showcase__arrow--prev"
+            id="howto-prev"
+            data-i18n-attr="howItWorks.prevStep:aria-label"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          <div class="how-showcase__content" id="howto-panel">
+            <div class="how-showcase__copy" id="howto-copy" aria-live="polite"></div>
+            <div class="how-showcase__visual" id="howto-visual" aria-hidden="true"></div>
+          </div>
+
+          <button
+            type="button"
+            class="how-showcase__arrow how-showcase__arrow--next"
+            id="howto-next"
+            data-i18n-attr="howItWorks.nextStep:aria-label"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+
+          <div class="how-showcase__dots" id="howto-dots" role="tablist"></div>
+        </div>
       </div>
     </section>
 
-    <!-- Future Categories -->
-    <section class="section section--alt" id="future-categories" aria-labelledby="future-categories-heading">
-      <div class="container">
-        <header class="section__header">
-          <h2 class="section__heading" id="future-categories-heading">Zukünftige Kategorien</h2>
-          <p class="section__subheading">Placeholder – Geplante Kategorien und Erweiterungen.</p>
+    <!-- Vision / Roadmap -->
+    <section class="section section--vision" id="future-categories" aria-labelledby="future-categories-heading">
+      <div class="vision__atmosphere" aria-hidden="true"></div>
+      <div class="container container--wide vision__container">
+        <header class="vision__header">
+          <p class="vision__eyebrow" data-i18n="futureCategories.eyebrow">AUSBLICK</p>
+          <h2 class="vision__title" id="future-categories-heading" data-i18n="futureCategories.title">Mehr Bühnenformate folgen</h2>
+          <p class="vision__subtitle" data-i18n="futureCategories.subtitle">
+            SPOTSTAGE startet mit Comedy — und ist darauf ausgelegt, künftig weitere Live-Formate zu unterstützen.
+          </p>
         </header>
-        <div class="grid grid--4">
-          <article class="card card--compact">
-            <h3 class="card__title">Kategorie 1</h3>
-            <p class="card__text">Placeholder</p>
-          </article>
-          <article class="card card--compact">
-            <h3 class="card__title">Kategorie 2</h3>
-            <p class="card__text">Placeholder</p>
-          </article>
-          <article class="card card--compact">
-            <h3 class="card__title">Kategorie 3</h3>
-            <p class="card__text">Placeholder</p>
-          </article>
-          <article class="card card--compact">
-            <h3 class="card__title">Kategorie 4</h3>
-            <p class="card__text">Placeholder</p>
-          </article>
+
+        <div class="vision__grid" id="future-categories-grid" role="list"></div>
+
+        <div class="vision__cta benefits-cta" id="vision-cta">
+          <div class="vision__cta-copy benefits-cta__copy">
+            <span class="vision__cta-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+              </svg>
+            </span>
+            <p class="vision__cta-text benefits-cta__text" data-i18n="futureCategories.noteText">Du planst ein anderes Format? Schlag es uns vor.</p>
+          </div>
+          <a class="vision__cta-btn" id="vision-cta-link" href="mailto:formate@spotstage.app" data-i18n="futureCategories.ctaLabel">Format vorschlagen</a>
         </div>
       </div>
     </section>
 
     <!-- Download CTA -->
-    <section class="section section--cta spotlight-bg" id="download" aria-labelledby="download-heading">
-      <div class="container">
-        <div class="cta-block">
-          <h2 class="cta-block__heading" id="download-heading">Jetzt SPOTSTAGE laden</h2>
-          <p class="cta-block__text">Placeholder – Call-to-Action für App-Downloads.</p>
-          <div class="cta-block__stores">
-            <a href="#" class="btn btn--primary btn--store" data-store="apple">App Store</a>
-            <a href="#" class="btn btn--primary btn--store" data-store="google">Google Play</a>
+    <section class="section section--download spotlight-bg" id="download" aria-labelledby="download-heading">
+      <div class="download-cta__atmosphere" aria-hidden="true"></div>
+      <div class="container container--wide">
+        <div class="download-cta">
+          <img
+            src="images/logo/spotstage_logo.svg"
+            alt=""
+            class="download-cta__logo"
+            width="200"
+            height="58"
+            aria-hidden="true"
+          >
+          <h2
+            class="download-cta__heading"
+            id="download-heading"
+            data-i18n="downloadCta.title"
+            data-i18n-attr="downloadCta.titleAria:aria-label"
+          >
+            Jetzt kostenlos herunterladen
+          </h2>
+
+          <div class="hero-section__stores download-cta__stores">
+            <a
+              href="#"
+              class="hero-section__store-badge"
+              data-store="apple"
+              aria-label="SPOTSTAGE im App Store laden"
+            >
+              <img src="images/badges/Download_on_the_App_Store_Badge_DE_RGB_blk_092917.svg" alt="" width="162" height="54">
+            </a>
+            <a
+              href="#"
+              class="hero-section__store-badge"
+              data-store="google"
+              aria-label="SPOTSTAGE bei Google Play laden"
+            >
+              <img src="images/badges/GetItOnGooglePlay_Badge_Web_color_German.svg" alt="" width="182" height="54">
+            </a>
           </div>
+
+          <p class="download-cta__note">
+            <span class="download-cta__note-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+              </svg>
+            </span>
+            <span data-i18n="downloadCta.note">Kostenlos loslegen. Mehr geht später immer.</span>
+          </p>
         </div>
       </div>
     </section>
@@ -191,19 +386,28 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="site-footer__brand">
-        <img src="images/logo/logo.svg" alt="SPOTSTAGE Logo" width="120" height="34">
-        <p class="site-footer__tagline">Deine Show. Deine Bühne. Dein Moment.</p>
+        <a href="/" class="site-footer__logo" data-i18n-attr="logo.ariaHome:aria-label">
+          <img src="images/logo/spotstage_logo.svg" alt="SPOTSTAGE" width="160" height="46">
+        </a>
+        <p class="site-footer__claim" data-i18n="footer.claim">Deine Show. Deine Bühne. Dein Moment.</p>
       </div>
-      <nav class="site-footer__nav" aria-label="Footer-Navigation">
+      <nav class="site-footer__nav" data-i18n-attr="footer.navAria:aria-label">
         <ul class="site-footer__list">
-          <li><a href="impressum.html">Impressum</a></li>
-          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="impressum.html" class="site-footer__link" data-i18n="footer.legalNotice">Impressum</a></li>
+          <li><a href="datenschutz.html" class="site-footer__link" data-i18n="footer.privacy">Datenschutz</a></li>
+          <li><a href="mailto:hello@spotstage.app" class="site-footer__link" data-i18n="footer.contact">Kontakt</a></li>
+          <li><a href="barrierefreiheit.html" class="site-footer__link" data-i18n="footer.accessibility">Barrierefreiheit</a></li>
         </ul>
       </nav>
-      <p class="site-footer__copy">&copy; <span id="current-year"></span> SPOTSTAGE. Alle Rechte vorbehalten.</p>
+      <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 SPOTSTAGE UG (haftungsbeschränkt)</p>
     </div>
   </footer>
 
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/benefits.js" defer></script>
+  <script src="js/how-it-works.js" defer></script>
+  <script src="js/future-categories.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 </html>
