@@ -7,14 +7,10 @@
   'use strict';
 
   var VISION_ICONS = {
-    comedy:
-      '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>',
-    music:
-      '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>',
-    poetry:
-      '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>',
-    variety:
-      '<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 16.1A5.9 5.9 0 0 1 7.9 10H12a5.9 5.9 0 0 1 5.9 6.1"/><path d="M6.2 20.9A7 7 0 0 1 12 18a7 7 0 0 1 5.8 2.9"/><path d="M22 16.1A5.9 5.9 0 0 0 16.1 10H12a5.9 5.9 0 0 0-5.9 6.1"/><path d="M17.8 20.9A7 7 0 0 0 12 18a7 7 0 0 0-5.8 2.9"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg>',
+    comedy: 'images/icons/mikrofon.svg',
+    poetry: 'images/icons/bucher.svg',
+    variety: 'images/icons/kaninchen.svg',
+    music: 'images/icons/musik.svg',
   };
 
   function getVisionData() {
@@ -43,11 +39,10 @@
     var panelAccent =
       item.type === 'live' ? 'comparison__panel--artist' : 'comparison__panel--organizer';
     var liveClass = item.type === 'live' ? ' vision-card--live' : '';
-    var iconSize = item.type === 'live' ? 26 : 24;
-    var iconMarkup = (VISION_ICONS[item.icon] || '').replace(
-      /width="\d+" height="\d+"/,
-      'width="' + iconSize + '" height="' + iconSize + '"'
-    );
+    var iconSrc = VISION_ICONS[item.icon];
+    var iconMarkup = iconSrc
+      ? '<img src="' + iconSrc + '" alt="" width="32" height="32">'
+      : '';
 
     return (
       '<article class="comparison__panel ' +

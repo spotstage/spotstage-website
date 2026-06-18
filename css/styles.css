@@ -11,6 +11,7 @@
 :root {
   /* Brand Colors */
   --color-bg-primary: #0a0512;
+  --color-test: #100b32;
   --color-bg-secondary: #0f051d;
   --color-bg-elevated: #1e1033;
   --color-bg-card: rgba(30, 16, 51, 0.6);
@@ -1163,7 +1164,7 @@ p {
   top: 0;
   z-index: 100;
   height: var(--header-height);
-  background: rgba(10, 5, 18, 0.9);
+  background: var(--color-bg-secondary);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-border);
 }
@@ -3163,30 +3164,29 @@ body.nav-open .site-header {
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.26);
 }
 
-.vision-card__icon svg {
-  width: 2rem;
-  height: 2rem;
+.vision-card__icon img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
 }
 
 .comparison__panel--artist .vision-card__icon {
-  color: #ffe066;
-  border: 2px solid var(--color-gold);
-  background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-artists) 100%);
+  border: 2px solid var(--color-gold-dark);
+  background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-gold-dark) 100%);
 }
 
 .comparison__panel--organizer .vision-card__icon {
-  color: #d4c0ff;
-  border: 2px solid var(--color-organizers);
-  background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-organizers) 100%);
+  border: 2px solid var(--color-purple-dark);
+  background: linear-gradient(145deg, var(--color-bg-primary) 0%, var(--color-purple-dark) 100%);
 }
 
 .vision-card--live.comparison__panel {
   --vision-icon-size: 5rem;
 }
 
-.vision-card--live .vision-card__icon svg {
-  width: 2.5rem;
-  height: 2.5rem;
+.vision-card--live .vision-card__icon img {
+  width: 4rem;
+  height: 4rem;
 }
 
 .vision-card__body {
@@ -3314,7 +3314,10 @@ body.nav-open .site-header {
 .vision__cta-icon {
   display: inline-flex;
   flex-shrink: 0;
-  color: var(--color-artists);
+}
+
+.vision__cta-icon img {
+  display: block;
   filter: drop-shadow(0 0 6px rgba(254, 207, 57, 0.35));
 }
 
@@ -3471,9 +3474,9 @@ body.nav-open .site-header {
     height: 4.5rem;
   }
 
-  .vision-card.comparison__panel--organizer .vision-card__icon svg {
-    width: 2rem;
-    height: 2rem;
+  .vision-card.comparison__panel--organizer .vision-card__icon img {
+    width: 3rem;
+    height: 3rem;
   }
 }
 
@@ -3690,7 +3693,10 @@ body.nav-open .site-header {
 .download-cta__note-icon {
   display: inline-flex;
   flex-shrink: 0;
-  color: var(--color-artists);
+}
+
+.download-cta__note-icon img {
+  display: block;
   filter: drop-shadow(0 0 6px rgba(254, 207, 57, 0.35));
 }
 
