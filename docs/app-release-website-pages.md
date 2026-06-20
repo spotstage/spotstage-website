@@ -9,10 +9,10 @@ Dokumentation zu den rechtlichen und Support-Seiten der SPOTSTAGE-Website für d
 | Website-Inhalte im Repo | Releasebereit |
 | Netlify Preview | Erreichbar unter `https://spotstage-website.netlify.app/` |
 | Custom Domain in Netlify | Mit `spotstage.app` verknüpft (DNS bei united-domains eingerichtet) |
-| Produktive Domain `https://spotstage.app` | **In Ausrollung** — DNS/TLS nach Verknüpfung prüfen |
-| REL-004 | **Partially resolved** → nach bestätigter Erreichbarkeit aller Pfade auf **resolved** setzen |
+| Produktive Domain `https://spotstage.app` | **Live** (HTTPS, alle Store-Pfade erreichbar) |
+| REL-004 | **Resolved** (Stand 20.06.2026) |
 
-**Hinweis (Stand 20.06.2026):** Die Netlify-Site ist unter der Preview-URL erreichbar. Für `spotstage.app` sollten die DNS-Einträge bei united-domains auf Netlify zeigen (nicht auf united-domains Webspace). Sobald HTTPS und alle Store-Pfade erreichbar sind, ist REL-004 vollständig erledigt.
+**Verifiziert (20.06.2026):** Alle produktiven Pfade liefern HTTP 200 über `https://spotstage.app`. Deployment: Commit `1252166` auf `main`, Netlify Custom Domain aktiv.
 
 ### Produktive Pfade (Ziel-URLs für App Store / Google Play)
 
@@ -73,9 +73,9 @@ Technische Anbieter, die benannt werden: Supabase, Expo/Expo Push, Netlify, unit
 
 Mögliche Blocker: bestätigter zukünftiger Auftritt, aktive Host-Zuordnung, geplante Shows, Organisations-Eigentümerschaft, einziges Organisationsmitglied, Admin-Self-Delete.
 
-## Mobile-App-Config (später anpassen)
+## Mobile-App-Config
 
-Im Mobile-Repo können die finalen URLs gesetzt werden, sobald `spotstage.app` produktiv erreichbar ist:
+Die folgenden URLs sind produktiv und können im Mobile-Repo gesetzt werden:
 
 | Config-Key | Ziel-URL |
 |------------|----------|
@@ -92,13 +92,13 @@ Bestehende App-URLs (bereits vorbereitet):
 
 | Schritt | Status |
 |---------|--------|
-| Netlify-Deployment aus Repo | Erledigt (Preview live) |
+| Netlify-Deployment aus Repo | Erledigt |
 | Custom Domain `spotstage.app` in Netlify | Erledigt |
-| DNS bei united-domains | Erledigt (laut Team) |
-| TLS-Zertifikat / HTTPS auf Apex | **Prüfen** |
-| Erreichbarkeit aller Pfade auf `spotstage.app` | **Prüfen** |
-| Mobile-App-Config mit finalen URLs | Offen |
-| REL-004 auf „resolved“ | Offen, sobald Domain produktiv bestätigt |
+| DNS bei united-domains | Erledigt |
+| TLS-Zertifikat / HTTPS auf Apex | Erledigt |
+| Erreichbarkeit aller Pfade auf `spotstage.app` | Erledigt (20.06.2026) |
+| Mobile-App-Config mit finalen URLs | Offen (Mobile-Repo) |
+| REL-004 | **Resolved** |
 
 ### DNS-Check (bei united-domains)
 
@@ -124,8 +124,6 @@ Nach DNS-Änderungen kann die Propagation einige Minuten bis Stunden dauern.
 
 ## Bekannte Grenzen
 
-- Canonical-URLs zeigen auf `spotstage.app`; finale Erreichbarkeit nach DNS/TLS-Ausrollung verifizieren
-- Netlify-Preview-URL nur als Fallback während der Migration, nicht als Store-URL
 - Keine Open-Graph-Tags (site-weit nicht etabliert)
 - Keine automatisierten Testskripte im Repo
 
@@ -141,7 +139,7 @@ Manuelle Prüfung nach Implementierung:
 - [x] Genau eine `h1` pro Seite
 - [x] Footer-Navigation konsistent (5 Links)
 - [x] `mailto:hello@spotstage.app` auf Support-Seite
-- [ ] Produktive Erreichbarkeit auf `https://spotstage.app/` (nach DNS/TLS)
-- [ ] Alle Store-Pfade auf `spotstage.app` erreichbar
+- [x] Produktive Erreichbarkeit auf `https://spotstage.app/` (20.06.2026)
+- [x] Alle Store-Pfade auf `spotstage.app` erreichbar (HTTP 200)
 
-Stand: Juni 2026 (Domain in Netlify verknüpft, DNS eingerichtet)
+Stand: Juni 2026 — produktiv live auf `spotstage.app`

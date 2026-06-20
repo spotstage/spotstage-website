@@ -66,7 +66,7 @@ Legal and support pages for App Store / Google Play are documented in [`docs/app
 - `https://spotstage.app/barrierefreiheit.html`
 - `https://spotstage.app/account-loeschen.html`
 
-**Note:** Custom domain `spotstage.app` is linked in Netlify with DNS configured at united-domains. Verify HTTPS and all paths are reachable before using as Store URLs. Netlify preview: `https://spotstage-website.netlify.app/`.
+**Production:** `https://spotstage.app` is live with all App Store / Google Play legal and support pages. Netlify preview: `https://spotstage-website.netlify.app/`.
 
 ## Local Development
 
