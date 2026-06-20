@@ -16,28 +16,57 @@ This repository contains the marketing website for SPOTSTAGE, a mobile app conne
 - CSS3 (custom properties, mobile-first)
 - Vanilla JavaScript (no frameworks or build tools)
 - Netlify (static hosting)
+- Client-side i18n (DE / EN)
 
 ## Folder Structure
 
 ```
 /
-├── index.html              # Main landing page
-├── impressum.html          # Legal notice (Impressum)
-├── datenschutz.html        # Privacy policy (Datenschutz)
+├── index.html                  # Main landing page
+├── impressum.html              # Legal notice (Impressum)
+├── datenschutz.html            # Privacy policy (Datenschutz)
+├── barrierefreiheit.html       # Accessibility statement
+├── support.html                # App support page
+├── account-loeschen.html       # Account deletion information
+├── 404.html                    # Not found page
 │
 ├── css/
-│   └── styles.css          # Global styles, design system
+│   ├── styles.css              # Global styles, design system
+│   └── tokens.css              # Design tokens reference
 │
 ├── js/
-│   └── app.js              # Navigation, smooth scroll, CTA helpers
+│   ├── app.js                  # Navigation, smooth scroll, CTA helpers
+│   ├── i18n.js                 # Locale switching (de / en)
+│   ├── translations.js         # Central translations
+│   ├── privacy-legal-content.js # Website privacy policy content
+│   └── privacy-app-content.js  # App privacy policy content
 │
 ├── images/
-│   ├── logo/               # Brand logo assets
-│   ├── screenshots/        # App screenshots
-│   └── placeholders/       # Temporary placeholder images
+│   ├── logo/                   # Brand logo assets
+│   ├── screenshots/            # App screenshots
+│   └── badges/                 # App store badges
+│
+├── docs/
+│   ├── DESIGN-SYSTEM.md        # Design token documentation
+│   └── app-release-website-pages.md  # App release page documentation
 │
 └── README.md
 ```
+
+## App Release Pages
+
+Legal and support pages for App Store / Google Play are documented in [`docs/app-release-website-pages.md`](docs/app-release-website-pages.md).
+
+**Target URLs (after custom domain is live):**
+
+- `https://spotstage.app/`
+- `https://spotstage.app/support.html`
+- `https://spotstage.app/datenschutz.html`
+- `https://spotstage.app/impressum.html`
+- `https://spotstage.app/barrierefreiheit.html`
+- `https://spotstage.app/account-loeschen.html`
+
+**Note:** Custom domain `spotstage.app` is linked in Netlify with DNS configured at united-domains. Verify HTTPS and all paths are reachable before using as Store URLs. Netlify preview: `https://spotstage-website.netlify.app/`.
 
 ## Local Development
 
@@ -90,7 +119,7 @@ netlify deploy --prod --dir=.
 
 ### Custom domain
 
-After deployment, add your custom domain under **Site settings → Domain management** in the Netlify dashboard.
+After deployment, add your custom domain under **Site settings → Domain management** in the Netlify dashboard. DNS must be configured at your domain registrar (e.g. united-domains).
 
 ## Brand Colors (Reference)
 

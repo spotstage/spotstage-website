@@ -349,8 +349,9 @@
         navAria: 'Footer-Navigation',
         legalNotice: 'Impressum',
         privacy: 'Datenschutz',
-        contact: 'Kontakt',
+        support: 'Support',
         accessibility: 'Barrierefreiheit',
+        accountDeletion: 'Account löschen',
         copyright: '© 2026 SPOTSTAGE UG (haftungsbeschränkt)',
       },
       legal: {
@@ -435,6 +436,87 @@
           '<p>Zur Prüfung wurden unter anderem eine HTML-Validierung, Google Lighthouse, codebasierte Kontrollen sowie manuelle Prüfungen der Tastatur- und Fokusführung eingesetzt.</p>' +
           '<p>Automatisierte Prüfwerkzeuge können nicht alle Barrieren erkennen und ersetzen keine umfassende Prüfung mit unterschiedlichen assistiven Technologien.</p>',
         accessibilityUpdated: 'Erstellt und zuletzt überprüft: Juni 2026',
+        supportMeta: 'Support | SPOTSTAGE',
+        supportTitle: 'Support',
+        supportPurposeHeading: 'Wobei wir helfen',
+        supportPurposeBody:
+          '<p>Diese Seite bietet Hilfe zur SPOTSTAGE-App. Du findest hier Antworten und Kontaktmöglichkeiten bei Problemen mit Login, Passwort-Reset, Account-Löschung, Bewerbungen, Shows, Profilen oder technischen Fehlern.</p>',
+        supportContactHeading: 'Kontakt',
+        supportContactBody:
+          '<p>Bei Fragen oder Problemen erreichst du uns per E-Mail:</p>' +
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>',
+        supportExpectationsHeading: 'Was du erwarten kannst',
+        supportExpectationsBody:
+          '<p>Wir bearbeiten Anfragen so schnell wie möglich. Eine garantierte Antwortzeit, Support-Hotline oder feste Supportzeiten gibt es derzeit nicht.</p>',
+        supportHelpHeading: 'Häufige Themen',
+        supportHelpBody:
+          '<p><strong>Passwort vergessen</strong><br>Öffne die App, tippe auf „Passwort vergessen?“ und folge den Anweisungen in der E-Mail. Weitere Details findest du in unserer Datenschutzerklärung.</p>' +
+          '<p><strong>Account löschen</strong><br>Die Löschung erfolgt in der App unter Profil → Konto → „Account löschen“. Ausführliche Informationen findest du auf der Seite <a class="legal-page__link" href="account-loeschen.html">Account löschen</a>.</p>' +
+          '<p><strong>Technische Probleme melden</strong><br>Schreib uns an <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>. Folgende Angaben helfen uns bei der Fehlersuche:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>Gerät und Modell</li>' +
+          '<li>Betriebssystem und Version</li>' +
+          '<li>App-Version</li>' +
+          '<li>betroffener Screen oder Funktion</li>' +
+          '<li>Schritte zur Reproduktion des Problems</li>' +
+          '<li>Screenshot ohne sensible Daten (keine Passwörter, keine privaten Nachrichten)</li>' +
+          '</ul>',
+        supportUpdated: 'Stand: Juni 2026',
+        accountDeletionMeta: 'Account löschen | SPOTSTAGE',
+        accountDeletionTitle: 'Account löschen',
+        accountDeletionIntroHeading: 'Informationen zur Account-Löschung',
+        accountDeletionIntroBody:
+          '<p>Diese Seite erklärt, wie du deinen SPOTSTAGE-Account in der App löschen kannst und was dabei passiert. Es handelt sich um eine Informationsseite — die Löschung selbst erfolgt ausschließlich in der App.</p>',
+        accountDeletionStepsHeading: 'So löschst du deinen Account in der App',
+        accountDeletionStepsBody:
+          '<ol class="legal-page__list">' +
+          '<li>SPOTSTAGE öffnen</li>' +
+          '<li>Profil öffnen</li>' +
+          '<li>Den Bereich „Konto“ aufrufen</li>' +
+          '<li>„Account löschen“ wählen</li>' +
+          '<li>Dein Passwort erneut eingeben</li>' +
+          '<li>Mit „LÖSCHEN“ bestätigen</li>' +
+          '</ol>',
+        accountDeletionDeletedHeading: 'Was gelöscht wird',
+        accountDeletionDeletedBody:
+          '<p>Bei einer erfolgreichen Account-Löschung werden insbesondere folgende Daten entfernt:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>dein Account-Zugang</li>' +
+          '<li>persönliche Profildaten</li>' +
+          '<li>Rollenprofile</li>' +
+          '<li>Avatare</li>' +
+          '<li>Push Token</li>' +
+          '<li>Benachrichtigungseinstellungen</li>' +
+          '<li>offene Bewerbungen</li>' +
+          '<li>unverbindliche zukünftige Einladungen</li>' +
+          '</ul>',
+        accountDeletionRetainedHeading: 'Was anonymisiert erhalten bleiben kann',
+        accountDeletionRetainedBody:
+          '<p>Aus sachlichen Gründen können bestimmte historische Bezüge anonymisiert erhalten bleiben, zum Beispiel:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>vergangene Shows</li>' +
+          '<li>historische Line-ups</li>' +
+          '<li>vergangene Auftritte</li>' +
+          '<li>sachlich notwendige Showhistorie</li>' +
+          '</ul>' +
+          '<p>In solchen Fällen kann dein Name durch „Gelöschtes Mitglied“ ersetzt werden.</p>',
+        accountDeletionBlockersHeading: 'Mögliche Blocker',
+        accountDeletionBlockersBody:
+          '<p>Eine Löschung kann vorübergehend nicht möglich sein, wenn unter anderem folgende Umstände vorliegen:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>zukünftiger bestätigter Auftritt</li>' +
+          '<li>aktive Host-Zuordnung</li>' +
+          '<li>aktive oder geplante Shows</li>' +
+          '<li>Organisations-Eigentümerschaft</li>' +
+          '<li>du bist das einzige Organisationsmitglied</li>' +
+          '<li>Admin-Self-Delete ist nicht möglich</li>' +
+          '</ul>' +
+          '<p>In diesen Fällen musst du zuerst die jeweilige Verpflichtung auflösen oder abwickeln.</p>',
+        accountDeletionHelpHeading: 'Hilfe ohne App-Zugriff',
+        accountDeletionHelpBody:
+          '<p>Wenn du keinen Zugang mehr zur App hast, kontaktiere uns unter <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>.</p>' +
+          '<p>Zum Schutz deiner Daten kann eine Identitätsprüfung erforderlich sein. Wir können keine sofortige Löschung allein aufgrund einer ungeprüften E-Mail zusagen. Eine Löschung fremder Accounts ist aus Sicherheitsgründen nicht möglich.</p>',
+        accountDeletionUpdated: 'Stand: Juni 2026',
       },
     },
     en: {
@@ -780,8 +862,9 @@
         navAria: 'Footer navigation',
         legalNotice: 'Legal Notice',
         privacy: 'Privacy',
-        contact: 'Contact',
+        support: 'Support',
         accessibility: 'Accessibility',
+        accountDeletion: 'Delete account',
         copyright: '© 2026 SPOTSTAGE UG (haftungsbeschränkt)',
       },
       legal: {
@@ -870,6 +953,87 @@
           '<p>The review has included HTML validation, Google Lighthouse, code-based checks and manual testing of keyboard and focus behaviour.</p>' +
           '<p>Automated testing tools cannot identify all accessibility barriers and do not replace comprehensive testing with different assistive technologies.</p>',
         accessibilityUpdated: 'Created and last reviewed: June 2026',
+        supportMeta: 'Support | SPOTSTAGE',
+        supportTitle: 'Support',
+        supportPurposeHeading: 'How we can help',
+        supportPurposeBody:
+          '<p>This page provides help for the SPOTSTAGE app. You will find answers and contact options for issues with login, password reset, account deletion, applications, shows, profiles, or technical errors.</p>',
+        supportContactHeading: 'Contact',
+        supportContactBody:
+          '<p>For questions or problems, you can reach us by email:</p>' +
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>',
+        supportExpectationsHeading: 'What to expect',
+        supportExpectationsBody:
+          '<p>We handle requests as quickly as possible. There is currently no guaranteed response time, support hotline, or fixed support hours.</p>',
+        supportHelpHeading: 'Common topics',
+        supportHelpBody:
+          '<p><strong>Forgot password</strong><br>Open the app, tap “Forgot password?”, and follow the instructions in the email. Further details are available in our privacy notice.</p>' +
+          '<p><strong>Delete account</strong><br>Deletion is performed in the app under Profile → Account → “Delete account”. For detailed information, see the <a class="legal-page__link" href="account-loeschen.html">Delete account</a> page.</p>' +
+          '<p><strong>Report technical issues</strong><br>Email us at <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>. The following details help us investigate:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>Device and model</li>' +
+          '<li>Operating system and version</li>' +
+          '<li>App version</li>' +
+          '<li>Affected screen or feature</li>' +
+          '<li>Steps to reproduce the issue</li>' +
+          '<li>Screenshot without sensitive data (no passwords, no private messages)</li>' +
+          '</ul>',
+        supportUpdated: 'Last updated: June 2026',
+        accountDeletionMeta: 'Delete account | SPOTSTAGE',
+        accountDeletionTitle: 'Delete account',
+        accountDeletionIntroHeading: 'Information about account deletion',
+        accountDeletionIntroBody:
+          '<p>This page explains how to delete your SPOTSTAGE account in the app and what happens when you do. This is an information page only — deletion itself takes place exclusively in the app.</p>',
+        accountDeletionStepsHeading: 'How to delete your account in the app',
+        accountDeletionStepsBody:
+          '<ol class="legal-page__list">' +
+          '<li>Open SPOTSTAGE</li>' +
+          '<li>Open Profile</li>' +
+          '<li>Go to the “Account” section</li>' +
+          '<li>Select “Delete account”</li>' +
+          '<li>Re-enter your password</li>' +
+          '<li>Confirm with “DELETE”</li>' +
+          '</ol>',
+        accountDeletionDeletedHeading: 'What is deleted',
+        accountDeletionDeletedBody:
+          '<p>When account deletion is successful, the following data is removed in particular:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>your account access</li>' +
+          '<li>personal profile data</li>' +
+          '<li>role profiles</li>' +
+          '<li>avatars</li>' +
+          '<li>push token</li>' +
+          '<li>notification settings</li>' +
+          '<li>open applications</li>' +
+          '<li>non-binding future invitations</li>' +
+          '</ul>',
+        accountDeletionRetainedHeading: 'What may remain anonymized',
+        accountDeletionRetainedBody:
+          '<p>For factual reasons, certain historical references may remain anonymized, for example:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>past shows</li>' +
+          '<li>historical line-ups</li>' +
+          '<li>past performances</li>' +
+          '<li>factually necessary show history</li>' +
+          '</ul>' +
+          '<p>In such cases, your name may be replaced with “Deleted member”.</p>',
+        accountDeletionBlockersHeading: 'Possible blockers',
+        accountDeletionBlockersBody:
+          '<p>Deletion may temporarily not be possible if, among other things, the following circumstances apply:</p>' +
+          '<ul class="legal-page__list">' +
+          '<li>confirmed future performance</li>' +
+          '<li>active host assignment</li>' +
+          '<li>active or planned shows</li>' +
+          '<li>organization ownership</li>' +
+          '<li>you are the only organization member</li>' +
+          '<li>admin self-deletion is not possible</li>' +
+          '</ul>' +
+          '<p>In these cases, you must first resolve or complete the relevant obligation.</p>',
+        accountDeletionHelpHeading: 'Help without app access',
+        accountDeletionHelpBody:
+          '<p>If you no longer have access to the app, contact us at <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>.</p>' +
+          '<p>To protect your data, identity verification may be required. We cannot promise immediate deletion based on an unverified email alone. Deletion of third-party accounts is not possible for security reasons.</p>',
+        accountDeletionUpdated: 'Last updated: June 2026',
       },
     },
   };
@@ -882,6 +1046,17 @@
     Object.assign(
       window.SpotstageTranslations.en.legal,
       window.SpotstagePrivacyLegal.en
+    );
+  }
+
+  if (window.SpotstagePrivacyApp) {
+    Object.assign(
+      window.SpotstageTranslations.de.legal,
+      window.SpotstagePrivacyApp.de
+    );
+    Object.assign(
+      window.SpotstageTranslations.en.legal,
+      window.SpotstagePrivacyApp.en
     );
   }
 })();

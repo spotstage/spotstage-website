@@ -12,7 +12,7 @@
     de: {
       privacyS1Title: '1. Verantwortlicher',
       privacyS1Body:
-        '<p>Verantwortlicher für die Verarbeitung personenbezogener Daten auf dieser Website ist:</p>' +
+        '<p>Verantwortlicher für die Verarbeitung personenbezogener Daten im Zusammenhang mit dieser Website und der SPOTSTAGE-App ist:</p>' +
         '<p>SPOTSTAGE UG (haftungsbeschränkt)<br>Hugo-Weiss-Str. 25<br>81827 München<br>Deutschland</p>' +
         '<p>Vertreten durch den Geschäftsführer:<br>Christian Peter Sigel</p>' +
         '<p>E-Mail: ' + mailLink + '</p>' +
@@ -20,8 +20,9 @@
 
       privacyS2Title: '2. Allgemeine Hinweise',
       privacyS2Body:
-        '<p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer sicheren und funktionsfähigen Website, zur Bearbeitung von Kontaktanfragen oder zur Erfüllung gesetzlicher Pflichten erforderlich ist.</p>' +
-        '<p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Hierzu können insbesondere IP-Adressen, Kontaktdaten und Inhalte von Nachrichten gehören.</p>',
+        '<p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer sicheren und funktionsfähigen Website, zur Bereitstellung der SPOTSTAGE-App, zur Bearbeitung von Kontaktanfragen oder zur Erfüllung gesetzlicher Pflichten erforderlich ist.</p>' +
+        '<p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Hierzu können insbesondere IP-Adressen, Kontaktdaten, Profil- und Kontodaten sowie Inhalte von Nachrichten gehören.</p>' +
+        '<p>Website und App werden in dieser Datenschutzerklärung getrennt beschrieben, gelten aber unter demselben Verantwortlichen.</p>',
 
       privacyS3Title: '3. Bereitstellung und Hosting der Website',
       privacyS3Body:
@@ -77,7 +78,8 @@
         '<li>Umami</li>' +
         '<li>Netlify Web Analytics</li>' +
         '</ul>' +
-        '<p>Es findet keine Profilbildung zu Werbe- oder Analysezwecken statt.</p>',
+        '<p>Es findet keine Profilbildung zu Werbe- oder Analysezwecken statt.</p>' +
+        '<p>Dies gilt auch für die SPOTSTAGE-App. Wir setzen derzeit insbesondere kein Analytics-Tool, kein Crash-Reporting-SDK, keinen Chat-Dienst und keine Zahlungsdienste ein.</p>',
 
       privacyS6Title: '6. Kontaktaufnahme per E-Mail',
       privacyS6Body:
@@ -113,32 +115,34 @@
         '<p>Beim bloßen Aufruf unserer Website werden aufgrund dieser Links keine Daten an Apple oder Google übertragen. Eine Verbindung zu dem jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn ein Besucher den entsprechenden Link anklickt.</p>' +
         '<p>Nach dem Anklicken gelten die Datenschutzbestimmungen des jeweiligen externen Anbieters. Auf die anschließende Datenverarbeitung durch den jeweiligen Anbieter haben wir keinen Einfluss.</p>',
 
-      privacyS9Title: '9. Empfänger personenbezogener Daten',
-      privacyS9Body:
-        '<p>Personenbezogene Daten können an technische Dienstleister übermittelt werden, soweit dies zur Bereitstellung der Website oder zur Bearbeitung von Anfragen erforderlich ist.</p>' +
+      privacyS17Title: '17. Empfänger personenbezogener Daten',
+      privacyS17Body:
+        '<p>Personenbezogene Daten können an technische Dienstleister übermittelt werden, soweit dies zur Bereitstellung der Website, der SPOTSTAGE-App oder zur Bearbeitung von Anfragen erforderlich ist.</p>' +
         '<p>Hierzu gehören insbesondere:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Netlify als Hostinganbieter</li>' +
+        '<li>Netlify als Hostinganbieter der Website</li>' +
+        '<li>Supabase als Anbieter für Authentifizierung, Datenbank und Dateispeicher in der App</li>' +
+        '<li>Expo beziehungsweise der Expo Push Service für Push-Benachrichtigungen in der App</li>' +
         '<li>united-domains als Anbieter der geschäftlichen E-Mail-Infrastruktur</li>' +
         '<li>IT- und Sicherheitsdienstleister, soweit deren Einsatz erforderlich ist</li>' +
         '<li>Behörden oder sonstige Stellen, sofern wir gesetzlich zur Übermittlung verpflichtet sind</li>' +
         '</ul>' +
-        '<p>Eine Weitergabe personenbezogener Daten zu Werbezwecken findet nicht statt.</p>',
+        '<p>Eine Weitergabe personenbezogener Daten zu Werbezwecken findet nicht statt. Derzeit werden keine Analytics-, Crash-, Zahlungs-, Chat- oder Social-Login-Anbieter eingesetzt.</p>',
 
-      privacyS10Title: '10. Speicherdauer',
-      privacyS10Body:
+      privacyS18Title: '18. Speicherdauer',
+      privacyS18Body:
         '<p>Wir speichern personenbezogene Daten nur so lange, wie dies für den jeweiligen Verarbeitungszweck erforderlich ist.</p>' +
         '<p>Anschließend werden die Daten gelöscht, sofern keine gesetzlichen Aufbewahrungspflichten, vertraglichen Gründe oder berechtigten Interessen an einer weiteren Speicherung bestehen.</p>' +
         '<p>Gesetzliche Aufbewahrungsfristen können insbesondere für handels- und steuerrechtlich relevante Unterlagen gelten.</p>',
 
-      privacyS11Title: '11. Datensicherheit',
-      privacyS11Body:
+      privacyS19Title: '19. Datensicherheit',
+      privacyS19Body:
         '<p>Wir treffen angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Manipulation, Zerstörung und unberechtigtem Zugriff zu schützen.</p>' +
-        '<p>Die Übertragung dieser Website erfolgt verschlüsselt über HTTPS beziehungsweise TLS.</p>' +
+        '<p>Die Übertragung der Website erfolgt verschlüsselt über HTTPS beziehungsweise TLS. Die Kommunikation zwischen App und Backend erfolgt ebenfalls verschlüsselt.</p>' +
         '<p>Ein vollständiger Schutz von Daten bei der Übertragung über das Internet kann jedoch nicht garantiert werden.</p>',
 
-      privacyS12Title: '12. Rechte betroffener Personen',
-      privacyS12Body:
+      privacyS20Title: '20. Rechte betroffener Personen',
+      privacyS20Body:
         '<p>Sie haben im Rahmen der gesetzlichen Voraussetzungen insbesondere folgende Rechte:</p>' +
         '<ul class="legal-page__list">' +
         '<li>Recht auf Auskunft über die von uns verarbeiteten personenbezogenen Daten</li>' +
@@ -153,40 +157,40 @@
         '<p>Zur Ausübung Ihrer Rechte können Sie uns unter folgender Adresse kontaktieren:</p>' +
         '<p>E-Mail: ' + mailLink + '</p>',
 
-      privacyS13Title: '13. Widerspruchsrecht',
-      privacyS13Body:
+      privacyS21Title: '21. Widerspruchsrecht',
+      privacyS21Body:
         '<p>Soweit wir personenbezogene Daten auf Grundlage von Art. 6 Abs. 1 Buchst. f DSGVO verarbeiten, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen.</p>' +
         '<p>Wir verarbeiten die betreffenden Daten anschließend nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen.</p>' +
         '<p>Eine weitere Verarbeitung kann außerdem erfolgen, wenn sie der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.</p>',
 
-      privacyS14Title: '14. Beschwerderecht bei einer Aufsichtsbehörde',
-      privacyS14Body:
+      privacyS22Title: '22. Beschwerderecht bei einer Aufsichtsbehörde',
+      privacyS22Body:
         '<p>Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren.</p>' +
         '<p>Für nicht öffentliche Unternehmen mit Sitz in Bayern ist grundsätzlich folgende Aufsichtsbehörde zuständig:</p>' +
         '<p>Bayerisches Landesamt für Datenschutzaufsicht<br>Promenade 18<br>91522 Ansbach<br>Deutschland</p>' +
         '<p>Sie können sich auch an eine andere nach den gesetzlichen Vorschriften zuständige Datenschutzaufsichtsbehörde wenden.</p>',
 
-      privacyS15Title: '15. Keine automatisierte Entscheidungsfindung',
-      privacyS15Body:
-        '<p>Eine ausschließlich automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet auf dieser Website nicht statt.</p>',
+      privacyS23Title: '23. Keine automatisierte Entscheidungsfindung',
+      privacyS23Body:
+        '<p>Eine ausschließlich automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet weder auf dieser Website noch in der SPOTSTAGE-App statt.</p>',
 
-      privacyS16Title: '16. Minderjährige',
-      privacyS16Body:
-        '<p>Diese Website richtet sich nicht ausdrücklich an Personen unter 16 Jahren.</p>' +
-        '<p>Über die Website selbst besteht keine Möglichkeit, personenbezogene Daten über ein Kontaktformular oder ein Nutzerkonto einzugeben.</p>',
+      privacyS24Title: '24. Minderjährige',
+      privacyS24Body:
+        '<p>Website und SPOTSTAGE-App richten sich nicht ausdrücklich an Personen unter 16 Jahren.</p>' +
+        '<p>Über die Website selbst besteht keine Möglichkeit, personenbezogene Daten über ein Kontaktformular oder ein Nutzerkonto einzugeben. In der App ist ein Nutzerkonto erforderlich. Personen unter 16 Jahren sollten die App nur mit Zustimmung der Erziehungsberechtigten nutzen.</p>',
 
-      privacyS17Title: '17. Änderungen dieser Datenschutzerklärung',
-      privacyS17Body:
-        '<p>Wir können diese Datenschutzerklärung anpassen, wenn sich die Website, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern.</p>' +
+      privacyS25Title: '25. Änderungen dieser Datenschutzerklärung',
+      privacyS25Body:
+        '<p>Wir können diese Datenschutzerklärung anpassen, wenn sich die Website, die SPOTSTAGE-App, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern.</p>' +
         '<p>Es gilt die jeweils auf dieser Website veröffentlichte Fassung.</p>',
 
-      privacyUpdated: 'Stand: Juni 2026',
+      privacyUpdated: 'Stand: Juni 2026 (ergänzt um SPOTSTAGE-App)',
     },
 
     en: {
       privacyS1Title: '1. Controller',
       privacyS1Body:
-        '<p>The controller responsible for processing personal data on this website is:</p>' +
+        '<p>The controller responsible for processing personal data in connection with this website and the SPOTSTAGE app is:</p>' +
         '<p>SPOTSTAGE UG (haftungsbeschränkt)<br>Hugo-Weiss-Str. 25<br>81827 Munich<br>Germany</p>' +
         '<p>Represented by the managing director:<br>Christian Peter Sigel</p>' +
         '<p>Email: ' + mailLink + '</p>' +
@@ -194,8 +198,9 @@
 
       privacyS2Title: '2. General information',
       privacyS2Body:
-        '<p>We process personal data only to the extent necessary to provide a secure and functional website, handle contact requests, or comply with legal obligations.</p>' +
-        '<p>Personal data means any information relating to an identified or identifiable natural person. This may include IP addresses, contact details, and the content of messages.</p>',
+        '<p>We process personal data only to the extent necessary to provide a secure and functional website, provide the SPOTSTAGE app, handle contact requests, or comply with legal obligations.</p>' +
+        '<p>Personal data means any information relating to an identified or identifiable natural person. This may include IP addresses, contact details, profile and account data, and the content of messages.</p>' +
+        '<p>The website and app are described separately in this privacy policy but are operated under the same controller.</p>',
 
       privacyS3Title: '3. Provision and hosting of the website',
       privacyS3Body:
@@ -251,7 +256,8 @@
         '<li>Umami</li>' +
         '<li>Netlify Web Analytics</li>' +
         '</ul>' +
-        '<p>No profiling for advertising or analytics purposes takes place.</p>',
+        '<p>No profiling for advertising or analytics purposes takes place.</p>' +
+        '<p>This also applies to the SPOTSTAGE app. We currently do not use an analytics tool, crash reporting SDK, chat service, or payment services.</p>',
 
       privacyS6Title: '6. Contact by email',
       privacyS6Body:
@@ -287,32 +293,34 @@
         '<p>Simply visiting our website does not transfer data to Apple or Google because of these links. A connection to the respective provider is generally established only when a visitor clicks the relevant link.</p>' +
         '<p>After clicking, the privacy policies of the respective external provider apply. We have no influence over subsequent processing by that provider.</p>',
 
-      privacyS9Title: '9. Recipients of personal data',
-      privacyS9Body:
-        '<p>Personal data may be transferred to technical service providers where necessary to operate the website or handle requests.</p>' +
+      privacyS17Title: '17. Recipients of personal data',
+      privacyS17Body:
+        '<p>Personal data may be transferred to technical service providers where necessary to operate the website, the SPOTSTAGE app, or handle requests.</p>' +
         '<p>This includes in particular:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Netlify as hosting provider</li>' +
+        '<li>Netlify as hosting provider for the website</li>' +
+        '<li>Supabase as provider for authentication, database, and file storage in the app</li>' +
+        '<li>Expo or the Expo Push Service for push notifications in the app</li>' +
         '<li>united-domains as provider of business email infrastructure</li>' +
         '<li>IT and security service providers where their use is required</li>' +
         '<li>Authorities or other bodies where we are legally obliged to disclose data</li>' +
         '</ul>' +
-        '<p>Personal data is not disclosed for advertising purposes.</p>',
+        '<p>Personal data is not disclosed for advertising purposes. We currently do not use analytics, crash, payment, chat, or social login providers.</p>',
 
-      privacyS10Title: '10. Storage period',
-      privacyS10Body:
+      privacyS18Title: '18. Storage period',
+      privacyS18Body:
         '<p>We store personal data only for as long as necessary for the respective processing purpose.</p>' +
         '<p>Data is then deleted unless statutory retention obligations, contractual reasons, or legitimate interests require further storage.</p>' +
         '<p>Statutory retention periods may apply in particular to records relevant under commercial and tax law.</p>',
 
-      privacyS11Title: '11. Data security',
-      privacyS11Body:
+      privacyS19Title: '19. Data security',
+      privacyS19Body:
         '<p>We implement appropriate technical and organizational measures to protect personal data against loss, manipulation, destruction, and unauthorized access.</p>' +
-        '<p>Transmission of this website is encrypted via HTTPS/TLS.</p>' +
+        '<p>Transmission of the website is encrypted via HTTPS/TLS. Communication between the app and backend is also encrypted.</p>' +
         '<p>However, complete protection of data during transmission over the internet cannot be guaranteed.</p>',
 
-      privacyS12Title: '12. Rights of data subjects',
-      privacyS12Body:
+      privacyS20Title: '20. Rights of data subjects',
+      privacyS20Body:
         '<p>Subject to the statutory requirements, you have in particular the following rights:</p>' +
         '<ul class="legal-page__list">' +
         '<li>Right of access to personal data we process</li>' +
@@ -327,34 +335,34 @@
         '<p>To exercise your rights, you can contact us at:</p>' +
         '<p>Email: ' + mailLink + '</p>',
 
-      privacyS13Title: '13. Right to object',
-      privacyS13Body:
+      privacyS21Title: '21. Right to object',
+      privacyS21Body:
         '<p>Where we process personal data on the basis of Art. 6(1)(f) GDPR, you have the right to object at any time to such processing for reasons arising from your particular situation.</p>' +
         '<p>We will then no longer process the data unless we can demonstrate compelling legitimate grounds for processing that override your interests, rights, and freedoms.</p>' +
         '<p>Processing may also continue if it is necessary for the establishment, exercise, or defence of legal claims.</p>',
 
-      privacyS14Title: '14. Right to lodge a complaint with a supervisory authority',
-      privacyS14Body:
+      privacyS22Title: '22. Right to lodge a complaint with a supervisory authority',
+      privacyS22Body:
         '<p>You have the right to lodge a complaint with a data protection supervisory authority about the processing of your personal data.</p>' +
         '<p>For non-public companies based in Bavaria, the following authority is generally responsible:</p>' +
         '<p>Bayerisches Landesamt für Datenschutzaufsicht<br>Bavarian State Office for Data Protection Supervision<br>Promenade 18<br>91522 Ansbach<br>Germany</p>' +
         '<p>You may also contact another supervisory authority competent under applicable law.</p>',
 
-      privacyS15Title: '15. No automated decision-making',
-      privacyS15Body:
-        '<p>No solely automated decision-making, including profiling within the meaning of Art. 22 GDPR, takes place on this website.</p>',
+      privacyS23Title: '23. No automated decision-making',
+      privacyS23Body:
+        '<p>No solely automated decision-making, including profiling within the meaning of Art. 22 GDPR, takes place on this website or in the SPOTSTAGE app.</p>',
 
-      privacyS16Title: '16. Minors',
-      privacyS16Body:
-        '<p>This website is not expressly directed at persons under 16 years of age.</p>' +
-        '<p>The website itself does not offer a contact form or user account through which personal data can be submitted.</p>',
+      privacyS24Title: '24. Minors',
+      privacyS24Body:
+        '<p>The website and SPOTSTAGE app are not expressly directed at persons under 16 years of age.</p>' +
+        '<p>The website itself does not offer a contact form or user account through which personal data can be submitted. A user account is required in the app. Persons under 16 should use the app only with parental consent.</p>',
 
-      privacyS17Title: '17. Changes to this privacy policy',
-      privacyS17Body:
-        '<p>We may update this privacy policy if the website, the services used, or legal requirements change.</p>' +
+      privacyS25Title: '25. Changes to this privacy policy',
+      privacyS25Body:
+        '<p>We may update this privacy policy if the website, the SPOTSTAGE app, the services used, or legal requirements change.</p>' +
         '<p>The version published on this website at the relevant time applies.</p>',
 
-      privacyUpdated: 'Last updated: June 2026',
+      privacyUpdated: 'Last updated: June 2026 (extended for SPOTSTAGE app)',
     },
   };
 })();
