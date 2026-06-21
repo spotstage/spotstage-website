@@ -52,6 +52,7 @@
         phoneOrganizerAlt: 'SPOTSTAGE App – Veranstalter:innen-Ansicht mit Show-Besetzung',
         phoneArtistCaption: 'Für Künstler:innen',
         phoneOrganizerCaption: 'Für Veranstalter:innen',
+        scrollHint: 'Zum nächsten Abschnitt scrollen',
       },
       badges: {
         comingSoon: 'Demnächst verfügbar',
@@ -565,6 +566,7 @@
         phoneOrganizerAlt: 'SPOTSTAGE app – organizer view with show lineup',
         phoneArtistCaption: 'For Artists',
         phoneOrganizerCaption: 'For Organizers',
+        scrollHint: 'Scroll to next section',
       },
       badges: {
         comingSoon: 'Coming soon',

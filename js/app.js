@@ -17,6 +17,7 @@
     initMobileNav();
     initNavActiveState();
     initSmoothScroll();
+    initHeroScrollHint();
     initCTAHelpers();
   }
 
@@ -222,6 +223,79 @@
     updateActiveLink();
     window.addEventListener('scroll', updateActiveLink, { passive: true });
     window.addEventListener('resize', updateActiveLink);
+  }
+
+  /* --------------------------------------------------------------------------
+     Hero scroll hint – delayed enter, fade on scroll
+     -------------------------------------------------------------------------- */
+
+  function initHeroScrollHint() {
+    var hint = document.querySelector('.hero-section__scroll-hint');
+    var hero = document.getElementById('hero');
+    if (!hint || !hero) return;
+
+    var desktopMq = window.matchMedia('(min-width: 768px)');
+    var reducedMotionMq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var enterTimer = null;
+    var hasEntered = false;
+
+    function isDesktopViewport() {
+      return desktopMq.matches;
+    }
+
+    function getScrollThreshold() {
+      return hero.offsetHeight * 0.3;
+    }
+
+    function clearEnterTimer() {
+      if (enterTimer) {
+        clearTimeout(enterTimer);
+        enterTimer = null;
+      }
+    }
+
+    function resetHint() {
+      clearEnterTimer();
+      hasEntered = false;
+      hint.classList.remove('is-entered', 'is-scrolled-away');
+    }
+
+    function updateScrollState() {
+      if (!isDesktopViewport() || !hasEntered) return;
+
+      var scrolledPastThreshold = window.scrollY >= getScrollThreshold();
+      hint.classList.toggle('is-scrolled-away', scrolledPastThreshold);
+      hint.classList.toggle('is-entered', !scrolledPastThreshold);
+    }
+
+    function revealHint() {
+      if (!isDesktopViewport()) return;
+
+      hasEntered = true;
+      updateScrollState();
+    }
+
+    function scheduleEnter() {
+      resetHint();
+      if (!isDesktopViewport()) return;
+
+      var delay = reducedMotionMq.matches ? 0 : 3000;
+      enterTimer = setTimeout(revealHint, delay);
+    }
+
+    scheduleEnter();
+
+    window.addEventListener('scroll', updateScrollState, { passive: true });
+    window.addEventListener('resize', function () {
+      scheduleEnter();
+      updateScrollState();
+    });
+
+    if (typeof desktopMq.addEventListener === 'function') {
+      desktopMq.addEventListener('change', scheduleEnter);
+    } else if (typeof desktopMq.addListener === 'function') {
+      desktopMq.addListener(scheduleEnter);
+    }
   }
 
   /* --------------------------------------------------------------------------
