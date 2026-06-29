@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/images/favicon/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/images/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/images/favicon/favicon-96x96.png" type="image/png" sizes="96x96">
+  <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/images/favicon/site.webmanifest">
+  <meta name="theme-color" content="#0d0719">
+  <meta name="description" content="Organisationseinladung | SPOTSTAGE" data-i18n-attr="invite.metaDescription:content">
+  <title data-i18n="invite.metaTitle">Organisationseinladung | SPOTSTAGE</title>
+  <link rel="canonical" href="https://spotstage.app/org/invite">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="invite-page">
+
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skipToMain">Zum Hauptinhalt springen</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <a href="/" class="site-header__logo" data-i18n-attr="logo.ariaHome:aria-label">
+        <img src="/images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+        <span class="sr-only">SPOTSTAGE</span>
+      </a>
+
+      <div class="site-header__actions">
+        <div class="lang-switch" role="group" data-i18n-attr="lang.switchAria:aria-label">
+          <span class="lang-switch__icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </span>
+          <button type="button" class="lang-switch__btn is-active" data-locale="de" aria-pressed="true" data-i18n-attr="lang.activeDe:aria-label">DE</button>
+          <button type="button" class="lang-switch__btn" data-locale="en" aria-pressed="false" data-i18n-attr="lang.labelEn:aria-label">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section section--invite" aria-labelledby="invite-heading">
+      <div class="container container--narrow invite-page__content">
+        <h1 id="invite-heading" data-i18n="invite.headline">Du wurdest zu einer Organisation eingeladen</h1>
+        <p class="invite-page__lead" data-i18n="invite.lead">
+          Öffne die Einladung in der SPOTSTAGE-App, um dem Team beizutreten. Falls die App noch nicht installiert ist, installiere sie zuerst und tippe danach erneut auf den Einladungslink.
+        </p>
+        <p class="invite-page__hint" data-i18n="invite.hint">
+          Die SPOTSTAGE-App wird benötigt, um die Einladung anzunehmen.
+        </p>
+        <div class="invite-page__actions">
+          <a href="#" id="invite-open-app" class="vision__cta-btn invite-page__cta" data-i18n="invite.openInApp">
+            In SPOTSTAGE öffnen
+          </a>
+        </div>
+        <p class="invite-page__fallback">
+          <a href="/" class="legal-page__back-link" data-i18n="invite.backToHome">Zur Startseite</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a href="/" class="site-footer__logo" data-i18n-attr="logo.ariaHome:aria-label">
+          <img src="/images/logo/spotstage_logo.svg" alt="" width="160" height="46">
+          <span class="sr-only">SPOTSTAGE</span>
+        </a>
+      </div>
+      <nav class="site-footer__nav" aria-label="Footer-Navigation" data-i18n-attr="footer.navAria:aria-label">
+        <ul class="site-footer__list">
+          <li><a href="/impressum.html" class="site-footer__link" data-i18n="footer.legalNotice">Impressum</a></li>
+          <li><a href="/datenschutz.html" class="site-footer__link" data-i18n="footer.privacy">Datenschutz</a></li>
+          <li><a href="/support.html" class="site-footer__link" data-i18n="footer.support">Support</a></li>
+          <li><a href="/barrierefreiheit.html" class="site-footer__link" data-i18n="footer.accessibility">Barrierefreiheit</a></li>
+          <li><a href="/account-loeschen.html" class="site-footer__link" data-i18n="footer.accountDeletion">Account löschen</a></li>
+        </ul>
+      </nav>
+      <p class="site-footer__copy" data-i18n="footer.copyright">© 2026 SPOTSTAGE UG (haftungsbeschränkt)</p>
+    </div>
+  </footer>
+
+  <script src="/js/translations.js"></script>
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/app.js" defer></script>
+  <script src="/js/org-invite.js" defer></script>
+</body>
+</html>

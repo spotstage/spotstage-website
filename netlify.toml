@@ -1,0 +1,19 @@
+# Netlify — SPOTSTAGE marketing site
+# Publish directory: . (repository root)
+
+[build]
+  publish = "."
+
+# Android App Links — serve JSON directly (no SPA rewrite)
+[[headers]]
+  for = "/.well-known/assetlinks.json"
+  [headers.values]
+    Content-Type = "application/json"
+    Access-Control-Allow-Origin = "*"
+
+# Organization invite fallback — preserve query parameters (Netlify default for static files)
+[[redirects]]
+  from = "/org/invite"
+  to = "/org/invite/index.html"
+  status = 200
+  force = false

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.spotstage.app",
+      "sha256_cert_fingerprints": [
+        "2E:3B:20:2C:B3:41:48:BB:BB:FB:B7:BF:5A:BB:F6:62:0D:BB:D4:39:7D:57:AC:A1:2D:0D:E6:A4:DF:CD:88:3E"
+      ]
+    }
+  }
+]

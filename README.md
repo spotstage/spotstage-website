@@ -28,7 +28,15 @@ This repository contains the marketing website for SPOTSTAGE, a mobile app conne
 ├── barrierefreiheit.html       # Accessibility statement
 ├── support.html                # App support page
 ├── account-loeschen.html       # Account deletion information
+├── org/
+│   └── invite/
+│       └── index.html          # Organization invite web fallback (Android App Links)
 ├── 404.html                    # Not found page
+│
+├── .well-known/
+│   └── assetlinks.json         # Android App Links verification
+│
+├── netlify.toml                # Headers + invite route
 │
 ├── css/
 │   ├── styles.css              # Global styles, design system
@@ -65,6 +73,10 @@ Legal and support pages for App Store / Google Play are documented in [`docs/app
 - `https://spotstage.app/impressum.html`
 - `https://spotstage.app/barrierefreiheit.html`
 - `https://spotstage.app/account-loeschen.html`
+- `https://spotstage.app/org/invite` (organization invitation fallback)
+- `https://spotstage.app/.well-known/assetlinks.json` (Android App Links)
+
+Android App Links setup: [`docs/android-app-links-integration.md`](docs/android-app-links-integration.md)
 
 **Production:** `https://spotstage.app` is live with all App Store / Google Play legal and support pages. Netlify preview: `https://spotstage-website.netlify.app/`.
 

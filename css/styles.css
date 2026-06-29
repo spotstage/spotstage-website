@@ -2126,7 +2126,7 @@ body.nav-open .site-header {
 
 .hero-section__accent--gold,
 .hero-section__accent--purple {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .hero-section__accent--gold {
@@ -4575,4 +4575,56 @@ body.not-found-page .site-footer {
   .not-found__cta.vision__cta-btn {
     width: max-content;
   }
+}
+
+/* --------------------------------------------------------------------------
+   Organization invite fallback (/org/invite)
+   -------------------------------------------------------------------------- */
+
+.section--invite {
+  padding-block: clamp(3rem, 8vh, 6rem);
+}
+
+.invite-page__content {
+  text-align: center;
+}
+
+.invite-page__content h1 {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.invite-page__lead {
+  max-width: 36rem;
+  margin: var(--space-md) auto 0;
+  color: rgba(var(--color-text-primary-rgb), 0.82);
+  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  line-height: 1.65;
+}
+
+.invite-page__hint {
+  max-width: 32rem;
+  margin: var(--space-sm) auto 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.invite-page__actions {
+  margin-top: var(--space-xl);
+  display: flex;
+  justify-content: center;
+}
+
+.invite-page__cta.is-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.invite-page__fallback {
+  margin-top: var(--space-lg);
 }

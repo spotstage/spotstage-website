@@ -10,7 +10,7 @@
       meta: {
         title: 'SPOTSTAGE – Deine Show. Deine Bühne. Dein Moment.',
         description:
-          'SPOTSTAGE – Die App für Talente und Hosts. Shows finden. Shows organisieren.',
+          'SPOTSTAGE – Die App für Talente und Veranstaltende. Shows finden. Shows organisieren.',
       },
       lang: {
         switchAria: 'Sprache wählen',
@@ -30,6 +30,16 @@
         text: 'Die Seite, die du suchst, ist nicht mehr hier – oder hat ihren Auftritt noch nicht.',
         cta: 'Zur Startseite',
       },
+      invite: {
+        metaTitle: 'Organisationseinladung | SPOTSTAGE',
+        metaDescription: 'Organisationseinladung in SPOTSTAGE öffnen',
+        headline: 'Du wurdest zu einer Organisation eingeladen',
+        lead:
+          'Öffne die Einladung in der SPOTSTAGE-App, um dem Team beizutreten. Falls die App noch nicht installiert ist, installiere sie zuerst und tippe danach erneut auf den Einladungslink.',
+        hint: 'Die SPOTSTAGE-App wird benötigt, um die Einladung anzunehmen.',
+        openInApp: 'In SPOTSTAGE öffnen',
+        backToHome: 'Zur Startseite',
+      },
       nav: {
         ariaLabel: 'Hauptnavigation',
         open: 'Menü öffnen',
@@ -45,7 +55,7 @@
       hero: {
         slogan: 'Deine Show. Deine Bühne. Dein Moment.',
         headline:
-          'Die App für<br><span class="hero-section__accent hero-section__accent--gold">Talente</span> &amp;<br><span class="hero-section__accent hero-section__accent--purple">Hosts</span>',
+          'Die App für<br><span class="hero-section__accent hero-section__accent--gold">Talente</span> &amp;<br><span class="hero-section__accent hero-section__accent--purple">Veranstaltende</span>',
         subheadline:
           '<span>Mehr Bühne. Weniger Aufwand.</span><br>Einfacher planen, bewerben und besetzen.',
         phoneArtistAlt: 'SPOTSTAGE App – Künstler:innen-Ansicht mit Auftrittsübersicht',
@@ -75,7 +85,7 @@
       },
       comparison: {
         heading:
-          '<span class="comparison__accent comparison__accent--artists">Talente</span> treffen <span class="comparison__accent comparison__accent--organizers">Hosts</span>',
+          '<span class="comparison__accent comparison__accent--artists">Talente</span> treffen <span class="comparison__accent comparison__accent--organizers">Veranstaltende</span>',
         subline: 'SPOTSTAGE vereint Bewerbungen, Planung und Line-up in einer App.',
         artistTitle: 'Für Künstler:innen',
         artistSubline: 'Mehr passende Auftritte. Weniger Aufwand.',
@@ -343,7 +353,7 @@
       downloadCta: {
         title: 'Jetzt kostenlos herunterladen',
         titleAria: 'Jetzt SPOTSTAGE kostenlos herunterladen',
-        note: 'Kostenlos loslegen. Mehr geht später immer.',
+        note: 'Mit optionalen Zusatzoptionen für noch mehr Möglichkeiten.',
       },
       footer: {
         claim: 'Deine Show. Deine Bühne. Dein Moment.',
@@ -524,7 +534,7 @@
       meta: {
         title: 'SPOTSTAGE – Your Show. Your Stage. Your Moment.',
         description:
-          'SPOTSTAGE – The app for artists and organizers. Find shows. Organize shows.',
+          'SPOTSTAGE – The app for performers and organizers. Find shows. Organize shows.',
       },
       lang: {
         switchAria: 'Choose language',
@@ -544,13 +554,23 @@
         text: 'The page you\u2019re looking for is no longer here \u2013 or hasn\u2019t made its entrance yet.',
         cta: 'Back to home',
       },
+      invite: {
+        metaTitle: 'Organization invitation | SPOTSTAGE',
+        metaDescription: 'Open your organization invitation in SPOTSTAGE',
+        headline: 'You were invited to join an organization',
+        lead:
+          'Open the invitation in the SPOTSTAGE app to join the team. If the app is not installed yet, install it first and tap the invitation link again.',
+        hint: 'The SPOTSTAGE app is required to accept this invitation.',
+        openInApp: 'Open in SPOTSTAGE',
+        backToHome: 'Back to home',
+      },
       nav: {
         ariaLabel: 'Main navigation',
         open: 'Open menu',
         close: 'Close menu',
         benefits: 'Benefits',
         howItWorks: 'How it works',
-        outlook: 'Outlook',
+        outlook: 'Coming Soon',
         download: 'Get the app',
       },
       logo: {
@@ -559,12 +579,12 @@
       hero: {
         slogan: 'Your Show. Your Stage. Your Moment.',
         headline:
-          'The app for<br><span class="hero-section__accent hero-section__accent--gold">Artists</span> &amp;<br><span class="hero-section__accent hero-section__accent--purple">Organizers</span>',
+          'The app for<br><span class="hero-section__accent hero-section__accent--gold">Performers</span> &amp;<br><span class="hero-section__accent hero-section__accent--purple">Organizers</span>',
         subheadline:
           '<span>More stage time. Less hassle.</span><br>Plan, apply, and fill slots with ease.',
-        phoneArtistAlt: 'SPOTSTAGE app – artist view with gig overview',
+        phoneArtistAlt: 'SPOTSTAGE app – performer view with gig overview',
         phoneOrganizerAlt: 'SPOTSTAGE app – organizer view with show lineup',
-        phoneArtistCaption: 'For Artists',
+        phoneArtistCaption: 'For Performers',
         phoneOrganizerCaption: 'For Organizers',
         scrollHint: 'Scroll to next section',
       },
@@ -589,14 +609,14 @@
       },
       comparison: {
         heading:
-          '<span class="comparison__accent comparison__accent--artists">Artists</span> meet <span class="comparison__accent comparison__accent--organizers">Organizers</span>',
+          '<span class="comparison__accent comparison__accent--artists">Performers</span> meet <span class="comparison__accent comparison__accent--organizers">Organizers</span>',
         subline: 'From applications to the final line-up — everything in one place.',
-        artistTitle: 'For Artists',
+        artistTitle: 'For Performers',
         artistSubline: 'More opportunities. Less hassle.',
         organizerTitle: 'For Organizers',
         organizerSubline: 'Better shows. Less coordination.',
         ctaHeading: 'Get SPOTSTAGE now',
-        ctaText: 'For artists and organizers.',
+        ctaText: 'For Performers and organizers.',
       },
       benefits: {
         artist: {
@@ -656,7 +676,7 @@
         subtitle:
           'From the first show idea to the final line-up, SPOTSTAGE brings every step together in one simple flow.',
         switchAria: 'Select audience',
-        switchArtists: 'For Artists',
+        switchArtists: 'For Performers',
         switchOrganizers: 'For Organizers',
         prevStep: 'Previous step',
         nextStep: 'Next step',
@@ -788,7 +808,7 @@
           {
             number: '03',
             title: 'Finalize the line-up',
-            text: 'Fill slots, confirm artists, and get your line-up ready for the stage.',
+            text: 'Fill slots, confirm Performers, and get your line-up ready for the stage.',
             visual: 'org-lineup',
             ui: {
               primary: {
@@ -857,7 +877,7 @@
       downloadCta: {
         title: 'Get for free now',
         titleAria: 'Get SPOTSTAGE for free now',
-        note: 'Start for free. There’s always more when you’re ready.',
+        note: 'With optional add-ons for even more possibilities.',
       },
       footer: {
         claim: 'Your show. Your stage. Your moment.',
@@ -904,7 +924,7 @@
         accessibilityDescriptionHeading: 'Description of the Website',
         accessibilityDescriptionBody:
           '<p>The website spotstage.app provides information about the SPOTSTAGE mobile application.</p>' +
-          '<p>SPOTSTAGE helps artists and organisers find, plan and organise live stage shows.</p>' +
+          '<p>SPOTSTAGE helps Performers and organisers find, plan and organise live stage shows.</p>' +
           '<p>The website presents the app’s key features and provides information for its different target audiences, as well as legal information.</p>' +
           '<p>At present, users cannot create accounts, enter into contracts, make payments or submit personal data through a contact form on this website.</p>',
         accessibilityComplianceHeading: 'Conformance Status',
