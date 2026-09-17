@@ -1,0 +1,57 @@
+name: Feature / Improvement
+description: Capture a website feature, content improvement, technical task, documentation task, or test/QA work.
+title: ""
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Feature
+        - Improvement
+        - Tech
+        - Test / QA
+        - Docs
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should be achieved?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this useful or necessary? Link screenshots, discussions, or related app issues if available.
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Desired behavior / content
+      description: Describe the expected result, including DE/EN implications when relevant.
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ]
+        - [ ]
+        - [ ]
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Existing patterns / implementation notes
+      description: Relevant sections, styles, translations, docs, routes, or constraints. Leave blank if unknown.
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Expected mobile/desktop, link, translation, or route checks.
