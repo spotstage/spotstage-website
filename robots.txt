@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /org/invite
 
 Sitemap: https://spotstage.app/sitemap.xml
