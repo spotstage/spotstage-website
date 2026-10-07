@@ -124,6 +124,7 @@
         '<li>Supabase als Anbieter für Authentifizierung, Datenbank und Dateispeicher in der App</li>' +
         '<li>Expo beziehungsweise der Expo Push Service für Push-Benachrichtigungen in der App</li>' +
         '<li>united-domains als Anbieter der geschäftlichen E-Mail-Infrastruktur</li>' +
+        '<li>Have I Been Pwned / Superlative Enterprises Pty Ltd (Australien) für die Prüfung gewählter Passwörter gegen bekannte kompromittierte Passwörter; übertragen wird nur ein fünfstelliger Hash-Präfix sowie technisch notwendige Verbindungsdaten</li>' +
         '<li>IT- und Sicherheitsdienstleister, soweit deren Einsatz erforderlich ist</li>' +
         '<li>Behörden oder sonstige Stellen, sofern wir gesetzlich zur Übermittlung verpflichtet sind</li>' +
         '</ul>' +
@@ -139,7 +140,9 @@
       privacyS19Body:
         '<p>Wir treffen angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Manipulation, Zerstörung und unberechtigtem Zugriff zu schützen.</p>' +
         '<p>Die Übertragung der Website erfolgt verschlüsselt über HTTPS beziehungsweise TLS. Die Kommunikation zwischen App und Backend erfolgt ebenfalls verschlüsselt.</p>' +
-        '<p>Ein vollständiger Schutz von Daten bei der Übertragung über das Internet kann jedoch nicht garantiert werden.</p>',
+        '<p>Zum Schutz von Benutzerkonten setzen wir unter anderem Passwort-Mindestanforderungen und eine Prüfung neu gewählter Passwörter gegen bekannte kompromittierte Passwörter ein. Nutzerinnen und Nutzer sollten für SPOTSTAGE ein eigenes, nur für diesen Dienst verwendetes Passwort verwenden und ihre Zugangsdaten nicht weitergeben.</p>' +
+        '<p>Die Wiederverwendung von Zugangsdaten kann sogenannte Credential-Stuffing-Angriffe begünstigen. Dabei werden Zugangsdaten, die beispielsweise durch einen Sicherheitsvorfall bei einem anderen Anbieter bekannt geworden sind, automatisiert bei weiteren Diensten ausprobiert. Ein solcher Angriff bedeutet nicht automatisch, dass bei SPOTSTAGE selbst ein Datenleck vorliegt.</p>' +
+        '<p>Ein vollständiger Schutz von Daten und IT-Systemen vor sämtlichen Risiken kann jedoch nicht garantiert werden.</p>',
 
       privacyS20Title: '20. Rechte betroffener Personen',
       privacyS20Body:
@@ -184,7 +187,7 @@
         '<p>Wir können diese Datenschutzerklärung anpassen, wenn sich die Website, die SPOTSTAGE-App, die eingesetzten Dienste oder die rechtlichen Anforderungen ändern.</p>' +
         '<p>Es gilt die jeweils auf dieser Website veröffentlichte Fassung.</p>',
 
-      privacyUpdated: 'Stand: Juni 2026 (ergänzt um SPOTSTAGE-App)',
+      privacyUpdated: 'Stand: Oktober 2026',
     },
 
     en: {
@@ -302,6 +305,7 @@
         '<li>Supabase as provider for authentication, database, and file storage in the app</li>' +
         '<li>Expo or the Expo Push Service for push notifications in the app</li>' +
         '<li>united-domains as provider of business email infrastructure</li>' +
+        '<li>Have I Been Pwned / Superlative Enterprises Pty Ltd (Australia) for checking selected passwords against known compromised passwords; only a five-character hash prefix and technically necessary connection data are transmitted</li>' +
         '<li>IT and security service providers where their use is required</li>' +
         '<li>Authorities or other bodies where we are legally obliged to disclose data</li>' +
         '</ul>' +
@@ -317,7 +321,9 @@
       privacyS19Body:
         '<p>We implement appropriate technical and organizational measures to protect personal data against loss, manipulation, destruction, and unauthorized access.</p>' +
         '<p>Transmission of the website is encrypted via HTTPS/TLS. Communication between the app and backend is also encrypted.</p>' +
-        '<p>However, complete protection of data during transmission over the internet cannot be guaranteed.</p>',
+        '<p>To protect user accounts, we use measures including minimum password requirements and checks of newly selected passwords against known compromised passwords. Users should use a password that is unique to SPOTSTAGE and must not share their credentials.</p>' +
+        '<p>Reusing credentials can facilitate so-called credential-stuffing attacks. In such attacks, credentials exposed for example in a security incident at another provider are automatically tried against other services. Such an attack does not by itself mean that SPOTSTAGE has suffered a data breach.</p>' +
+        '<p>However, complete protection of data and IT systems against all risks cannot be guaranteed.</p>',
 
       privacyS20Title: '20. Rights of data subjects',
       privacyS20Body:
@@ -362,7 +368,7 @@
         '<p>We may update this privacy policy if the website, the SPOTSTAGE app, the services used, or legal requirements change.</p>' +
         '<p>The version published on this website at the relevant time applies.</p>',
 
-      privacyUpdated: 'Last updated: June 2026 (extended for SPOTSTAGE app)',
+      privacyUpdated: 'Last updated: October 2026',
     },
   };
 })();

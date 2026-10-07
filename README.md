@@ -25,6 +25,7 @@ This repository contains the marketing website for SPOTSTAGE, a mobile app conne
 ├── index.html                  # Main landing page
 ├── impressum.html              # Legal notice (Impressum)
 ├── datenschutz.html            # Privacy policy (Datenschutz)
+├── nutzungsbedingungen.html    # Terms of use (DE / EN)
 ├── barrierefreiheit.html       # Accessibility statement
 ├── support.html                # App support page
 ├── account-loeschen.html       # Account deletion information
@@ -47,7 +48,8 @@ This repository contains the marketing website for SPOTSTAGE, a mobile app conne
 │   ├── i18n.js                 # Locale switching (de / en)
 │   ├── translations.js         # Central translations
 │   ├── privacy-legal-content.js # Website privacy policy content
-│   └── privacy-app-content.js  # App privacy policy content
+│   ├── privacy-app-content.js  # App privacy policy content
+│   └── terms-content.js        # Terms of use content (DE / EN)
 │
 ├── images/
 │   ├── logo/                   # Brand logo assets
@@ -70,6 +72,7 @@ Legal and support pages for App Store / Google Play are documented in [`docs/app
 - `https://spotstage.app/`
 - `https://spotstage.app/support.html`
 - `https://spotstage.app/datenschutz.html`
+- `https://spotstage.app/nutzungsbedingungen.html`
 - `https://spotstage.app/impressum.html`
 - `https://spotstage.app/barrierefreiheit.html`
 - `https://spotstage.app/account-loeschen.html`
