@@ -26,13 +26,17 @@
         '<p>Dabei können insbesondere folgende Daten verarbeitet werden:</p>' +
         '<ul class="legal-page__list">' +
         '<li>E-Mail-Adresse</li>' +
-        '<li>Passwort (ausschließlich in verschlüsselter Form gespeichert, nicht im Klartext)</li>' +
+        '<li>Passwort (ausschließlich als sicherer Passwort-Hash durch den Authentifizierungsdienst gespeichert; SPOTSTAGE speichert das Passwort nicht im Klartext)</li>' +
         '<li>Status der E-Mail-Bestätigung</li>' +
         '<li>Sitzungs- und Authentifizierungsinformationen</li>' +
         '<li>technische Metadaten im Zusammenhang mit der Anmeldung</li>' +
         '</ul>' +
         '<p>Bei der Registrierung kann eine E-Mail zur Bestätigung der E-Mail-Adresse versendet werden. Die Anmeldung erfolgt mit E-Mail-Adresse und Passwort. Es wird derzeit kein Social Login angeboten.</p>' +
-        '<p>Die Verarbeitung erfolgt zur Einrichtung und Verwaltung Ihres Nutzerkontos, zur Authentifizierung und zur Bereitstellung der App-Funktionen.</p>' +
+        '<p>Beim Festlegen eines Passworts während der Registrierung sowie beim Zurücksetzen des Passworts prüft die App zusätzlich, ob das gewählte Passwort in bekannten Datenlecks vorkommt. Hierfür verwenden wir den Dienst „Pwned Passwords“ von Have I Been Pwned (HIBP), betrieben von Superlative Enterprises Pty Ltd, Australien.</p>' +
+        '<p>Das Passwort wird dabei ausschließlich auf dem Endgerät in einen SHA-1-Hash umgewandelt. An HIBP werden nur die ersten fünf Zeichen dieses Hashes übertragen. Das Passwort selbst und der vollständige Hash werden nicht an HIBP übermittelt. HIBP sendet eine Menge möglicher Hash-Endungen zurück; der eigentliche Vergleich findet lokal in der App statt. Zusätzlich verwenden wir die von HIBP angebotene Antwort-Padding-Funktion.</p>' +
+        '<p>Bei der Verbindung zu HIBP fallen technisch bedingt insbesondere die IP-Adresse des Endgeräts, der übermittelte fünfstellige Hash-Präfix und HTTP-Verbindungsdaten an. Nach Angaben von HIBP können betriebsnotwendige Server-Logs für einen begrenzten Zeitraum gespeichert werden. Eine Zuordnung des geprüften Passworts zu Ihrer E-Mail-Adresse wird von SPOTSTAGE nicht an HIBP übermittelt.</p>' +
+        '<p>Die Passwortprüfung dient der Erhöhung der Kontosicherheit und der Verringerung des Risikos, dass bereits kompromittierte Passwörter erneut verwendet werden. Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in der Verhinderung von Kontoübernahmen und dem sicheren Betrieb der Plattform. Ist der Prüfdienst vorübergehend nicht erreichbar, wird die Registrierung beziehungsweise Passwortänderung nicht allein deshalb blockiert.</p>' +
+        '<p>Die übrige Verarbeitung erfolgt zur Einrichtung und Verwaltung Ihres Nutzerkontos, zur Authentifizierung und zur Bereitstellung der App-Funktionen.</p>' +
         '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Verarbeitung zur Erfüllung des Nutzungsverhältnisses erforderlich ist. Soweit die Verarbeitung der Sicherheit des Kontos dient, ist Rechtsgrundlage Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren Bereitstellung der App.</p>' +
         '<p>Supabase verarbeitet personenbezogene Daten in unserem Auftrag. Mit Supabase besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO.</p>',
 
@@ -109,19 +113,23 @@
 
       privacyS10Title: '10. User account and authentication',
       privacyS10Body:
-        '<p>A user account is required to use the SPOTSTAGE app. We use Supabase Auth for registration, login, and session management.</p>' +
-        '<p>In particular, the following data may be processed:</p>' +
+        '<p>A user account is required to use the SPOTSTAGE app. We use Supabase Auth for registration, sign-in and session management.</p>' +
+        '<p>The following data may be processed in particular:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Email address</li>' +
-        '<li>Password (stored only in encrypted form, not in plain text)</li>' +
-        '<li>Email confirmation status</li>' +
-        '<li>Session and authentication information</li>' +
-        '<li>Technical metadata related to login</li>' +
+        '<li>email address</li>' +
+        '<li>password (stored by the authentication provider only as a secure password hash; SPOTSTAGE does not store the password in plain text)</li>' +
+        '<li>email confirmation status</li>' +
+        '<li>session and authentication information</li>' +
+        '<li>technical metadata relating to authentication</li>' +
         '</ul>' +
-        '<p>During registration, an email may be sent to confirm your email address. Login is performed with email address and password. Social login is not currently offered.</p>' +
-        '<p>Processing takes place to set up and manage your user account, authenticate you, and provide app features.</p>' +
-        '<p>The legal basis is Art. 6(1)(b) GDPR where processing is necessary to perform the user relationship. Where processing serves account security, the legal basis is Art. 6(1)(f) GDPR. Our legitimate interest lies in the secure provision of the app.</p>' +
-        '<p>Supabase processes personal data on our behalf. We have a data processing agreement with Supabase pursuant to Art. 28 GDPR.</p>',
+        '<p>During registration, an email may be sent to confirm the email address. Sign-in uses an email address and password. Social login is not currently offered.</p>' +
+        '<p>When a password is chosen during registration or reset, the app additionally checks whether the selected password appears in known data breaches. For this purpose, we use the “Pwned Passwords” service provided by Have I Been Pwned (HIBP), operated by Superlative Enterprises Pty Ltd, Australia.</p>' +
+        '<p>The password is converted into a SHA-1 hash exclusively on the device. Only the first five characters of that hash are sent to HIBP. The password itself and the complete hash are never sent to HIBP. HIBP returns a set of possible hash suffixes and the actual comparison takes place locally in the app. We also enable the response-padding feature offered by HIBP.</p>' +
+        '<p>For technical reasons, the connection to HIBP may involve processing of the device IP address, the transmitted five-character hash prefix and HTTP connection data. According to HIBP, operational server logs may be retained for a limited period. SPOTSTAGE does not send your email address together with the password check.</p>' +
+        '<p>The password check is used to improve account security and reduce the risk of reusing previously compromised passwords. The legal basis is Art. 6(1)(f) GDPR. Our legitimate interest is preventing account takeover and operating the platform securely. If the checking service is temporarily unavailable, registration or password changes are not blocked solely for that reason.</p>' +
+        '<p>Other processing takes place to create and manage your user account, authenticate you and provide app functionality.</p>' +
+        '<p>The legal basis is Art. 6(1)(b) GDPR where processing is necessary for the user relationship. Where processing serves account security, the legal basis is Art. 6(1)(f) GDPR. Our legitimate interest lies in providing the app securely.</p>' +
+        '<p>Supabase processes personal data on our behalf. We have entered into a data processing agreement with Supabase pursuant to Art. 28 GDPR.</p>',
 
       privacyS11Title: '11. Profiles',
       privacyS11Body:
