@@ -21,6 +21,7 @@ Dokumentation zu den rechtlichen und Support-Seiten der SPOTSTAGE-Website für d
 | Startseite | `https://spotstage.app/` |
 | Support | `https://spotstage.app/support.html` |
 | Datenschutz | `https://spotstage.app/datenschutz.html` |
+| Nutzungsbedingungen | `https://spotstage.app/nutzungsbedingungen.html` |
 | Impressum | `https://spotstage.app/impressum.html` |
 | Barrierefreiheit | `https://spotstage.app/barrierefreiheit.html` |
 | Account löschen | `https://spotstage.app/account-loeschen.html` |
@@ -30,6 +31,7 @@ Dokumentation zu den rechtlichen und Support-Seiten der SPOTSTAGE-Website für d
 | Seite | Datei | Finaler Pfad |
 |-------|-------|--------------|
 | Support | `support.html` | `https://spotstage.app/support.html` |
+| Nutzungsbedingungen | `nutzungsbedingungen.html` | `https://spotstage.app/nutzungsbedingungen.html` |
 | Account löschen | `account-loeschen.html` | `https://spotstage.app/account-loeschen.html` |
 
 ## Bestehende Seiten (aktualisiert)
@@ -48,7 +50,7 @@ Die Datenschutzerklärung (`datenschutz.html`) umfasst 25 Abschnitte:
 - **Abschnitte 1–8:** Website (Hosting via Netlify, Local Storage, keine Analytics, E-Mail-Kontakt, united-domains)
 - **Abschnitte 9–16:** SPOTSTAGE-App (Inhalt in `js/privacy-app-content.js`)
   - 9: Überblick Website vs. App
-  - 10: Benutzerkonto und Authentifizierung (Supabase Auth)
+  - 10: Benutzerkonto und Authentifizierung (Supabase Auth + HIBP Pwned Passwords)
   - 11: Profile
   - 12: Shows und Bewerbungen
   - 13: Uploads (Supabase Storage)
@@ -57,7 +59,7 @@ Die Datenschutzerklärung (`datenschutz.html`) umfasst 25 Abschnitte:
   - 16: Passwort-Reset
 - **Abschnitte 17–25:** Gemeinsame Regelungen (Empfänger inkl. Supabase/Expo, Speicherdauer, Rechte, Minderjährige, Änderungen)
 
-Technische Anbieter, die benannt werden: Supabase, Expo/Expo Push, Netlify, united-domains. Keine Analytics, kein Crash-SDK, keine Zahlungen, kein Chat, kein Social Login.
+Technische Anbieter, die benannt werden: Supabase, Expo/Expo Push, Netlify, united-domains sowie Have I Been Pwned / Superlative Enterprises Pty Ltd für die kompromittierte-Passwort-Prüfung. Keine Analytics, kein Crash-SDK, keine Zahlungen, kein Chat, kein Social Login.
 
 ## Supportkontakt
 
@@ -85,6 +87,7 @@ Die folgenden URLs sind produktiv und können im Mobile-Repo gesetzt werden:
 Bestehende App-URLs (bereits vorbereitet):
 
 - `https://spotstage.app/datenschutz.html`
+- `https://spotstage.app/nutzungsbedingungen.html`
 - `https://spotstage.app/impressum.html`
 - `https://spotstage.app/barrierefreiheit.html`
 
@@ -119,6 +122,7 @@ Nach DNS-Änderungen kann die Propagation einige Minuten bis Stunden dauern.
 
 - DE/EN über `js/i18n.js` und `js/translations.js`
 - App-Datenschutz: `js/privacy-app-content.js`
+- Nutzungsbedingungen: `js/terms-content.js`
 - Website-Datenschutz: `js/privacy-legal-content.js`
 - Gleiche HTML-Dateien für beide Sprachen
 
@@ -137,9 +141,10 @@ Manuelle Prüfung nach Implementierung:
 - [x] Canonical URLs auf `spotstage.app` (neue Seiten + Datenschutz)
 - [x] Keine Netlify-Domain in Canonicals
 - [x] Genau eine `h1` pro Seite
-- [x] Footer-Navigation konsistent (5 Links)
+- [x] Footer-Navigation im Branch um Nutzungsbedingungen ergänzt
+- [ ] Neue Nutzungsbedingungen nach Merge unter `spotstage.app/nutzungsbedingungen.html` produktiv verifizieren
 - [x] `mailto:hello@spotstage.app` auf Support-Seite
 - [x] Produktive Erreichbarkeit auf `https://spotstage.app/` (20.06.2026)
 - [x] Alle Store-Pfade auf `spotstage.app` erreichbar (HTTP 200)
 
-Stand: Juni 2026 — produktiv live auf `spotstage.app`
+Stand: Oktober 2026 — bestehende Seiten produktiv; neue Nutzungsbedingungen nach Merge/Deployment erneut zu verifizieren
