@@ -150,3 +150,21 @@ Full design tokens are defined in `css/styles.css` under `:root`.
 ## License
 
 © SPOTSTAGE. All rights reserved.
+
+## Homepage and launch preparation
+
+The homepage focuses on comedy shows for organisers and comedians, without a regional restriction.
+Compact benefits lead into a feature carousel with four independent features per audience.
+The existing audience toggle, DE/EN translations and local-storage preference remain.
+Navigation uses arrows, feature indicators, keyboard and horizontal swipe, without autoplay.
+The future-format section is not loaded. Its legacy script/CSS remain unused.
+
+Hero and final download section share the same store configuration. Configure both verified HTTPS store URLs in
+`STORE_URLS` in `js/app.js` before the app/website launch. Empty or invalid URLs leave badges
+disabled without an href; both status notes disappear once both links are configured.
+Active links are keyboard-accessible and open with `noopener noreferrer` in a new tab.
+No email CTA substitutes for the app; the compact feedback section has one contact link.
+
+Feature visuals currently use the existing neutral `images/placeholders/hero-phone.svg`,
+visibly labelled as placeholders. No new simulated app UI is generated.
+See [Screenshot brief](docs/homepage-screenshots.md) for filenames, capture states and test data.

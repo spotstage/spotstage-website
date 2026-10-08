@@ -345,32 +345,57 @@
      -------------------------------------------------------------------------- */
 
   var STORE_URLS = {
-    apple: '#', // TODO: Replace with App Store URL
-    google: '#', // TODO: Replace with Google Play URL
+    apple: '', // Launch: insert the verified https://apps.apple.com/... URL
+    google: '', // Launch: insert the verified https://play.google.com/store/apps/details?... URL
   };
 
-  function initCTAHelpers() {
-    document.querySelectorAll('[data-store]').forEach(function (el) {
+  function getStoreUrl(store) {
+    var value = STORE_URLS[store];
+    try {
+      return new URL(value).protocol === 'https:' ? value : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function updateStoreLinks() {
+    document.querySelectorAll('a[data-store]').forEach(function (el) {
       var store = el.getAttribute('data-store');
-      var url = STORE_URLS[store];
-      var isLink = el.tagName === 'A';
-
-      if (!isLink) return;
-
-      if (!url || url === '#') {
+      var url = getStoreUrl(store);
+      if (url) {
+        el.setAttribute('href', url);
+        el.setAttribute('target', '_blank');
+        el.setAttribute('rel', 'noopener noreferrer');
+        el.removeAttribute('aria-disabled');
+        el.removeAttribute('tabindex');
+        el.removeAttribute('aria-describedby');
+      } else {
+        el.removeAttribute('href');
+        el.removeAttribute('target');
+        el.removeAttribute('rel');
         el.setAttribute('aria-disabled', 'true');
-        el.addEventListener('click', function (event) {
-          event.preventDefault();
-        });
-        return;
+        el.setAttribute('tabindex', '-1');
+        el.setAttribute('aria-describedby', el.getAttribute('data-store-description') || 'store-status');
       }
+      if (window.SpotstageI18n) {
+        el.setAttribute('aria-label', window.SpotstageI18n.t('badges.' + store + (url ? '.aria' : '.unavailableAria')));
+      }
+    });
+    document.querySelectorAll('[data-store-status]').forEach(function (status) {
+      status.hidden = Boolean(getStoreUrl('apple') && getStoreUrl('google'));
+    });
+  }
 
-      el.setAttribute('href', url);
-      el.removeAttribute('aria-disabled');
-      el.addEventListener('click', function () {
-        trackCTAClick(store);
+  function initCTAHelpers() {
+    updateStoreLinks();
+    document.querySelectorAll('a[data-store]').forEach(function (el) {
+      el.addEventListener('click', function (event) {
+        var store = el.getAttribute('data-store');
+        if (!getStoreUrl(store)) event.preventDefault();
+        else trackCTAClick(store);
       });
     });
+    document.addEventListener('spotstage:localechange', updateStoreLinks);
   }
 
   /**
@@ -387,12 +412,11 @@
 
   window.Spotstage = {
     trackCTAClick: trackCTAClick,
-    getStoreUrl: function (store) {
-      return STORE_URLS[store] || null;
-    },
+    getStoreUrl: getStoreUrl,
     setStoreUrl: function (store, url) {
       if (STORE_URLS.hasOwnProperty(store)) {
         STORE_URLS[store] = url;
+        updateStoreLinks();
       }
     },
   };
