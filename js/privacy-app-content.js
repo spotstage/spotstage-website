@@ -16,7 +16,7 @@
     de: {
       privacyS9Title: '9. SPOTSTAGE-App – Überblick',
       privacyS9Body:
-        '<p>Die mobile SPOTSTAGE-App ermöglicht es registrierten Nutzerinnen und Nutzern, Profile anzulegen, Shows zu organisieren oder sich auf Shows zu bewerben sowie Benachrichtigungen zu erhalten.</p>' +
+        '<p>Die mobile SPOTSTAGE-App ermöglicht es registrierten Nutzerinnen und Nutzern, Profile anzulegen, Shows zu organisieren, sich auf Shows zu bewerben, im Zusammenhang mit Shows zu kommunizieren sowie Benachrichtigungen zu erhalten.</p>' +
         '<p>Die Abschnitte 1 und 2 sowie die Abschnitte 17 bis 25 dieser Datenschutzerklärung gelten für Website und App gemeinsam. Die Abschnitte 3 bis 8 betreffen ausschließlich die Website. Die Abschnitte 9 bis 16 beschreiben die Datenverarbeitung in der SPOTSTAGE-App.</p>' +
         '<p>Verantwortlicher für die App-Datenverarbeitung ist derselbe wie in Abschnitt 1 genannt.</p>',
 
@@ -32,6 +32,7 @@
         '<li>technische Metadaten im Zusammenhang mit der Anmeldung</li>' +
         '</ul>' +
         '<p>Bei der Registrierung kann eine E-Mail zur Bestätigung der E-Mail-Adresse versendet werden. Die Anmeldung erfolgt mit E-Mail-Adresse und Passwort. Es wird derzeit kein Social Login angeboten.</p>' +
+        '<p>Damit Sie in der App angemeldet bleiben können, werden Sitzungs- und Authentifizierungsinformationen lokal im App-Speicher des Endgeräts gespeichert. Die Sitzung kann automatisch erneuert werden, solange sie gültig ist. Das Passwort selbst wird dabei nicht lokal im Klartext gespeichert.</p>' +
         '<p>Beim Festlegen eines Passworts während der Registrierung sowie beim Zurücksetzen des Passworts prüft die App zusätzlich, ob das gewählte Passwort in bekannten Datenlecks vorkommt. Hierfür verwenden wir den Dienst „Pwned Passwords“ von Have I Been Pwned (HIBP), betrieben von Superlative Enterprises Pty Ltd, Australien.</p>' +
         '<p>Das Passwort wird dabei ausschließlich auf dem Endgerät in einen SHA-1-Hash umgewandelt. An HIBP werden nur die ersten fünf Zeichen dieses Hashes übertragen. Das Passwort selbst und der vollständige Hash werden nicht an HIBP übermittelt. HIBP sendet eine Menge möglicher Hash-Endungen zurück; der eigentliche Vergleich findet lokal in der App statt. Zusätzlich verwenden wir die von HIBP angebotene Antwort-Padding-Funktion.</p>' +
         '<p>Bei der Verbindung zu HIBP fallen technisch bedingt insbesondere die IP-Adresse des Endgeräts, der übermittelte fünfstellige Hash-Präfix und HTTP-Verbindungsdaten an. Nach Angaben von HIBP können betriebsnotwendige Server-Logs für einen begrenzten Zeitraum gespeichert werden. Eine Zuordnung des geprüften Passworts zu Ihrer E-Mail-Adresse wird von SPOTSTAGE nicht an HIBP übermittelt.</p>' +
@@ -39,55 +40,69 @@
         '<p>Die Passwortprüfung dient der Erhöhung der Kontosicherheit und der Verringerung des Risikos, dass bereits kompromittierte Passwörter erneut verwendet werden. Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in der Verhinderung von Kontoübernahmen und dem sicheren Betrieb der Plattform. Ist der Prüfdienst vorübergehend nicht erreichbar, wird die Registrierung beziehungsweise Passwortänderung nicht allein deshalb blockiert.</p>' +
         '<p>Die übrige Verarbeitung erfolgt zur Einrichtung und Verwaltung Ihres Nutzerkontos, zur Authentifizierung und zur Bereitstellung der App-Funktionen.</p>' +
         '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Verarbeitung zur Erfüllung des Nutzungsverhältnisses erforderlich ist. Soweit die Verarbeitung der Sicherheit des Kontos dient, ist Rechtsgrundlage Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren Bereitstellung der App.</p>' +
-        '<p>Supabase verarbeitet personenbezogene Daten in unserem Auftrag. Mit Supabase besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO.</p>',
+        '<p>Supabase verarbeitet personenbezogene Daten in unserem Auftrag. Mit Supabase besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO. Das von SPOTSTAGE verwendete Supabase-Produktionsprojekt wird derzeit in der Region EU West (Irland) betrieben; dort werden die primären Projektdaten gespeichert. Eine Verarbeitung im Zusammenhang mit Support, Administration oder eingesetzten Unterauftragnehmern außerhalb der Europäischen Union beziehungsweise des Europäischen Wirtschaftsraums kann jedoch nicht vollständig ausgeschlossen werden. Soweit hierfür eine geeignete Garantie erforderlich ist, sieht der mit Supabase bestehende Vertrag insbesondere die Standardvertragsklauseln der Europäischen Kommission vor.</p>',
 
       privacyS11Title: '11. Profile',
       privacyS11Body:
-        '<p>In der App können Sie ein persönliches Profil und rollenbezogene Profile pflegen.</p>' +
+        '<p>In der App können Sie ein persönliches Profil sowie rollenbezogene Profile als Comedian oder Veranstalter pflegen.</p>' +
         '<p>Dabei können insbesondere folgende Daten verarbeitet werden:</p>' +
         '<ul class="legal-page__list">' +
         '<li>Name, Anzeigename oder Künstlername</li>' +
-        '<li>Stadt</li>' +
+        '<li>Stadt beziehungsweise ausgewählter Auftrittsort</li>' +
+        '<li>Postleitzahl, Region und Land</li>' +
+        '<li>geografische Koordinaten des ausgewählten Orts sowie eine technische Ortskennung</li>' +
         '<li>Profilbeschreibung</li>' +
-        '<li>Rollenprofile als Comedian beziehungsweise Organizer</li>' +
-        '<li>von Ihnen freiwillig eingetragene Social Links</li>' +
-        '<li>Profilbilder</li>' +
+        '<li>Profil- und Rolleninformationen</li>' +
+        '<li>Profilbild</li>' +
+        '<li>freiwillig angegebene Social-Media- und Website-Links</li>' +
         '</ul>' +
-        '<p>Die Verarbeitung erfolgt zur Bereitstellung Ihres Profils innerhalb der App und zur Kommunikation mit anderen Nutzerinnen und Nutzern im Rahmen von Shows und Bewerbungen.</p>' +
-        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Profildaten für die Nutzung der App erforderlich sind. Soweit Sie freiwillige Angaben machen, ist Rechtsgrundlage Art. 6 Abs. 1 Buchst. a DSGVO beziehungsweise Art. 6 Abs. 1 Buchst. b DSGVO.</p>',
+        '<p>Bei Comedians können zusätzlich insbesondere Erfahrungslevel, Comedy-Stile, Sprachen, bevorzugte Spot-Länge und gewünschter Auftrittsradius verarbeitet werden.</p>' +
+        '<p>Bei Veranstaltern können zusätzlich insbesondere angebotene Show-Formate, Sprachen, Kontakt-E-Mail und die Zugehörigkeit zu einer Organisation verarbeitet werden.</p>' +
+        '<p>Die Ortsangaben werden verwendet, um standortbezogene Funktionen der Plattform bereitzustellen, insbesondere die Suche und Einordnung von Shows nach Auftrittsgebiet und Entfernung. SPOTSTAGE greift hierfür derzeit nicht auf den GPS-Standort Ihres Endgeräts zu.</p>' +
+        '<p>Die Verarbeitung erfolgt zur Bereitstellung und Darstellung des jeweiligen Profils, zur Nutzung rollenbezogener Funktionen sowie zur Kommunikation und Koordination im Zusammenhang mit Shows, Bewerbungen und Organisationen.</p>' +
+        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Angaben für die Nutzung der jeweiligen App-Funktionen erforderlich sind. Soweit Angaben freiwillig bereitgestellt werden und hierfür eine Einwilligung erforderlich ist, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 Buchst. a DSGVO.</p>',
 
-      privacyS12Title: '12. Shows und Bewerbungen',
+      privacyS12Title: '12. Shows, Bewerbungen und Show-Kommunikation',
       privacyS12Body:
-        '<p>Die App dient der Organisation von Shows und der Abwicklung von Bewerbungen und Besetzungen.</p>' +
+        '<p>Die App dient der Organisation von Shows, der Abwicklung von Bewerbungen und Besetzungen sowie der Kommunikation zwischen den an einer Show beteiligten Nutzerinnen und Nutzern.</p>' +
         '<p>Dabei können insbesondere folgende Daten verarbeitet werden:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Showdaten wie Titel, Datum, Uhrzeit und Beschreibung</li>' +
+        '<li>Showdaten wie Titel, Datum, Uhrzeit, Beschreibung, Format und weitere Rahmenbedingungen</li>' +
+        '<li>Angaben zu Veranstaltungsorten und Locations</li>' +
         '<li>Bewerbungen und deren Status</li>' +
         '<li>Besetzungen, Line-ups und Slot-Zuordnungen</li>' +
         '<li>Host-Zuordnungen</li>' +
-        '<li>Locations und Veranstaltungsorte</li>' +
+        '<li>Angaben zu Gage, Extras und weiteren Showbedingungen</li>' +
         '<li>Veranstalterdaten und Organisationsbezüge</li>' +
-        '<li>Status- und Verlaufsdaten zu Shows, Einladungen und Auftritten</li>' +
+        '<li>Status- und Verlaufsdaten zu Shows, Bewerbungen, Einladungen und Auftritten</li>' +
+        '<li>Nachrichten innerhalb von Show-Chats</li>' +
+        '<li>Absender, Zeitpunkt und Zuordnung einer Nachricht zur jeweiligen Show</li>' +
+        '<li>Systemnachrichten zu relevanten Änderungen innerhalb einer Show</li>' +
+        '<li>Reaktionen auf Nachrichten</li>' +
+        '<li>Informationen zur Chat-Mitgliedschaft sowie gegebenenfalls Lesestatus, Stummschaltung und angeheftete Nachrichten</li>' +
         '</ul>' +
-        '<p>Die Verarbeitung erfolgt zur Durchführung der App-Funktionen, zur Koordination von Shows und zur Dokumentation des Show-Verlaufs.</p>' +
-        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO. Soweit historische Showbezüge nach einer Account-Löschung anonymisiert verbleiben, kann Rechtsgrundlage Art. 6 Abs. 1 Buchst. f DSGVO sein. Unser berechtigtes Interesse liegt in der sachlich nachvollziehbaren Showhistorie.</p>',
+        '<p>Die Kommunikation innerhalb eines Show-Chats ist grundsätzlich für die jeweils berechtigten Teilnehmerinnen und Teilnehmer der betreffenden Show bestimmt. Die Zugriffsberechtigungen richten sich nach der jeweiligen Rolle und Beteiligung an der Show.</p>' +
+        '<p>Die Verarbeitung erfolgt zur Bereitstellung der App-Funktionen, zur Koordination und Durchführung von Shows, zur Abwicklung von Bewerbungen und Besetzungen sowie zur Kommunikation zwischen den beteiligten Nutzerinnen und Nutzern.</p>' +
+        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit die Verarbeitung zur Durchführung des Nutzungsverhältnisses und zur Bereitstellung der jeweiligen Plattformfunktionen erforderlich ist. Soweit historische Bezüge nach einer Account-Löschung mit fortbestehendem Personenbezug erhalten bleiben, kann die Verarbeitung auf Art. 6 Abs. 1 Buchst. f DSGVO gestützt werden. Unser berechtigtes Interesse liegt in einer sachlich nachvollziehbaren Showhistorie.</p>',
 
-      privacyS13Title: '13. Uploads',
+      privacyS13Title: '13. Uploads von Bildern',
       privacyS13Body:
-        '<p>Sie können in der App Profilbilder und Showbilder hochladen. Der Upload erfolgt über Supabase Storage.</p>' +
-        '<p>Dabei werden die von Ihnen ausgewählten Bilddateien gespeichert und mit Ihrem Profil beziehungsweise der jeweiligen Show verknüpft. Metadaten zum Upload können technisch erforderlich verarbeitet werden.</p>' +
-        '<p>Die Verarbeitung erfolgt zur Bereitstellung der von Ihnen gewünschten Bildinhalte in der App.</p>' +
-        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit der Upload für die Nutzung der App erforderlich ist, beziehungsweise Art. 6 Abs. 1 Buchst. a DSGVO, soweit Sie den Upload freiwillig vornehmen.</p>' +
-        '<p>Supabase verarbeitet die gespeicherten Dateien in unserem Auftrag gemäß Art. 28 DSGVO.</p>',
+        '<p>In der SPOTSTAGE-App können Nutzerinnen und Nutzer freiwillig Bilder hochladen oder über die Kamera des Endgeräts aufnehmen. Dies betrifft derzeit insbesondere Profilbilder sowie Bilder für Shows.</p>' +
+        '<p>Hierbei können insbesondere die Bilddatei, der zugehörige Speicherpfad beziehungsweise die öffentliche Bild-URL sowie technisch erforderliche Dateiinformationen verarbeitet werden.</p>' +
+        '<p>Die Bilder werden über Supabase Storage gespeichert. Profil- und Showbilder werden technisch über öffentlich abrufbare URLs bereitgestellt, damit sie innerhalb der vorgesehenen App-Bereiche angezeigt werden können. Nutzer sollten daher keine Bilder hochladen, die nicht für die entsprechende Darstellung auf SPOTSTAGE bestimmt sind.</p>' +
+        '<p>Der Zugriff auf die Foto-Mediathek oder Kamera des Endgeräts erfolgt nur nach der jeweiligen Freigabe durch das Betriebssystem. SPOTSTAGE verarbeitet nur die von Ihnen ausgewählten beziehungsweise aufgenommenen Bilder; ein allgemeiner Upload weiterer Medien findet nicht statt.</p>' +
+        '<p>Die Verarbeitung erfolgt zur Bereitstellung der vom Nutzer gewünschten Profil- oder Showbildfunktion auf Grundlage von Art. 6 Abs. 1 Buchst. b DSGVO.</p>' +
+        '<p>Supabase verarbeitet die gespeicherten Dateien in unserem Auftrag gemäß Art. 28 DSGVO. Wird ein Bild ersetzt oder entfernt, kann die zugehörige Datei aus dem Speicher gelöscht werden. Weitere Einzelheiten zur Speicherdauer und zur Löschung von Daten ergeben sich aus den Abschnitten 15 und 18.</p>',
 
       privacyS14Title: '14. Push-Benachrichtigungen',
       privacyS14Body:
-        '<p>Sofern Sie Push-Benachrichtigungen in der App aktivieren, verarbeiten wir einen Push Token sowie die Zuordnung zu Ihrem Gerät und Ihren Benachrichtigungseinstellungen.</p>' +
-        '<p>Für den Versand von Push-Benachrichtigungen nutzen wir den Expo Push Service.</p>' +
-        '<p>Push-Benachrichtigungen dienen der Information über relevante App-Ereignisse, etwa Bewerbungsstatus, Show-Updates oder Einladungen, soweit Sie diese Funktion aktiviert haben.</p>' +
-        '<p>Sie können Push-Benachrichtigungen jederzeit in den Einstellungen der App oder Ihres Geräts deaktivieren. Nach Deaktivierung werden keine weiteren Push-Nachrichten an das betreffende Gerät versendet.</p>' +
-        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. a DSGVO, soweit Sie Push-Benachrichtigungen aktivieren. Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>' +
-        '<p>Expo verarbeitet personenbezogene Daten in unserem Auftrag, soweit dies für den Versand technisch erforderlich ist. Mit Expo besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO, soweit anwendbar.</p>',
+        '<p>SPOTSTAGE kann Push-Benachrichtigungen über relevante Ereignisse innerhalb der App senden, beispielsweise zu Bewerbungen, veröffentlichten Shows oder bevorstehenden Auftritten.</p>' +
+        '<p>Push-Benachrichtigungen werden nur eingerichtet, wenn die entsprechende Berechtigung auf dem Endgerät erteilt wurde.</p>' +
+        '<p>Hierbei können insbesondere ein Push-Token zur Adressierung des Endgeräts, eine appbezogene Gerätekennung, die verwendete Plattform (iOS oder Android), Benachrichtigungseinstellungen, technische Informationen zur Zustellung sowie der für die jeweilige Benachrichtigung erforderliche Inhalt verarbeitet werden.</p>' +
+        '<p>Für die technische Zustellung verwenden wir den Expo Push Notification Service von 650 Industries, Inc. („Expo“). Expo erhält hierfür insbesondere den Push-Token und den jeweiligen Benachrichtigungsinhalt.</p>' +
+        '<p>Expo übermittelt die Benachrichtigung abhängig vom verwendeten Betriebssystem an den Apple Push Notification Service (APNs) von Apple Inc. beziehungsweise an Firebase Cloud Messaging (FCM) von Google LLC. Diese Dienste übernehmen anschließend die Zustellung an das jeweilige Endgerät.</p>' +
+        '<p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 Buchst. a DSGVO, soweit hierfür eine Einwilligung eingeholt wird. Eine erteilte Berechtigung für Push-Benachrichtigungen kann über die Einstellungen des Betriebssystems jederzeit geändert oder entzogen werden. Zusätzlich können einzelne Benachrichtigungsarten innerhalb von SPOTSTAGE angepasst werden.</p>' +
+        '<p>Expo verarbeitet personenbezogene Daten in unserem Auftrag, soweit dies für die technische Zustellung erforderlich ist. Soweit personenbezogene Daten im Rahmen der Expo-Dienste in Drittländer übertragen werden und hierfür eine geeignete Garantie erforderlich ist, sieht die Datenverarbeitungsvereinbarung von Expo insbesondere die Standardvertragsklauseln der Europäischen Kommission vor.</p>',
 
       privacyS15Title: '15. Account-Löschung',
       privacyS15Body:
@@ -110,7 +125,7 @@
     en: {
       privacyS9Title: '9. SPOTSTAGE app – overview',
       privacyS9Body:
-        '<p>The SPOTSTAGE mobile app allows registered users to create profiles, organize shows or apply for shows, and receive notifications.</p>' +
+        '<p>The SPOTSTAGE mobile app allows registered users to create profiles, organize shows, apply for shows, communicate in connection with shows, and receive notifications.</p>' +
         '<p>Sections 1 and 2 and sections 17 to 25 of this privacy policy apply to both the website and the app. Sections 3 to 8 relate exclusively to the website. Sections 9 to 16 describe data processing in the SPOTSTAGE app.</p>' +
         '<p>The controller for app data processing is the same as named in section 1.</p>',
 
@@ -126,6 +141,7 @@
         '<li>technical metadata relating to authentication</li>' +
         '</ul>' +
         '<p>During registration, an email may be sent to confirm the email address. Sign-in uses an email address and password. Social login is not currently offered.</p>' +
+        '<p>To keep you signed in to the app, session and authentication information is stored locally in the app storage on your device. The session may be refreshed automatically while it remains valid. The password itself is not stored locally in plain text.</p>' +
         '<p>When a password is chosen during registration or reset, the app additionally checks whether the selected password appears in known data breaches. For this purpose, we use the “Pwned Passwords” service provided by Have I Been Pwned (HIBP), operated by Superlative Enterprises Pty Ltd, Australia.</p>' +
         '<p>The password is converted into a SHA-1 hash exclusively on the device. Only the first five characters of that hash are sent to HIBP. The password itself and the complete hash are never sent to HIBP. HIBP returns a set of possible hash suffixes and the actual comparison takes place locally in the app. We also enable the response-padding feature offered by HIBP.</p>' +
         '<p>For technical reasons, the connection to HIBP may involve processing of the device IP address, the transmitted five-character hash prefix and HTTP connection data. According to HIBP, operational server logs may be retained for a limited period. SPOTSTAGE does not send your email address together with the password check.</p>' +
@@ -133,55 +149,69 @@
         '<p>The password check is used to improve account security and reduce the risk of reusing previously compromised passwords. The legal basis is Art. 6(1)(f) GDPR. Our legitimate interest is preventing account takeover and operating the platform securely. If the checking service is temporarily unavailable, registration or password changes are not blocked solely for that reason.</p>' +
         '<p>Other processing takes place to create and manage your user account, authenticate you and provide app functionality.</p>' +
         '<p>The legal basis is Art. 6(1)(b) GDPR where processing is necessary for the user relationship. Where processing serves account security, the legal basis is Art. 6(1)(f) GDPR. Our legitimate interest lies in providing the app securely.</p>' +
-        '<p>Supabase processes personal data on our behalf. We have entered into a data processing agreement with Supabase pursuant to Art. 28 GDPR.</p>',
+        '<p>Supabase processes personal data on our behalf. We have entered into a data processing agreement with Supabase pursuant to Art. 28 GDPR. The Supabase production project used by SPOTSTAGE is currently operated in the EU West (Ireland) region, where the primary project data is stored. Processing in connection with support, administration, or subprocessors outside the European Union or European Economic Area cannot, however, be completely excluded. Where an appropriate safeguard is required, the agreement with Supabase provides in particular for the European Commission’s Standard Contractual Clauses.</p>',
 
       privacyS11Title: '11. Profiles',
       privacyS11Body:
-        '<p>In the app, you can maintain a personal profile and role-based profiles.</p>' +
+        '<p>In the app, you can maintain a personal profile as well as role-based profiles as a comedian or organizer.</p>' +
         '<p>In particular, the following data may be processed:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Name, display name, or stage name</li>' +
-        '<li>City</li>' +
-        '<li>Profile description</li>' +
-        '<li>Role profiles as comedian or organizer</li>' +
-        '<li>Social links you voluntarily provide</li>' +
-        '<li>Profile images</li>' +
+        '<li>name, display name, or stage name</li>' +
+        '<li>city or selected performance location</li>' +
+        '<li>postal code, region, and country</li>' +
+        '<li>geographic coordinates of the selected location and a technical place identifier</li>' +
+        '<li>profile description</li>' +
+        '<li>profile and role information</li>' +
+        '<li>profile image</li>' +
+        '<li>social-media and website links provided voluntarily</li>' +
         '</ul>' +
-        '<p>Processing takes place to provide your profile within the app and to communicate with other users in the context of shows and applications.</p>' +
-        '<p>The legal basis is Art. 6(1)(b) GDPR where profile data is necessary to use the app. Where you provide voluntary information, the legal basis is Art. 6(1)(a) GDPR or Art. 6(1)(b) GDPR.</p>',
+        '<p>For comedians, additional data may include experience level, comedy styles, languages, preferred spot length, and desired performance radius.</p>' +
+        '<p>For organizers, additional data may include offered show formats, languages, contact email, and organization membership.</p>' +
+        '<p>Location information is used to provide location-based platform functions, in particular to search for and classify shows by performance area and distance. SPOTSTAGE currently does not access the GPS location of your device for this purpose.</p>' +
+        '<p>Processing takes place to provide and display the relevant profile, enable role-specific functions, and support communication and coordination relating to shows, applications, and organizations.</p>' +
+        '<p>The legal basis is Art. 6(1)(b) GDPR where the information is required to use the relevant app functions. Where information is provided voluntarily and consent is required for that processing, processing is based on Art. 6(1)(a) GDPR.</p>',
 
-      privacyS12Title: '12. Shows and applications',
+      privacyS12Title: '12. Shows, applications, and show communication',
       privacyS12Body:
-        '<p>The app is used to organize shows and handle applications and line-ups.</p>' +
+        '<p>The app is used to organize shows, handle applications and casting, and enable communication between users involved in a show.</p>' +
         '<p>In particular, the following data may be processed:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>Show data such as title, date, time, and description</li>' +
-        '<li>Applications and their status</li>' +
-        '<li>Line-ups and slot assignments</li>' +
-        '<li>Host assignments</li>' +
-        '<li>Locations and venues</li>' +
-        '<li>Organizer data and organization links</li>' +
-        '<li>Status and history data relating to shows, invitations, and performances</li>' +
+        '<li>show data such as title, date, time, description, format, and other conditions</li>' +
+        '<li>venue and location information</li>' +
+        '<li>applications and their status</li>' +
+        '<li>casting decisions, line-ups, and slot assignments</li>' +
+        '<li>host assignments</li>' +
+        '<li>information about fees, extras, and other show conditions</li>' +
+        '<li>organizer data and organization links</li>' +
+        '<li>status and history data relating to shows, applications, invitations, and performances</li>' +
+        '<li>messages within show chats</li>' +
+        '<li>sender, time, and assignment of a message to the relevant show</li>' +
+        '<li>system messages relating to relevant changes within a show</li>' +
+        '<li>reactions to messages</li>' +
+        '<li>information about chat membership and, where applicable, read status, mute status, and pinned messages</li>' +
         '</ul>' +
-        '<p>Processing takes place to provide app features, coordinate shows, and document show history.</p>' +
-        '<p>The legal basis is Art. 6(1)(b) GDPR. Where historical show references remain anonymized after account deletion, the legal basis may be Art. 6(1)(f) GDPR. Our legitimate interest lies in a factually traceable show history.</p>',
+        '<p>Communication within a show chat is generally intended for the authorized participants of the relevant show. Access permissions depend on the user’s role and involvement in the show.</p>' +
+        '<p>Processing takes place to provide app functions, coordinate and operate shows, handle applications and casting, and enable communication between the users involved.</p>' +
+        '<p>The legal basis is Art. 6(1)(b) GDPR where processing is necessary for the user relationship and to provide the relevant platform functions. Where historical references remain after account deletion and still constitute personal data, processing may be based on Art. 6(1)(f) GDPR. Our legitimate interest lies in maintaining a factually traceable show history.</p>',
 
-      privacyS13Title: '13. Uploads',
+      privacyS13Title: '13. Image uploads',
       privacyS13Body:
-        '<p>In the app, you can upload profile images and show images. Uploads are handled via Supabase Storage.</p>' +
-        '<p>Selected image files are stored and linked to your profile or the respective show. Metadata related to the upload may be processed where technically necessary.</p>' +
-        '<p>Processing takes place to provide the image content you choose within the app.</p>' +
-        '<p>The legal basis is Art. 6(1)(b) GDPR where the upload is necessary to use the app, or Art. 6(1)(a) GDPR where you upload voluntarily.</p>' +
-        '<p>Supabase processes stored files on our behalf pursuant to Art. 28 GDPR.</p>',
+        '<p>In the SPOTSTAGE app, users can voluntarily upload images or take images using the device camera. This currently applies in particular to profile images and images for shows.</p>' +
+        '<p>In particular, the image file, the associated storage path or public image URL, and technically required file information may be processed.</p>' +
+        '<p>Images are stored via Supabase Storage. Profile and show images are technically provided through publicly accessible URLs so that they can be displayed in the intended areas of the app. Users should therefore not upload images that are not intended for the corresponding display on SPOTSTAGE.</p>' +
+        '<p>Access to the device photo library or camera takes place only after the relevant permission has been granted through the operating system. SPOTSTAGE processes only the images you select or capture; other media is not uploaded generally.</p>' +
+        '<p>Processing takes place to provide the profile or show-image function requested by the user on the basis of Art. 6(1)(b) GDPR.</p>' +
+        '<p>Supabase processes stored files on our behalf pursuant to Art. 28 GDPR. If an image is replaced or removed, the associated file may be deleted from storage. Further information on retention and deletion is provided in sections 15 and 18.</p>',
 
       privacyS14Title: '14. Push notifications',
       privacyS14Body:
-        '<p>If you enable push notifications in the app, we process a push token and the assignment to your device and notification settings.</p>' +
-        '<p>We use the Expo Push Service to send push notifications.</p>' +
-        '<p>Push notifications inform you about relevant app events, such as application status, show updates, or invitations, where you have enabled this feature.</p>' +
-        '<p>You can disable push notifications at any time in the app or device settings. After deactivation, no further push messages are sent to the affected device.</p>' +
-        '<p>The legal basis is Art. 6(1)(a) GDPR where you enable push notifications. You may withdraw your consent at any time with effect for the future.</p>' +
-        '<p>Expo processes personal data on our behalf where technically necessary for delivery. We have a data processing agreement with Expo pursuant to Art. 28 GDPR, where applicable.</p>',
+        '<p>SPOTSTAGE can send push notifications about relevant events within the app, for example applications, published shows, or upcoming performances.</p>' +
+        '<p>Push notifications are set up only where the relevant permission has been granted on the device.</p>' +
+        '<p>In particular, a push token used to address the device, an app-related device identifier, the platform used (iOS or Android), notification settings, technical delivery information, and the content required for the respective notification may be processed.</p>' +
+        '<p>For technical delivery, we use the Expo Push Notification Service provided by 650 Industries, Inc. (“Expo”). For this purpose, Expo receives in particular the push token and the relevant notification content.</p>' +
+        '<p>Depending on the operating system used, Expo forwards the notification to the Apple Push Notification Service (APNs) provided by Apple Inc. or Firebase Cloud Messaging (FCM) provided by Google LLC. These services then deliver the notification to the relevant device.</p>' +
+        '<p>Processing is based on Art. 6(1)(a) GDPR where consent is obtained for this purpose. Permission for push notifications can be changed or withdrawn at any time through the operating-system settings. Individual notification categories can also be adjusted within SPOTSTAGE.</p>' +
+        '<p>Expo processes personal data on our behalf where technically necessary for delivery. Where personal data is transferred to third countries as part of the Expo services and an appropriate safeguard is required, Expo’s data processing agreement provides in particular for the European Commission’s Standard Contractual Clauses.</p>',
 
       privacyS15Title: '15. Account deletion',
       privacyS15Body:
