@@ -248,18 +248,18 @@
         accessibilityCommitmentHeading: 'Unser Anspruch',
         accessibilityCommitmentBody:
           '<p>SPOTSTAGE möchte seine Website für möglichst viele Menschen zugänglich und nutzbar machen.</p>' +
-          '<p>Wir arbeiten daran, die Website im Einklang mit den Anforderungen des Barrierefreiheitsstärkungsgesetzes sowie den einschlägigen technischen Standards barrierefrei zu gestalten und fortlaufend zu verbessern.</p>',
+          '<p>Wir berücksichtigen bei der Entwicklung und Weiterentwicklung der Website anerkannte Grundsätze der digitalen Barrierefreiheit und verbessern die Zugänglichkeit fortlaufend.</p>',
         accessibilityDescriptionHeading: 'Beschreibung der Website',
         accessibilityDescriptionBody:
           '<p>Die Website spotstage.app informiert über die mobile Anwendung SPOTSTAGE.</p>' +
           '<p>SPOTSTAGE unterstützt Künstlerinnen und Künstler sowie Veranstalterinnen und Veranstalter dabei, Bühnenshows zu finden, zu planen und zu organisieren.</p>' +
           '<p>Die Website stellt die wichtigsten Funktionen der App vor und enthält Informationen für die verschiedenen Zielgruppen sowie rechtliche Informationen.</p>' +
           '<p>Über die Website selbst können derzeit keine Nutzerkonten erstellt, Verträge abgeschlossen, Zahlungen vorgenommen oder Daten über ein Kontaktformular eingegeben werden.</p>',
-        accessibilityComplianceHeading: 'Stand der Vereinbarkeit',
+        accessibilityComplianceHeading: 'Stand der Barrierefreiheit',
         accessibilityComplianceBody:
-          '<p>Die Website wurde intern anhand zentraler Anforderungen der Web Content Accessibility Guidelines (WCAG) 2.1 auf den Konformitätsstufen A und AA geprüft und wird fortlaufend verbessert.</p>' +
-          '<p>Nach dem derzeitigen Stand ist die Website mit diesen Anforderungen voraussichtlich weitgehend vereinbar.</p>' +
-          '<p>Eine vollständige Konformität mit sämtlichen Anforderungen des Barrierefreiheitsstärkungsgesetzes kann derzeit nicht zugesichert werden. Eine unabhängige externe Prüfung oder Zertifizierung ist bislang nicht erfolgt.</p>',
+          '<p>Die Website wurde intern auf verschiedene Aspekte der digitalen Barrierefreiheit geprüft und wird fortlaufend weiterentwickelt.</p>' +
+          '<p>Dabei wurden unter anderem Tastaturbedienung, Fokusdarstellung, semantische Struktur, Farbkontraste, alternative Texte, unterschiedliche Bildschirmgrößen sowie Einstellungen zur Reduzierung von Bewegung berücksichtigt.</p>' +
+          '<p>Eine vollständige Prüfung mit allen Kombinationen aus assistiven Technologien, Browsern und Betriebssystemen sowie eine unabhängige externe Zertifizierung sind bislang nicht erfolgt. Eine vollständige Barrierefreiheit kann daher derzeit nicht zugesichert werden.</p>',
         accessibilityMeasuresHeading: 'Umgesetzte Maßnahmen',
         accessibilityMeasuresBody:
           '<p>Bei der Entwicklung und Überarbeitung der Website wurden insbesondere folgende Aspekte berücksichtigt:</p>' +
@@ -293,16 +293,10 @@
           '<p>Wir prüfen Ihren Hinweis und bemühen uns um eine zeitnahe Rückmeldung und eine geeignete Lösung.</p>',
         accessibilityStandardHeading: 'Prüfgrundlage',
         accessibilityStandardBody:
-          '<p>Die Entwicklung und interne Prüfung der Website orientiert sich insbesondere an:</p>' +
-          '<ul class="legal-page__list">' +
-          '<li>den Web Content Accessibility Guidelines (WCAG) 2.1 auf den Konformitätsstufen A und AA</li>' +
-          '<li>der europäischen Norm EN 301 549</li>' +
-          '<li>den Anforderungen des Barrierefreiheitsstärkungsgesetzes</li>' +
-          '<li>den Anforderungen der Barrierefreiheitsstärkungsverordnung</li>' +
-          '</ul>' +
-          '<p>Zur Prüfung wurden unter anderem eine HTML-Validierung, Google Lighthouse, codebasierte Kontrollen sowie manuelle Prüfungen der Tastatur- und Fokusführung eingesetzt.</p>' +
+          '<p>Bei Entwicklung und interner Prüfung orientieren wir uns insbesondere an den Web Content Accessibility Guidelines (WCAG), den für digitale Angebote relevanten Grundsätzen der europäischen Norm EN 301 549 sowie allgemein anerkannten Anforderungen an digitale Barrierefreiheit.</p>' +
+          '<p>Zur internen Prüfung wurden unter anderem HTML-Validierung, Google Lighthouse, codebasierte Kontrollen sowie manuelle Prüfungen der Tastatur- und Fokusbedienung eingesetzt.</p>' +
           '<p>Automatisierte Prüfwerkzeuge können nicht alle Barrieren erkennen und ersetzen keine umfassende Prüfung mit unterschiedlichen assistiven Technologien.</p>',
-        accessibilityUpdated: 'Erstellt und zuletzt überprüft: Juni 2026',
+        accessibilityUpdated: 'Zuletzt überprüft: Oktober 2026',
         supportMeta: 'Support | SPOTSTAGE',
         supportTitle: 'Support',
         supportPurposeHeading: 'Wobei wir helfen',
@@ -311,14 +305,15 @@
         supportContactHeading: 'Kontakt',
         supportContactBody:
           '<p>Bei Fragen oder Problemen erreichst du uns per E-Mail:</p>' +
-          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>',
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>' +
+          '<p>Bitte sende uns niemals dein Passwort oder einen Link zum Zurücksetzen deines Passworts.</p>',
         supportExpectationsHeading: 'Was du erwarten kannst',
         supportExpectationsBody:
           '<p>Wir bearbeiten Anfragen so schnell wie möglich. Eine garantierte Antwortzeit, Support-Hotline oder feste Supportzeiten gibt es derzeit nicht.</p>',
         supportHelpHeading: 'Häufige Themen',
         supportHelpBody:
-          '<p><strong>Passwort vergessen</strong><br>Öffne die App, tippe auf „Passwort vergessen?“ und folge den Anweisungen in der E-Mail. Weitere Details findest du in unserer Datenschutzerklärung.</p>' +
-          '<p><strong>Account löschen</strong><br>Die Löschung erfolgt in der App unter Profil → Konto → „Account löschen“. Ausführliche Informationen findest du auf der Seite <a class="legal-page__link" href="account-loeschen.html">Account löschen</a>.</p>' +
+          '<p><strong>Passwort vergessen</strong><br>Öffne die App, tippe auf „Passwort vergessen?“ und folge den Anweisungen in der E-Mail. Weitere Informationen zur Verarbeitung deiner Daten beim Passwort-Reset findest du in unserer <a class="legal-page__link" href="datenschutz.html">Datenschutzerklärung</a>.</p>' +
+          '<p><strong>Account löschen</strong><br>Die Löschung erfolgt in der App unter Profil → Konto → „Account löschen“. Ausführliche Informationen und Hinweise für den Fall, dass du keinen Zugriff mehr auf die App hast, findest du auf der Seite <a class="legal-page__link" href="account-loeschen.html">Account löschen</a>.</p>' +
           '<p><strong>Technische Probleme melden</strong><br>Schreib uns an <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>. Folgende Angaben helfen uns bei der Fehlersuche:</p>' +
           '<ul class="legal-page__list">' +
           '<li>Gerät und Modell</li>' +
@@ -326,23 +321,24 @@
           '<li>App-Version</li>' +
           '<li>betroffener Screen oder Funktion</li>' +
           '<li>Schritte zur Reproduktion des Problems</li>' +
-          '<li>Screenshot ohne sensible Daten (keine Passwörter, keine privaten Nachrichten)</li>' +
-          '</ul>',
-        supportUpdated: 'Stand: Juni 2026',
+          '<li>gegebenenfalls ein Screenshot; persönliche oder sensible Informationen sollten dabei möglichst entfernt oder unkenntlich gemacht werden</li>' +
+          '</ul>' +
+          '<p>Bitte sende uns keine Passwörter, Passwort-Reset-Links oder andere Zugangsdaten.</p>',
+        supportUpdated: 'Stand: Oktober 2026',
         accountDeletionMeta: 'Account löschen | SPOTSTAGE',
         accountDeletionTitle: 'Account löschen',
         accountDeletionIntroHeading: 'Informationen zur Account-Löschung',
         accountDeletionIntroBody:
-          '<p>Diese Seite erklärt, wie du deinen SPOTSTAGE-Account in der App löschen kannst und was dabei passiert. Es handelt sich um eine Informationsseite — die Löschung selbst erfolgt ausschließlich in der App.</p>',
+          '<p>Diese Seite erklärt, wie du deinen SPOTSTAGE-Account regulär in der App löschen kannst und was dabei passiert. Wenn du keinen Zugriff mehr auf die App hast, kannst du dich an unseren Support wenden.</p>',
         accountDeletionStepsHeading: 'So löschst du deinen Account in der App',
         accountDeletionStepsBody:
           '<ol class="legal-page__list">' +
-          '<li>SPOTSTAGE öffnen</li>' +
-          '<li>Profil öffnen</li>' +
-          '<li>Den Bereich „Konto“ aufrufen</li>' +
-          '<li>„Account löschen“ wählen</li>' +
-          '<li>Dein Passwort erneut eingeben</li>' +
-          '<li>Mit „LÖSCHEN“ bestätigen</li>' +
+          '<li>Öffne SPOTSTAGE und gehe zu deinem Profil.</li>' +
+          '<li>Scrolle zum Bereich „Konto“.</li>' +
+          '<li>Wähle „Account löschen“.</li>' +
+          '<li>Gib dein Passwort ein und bestätige es über „Passwort bestätigen“.</li>' +
+          '<li>Gib zur Bestätigung „LÖSCHEN“ ein.</li>' +
+          '<li>Wähle „Account endgültig löschen“.</li>' +
           '</ol>',
         accountDeletionDeletedHeading: 'Was gelöscht wird',
         accountDeletionDeletedBody:
@@ -630,18 +626,18 @@
         accessibilityCommitmentHeading: 'Our Commitment',
         accessibilityCommitmentBody:
           '<p>SPOTSTAGE aims to make its website accessible and usable for as many people as possible.</p>' +
-          '<p>We are working to design and continuously improve the website in line with the requirements of the German Accessibility Strengthening Act (BFSG) and the applicable technical standards.</p>',
+          '<p>We take recognised principles of digital accessibility into account when developing and improving the website and continuously work to improve accessibility.</p>',
         accessibilityDescriptionHeading: 'Description of the Website',
         accessibilityDescriptionBody:
           '<p>The website spotstage.app provides information about the SPOTSTAGE mobile application.</p>' +
           '<p>SPOTSTAGE helps Performers and organisers find, plan and organise live stage shows.</p>' +
           '<p>The website presents the app’s key features and provides information for its different target audiences, as well as legal information.</p>' +
           '<p>At present, users cannot create accounts, enter into contracts, make payments or submit personal data through a contact form on this website.</p>',
-        accessibilityComplianceHeading: 'Conformance Status',
+        accessibilityComplianceHeading: 'Accessibility Status',
         accessibilityComplianceBody:
-          '<p>The website has been reviewed internally against key requirements of the Web Content Accessibility Guidelines (WCAG) 2.1 at conformance levels A and AA and is being continuously improved.</p>' +
-          '<p>Based on the current review, the website is expected to be largely conformant with these requirements.</p>' +
-          '<p>Full compliance with all applicable requirements of the German Accessibility Strengthening Act cannot currently be guaranteed. The website has not yet undergone an independent external audit or certification.</p>',
+          '<p>The website has been reviewed internally for various aspects of digital accessibility and is being continuously improved.</p>' +
+          '<p>The review has considered, among other things, keyboard operation, focus indication, semantic structure, colour contrast, alternative text, different screen sizes, and settings for reduced motion.</p>' +
+          '<p>A complete review across all combinations of assistive technologies, browsers, and operating systems, as well as an independent external certification, has not yet been carried out. Full accessibility therefore cannot currently be guaranteed.</p>',
         accessibilityMeasuresHeading: 'Measures Implemented',
         accessibilityMeasuresBody:
           '<p>When developing and improving the website, we have paid particular attention to the following aspects:</p>' +
@@ -675,16 +671,10 @@
           '<p>We will review your report and aim to respond promptly with an appropriate solution.</p>',
         accessibilityStandardHeading: 'Review Basis',
         accessibilityStandardBody:
-          '<p>The development and internal review of the website are guided in particular by:</p>' +
-          '<ul class="legal-page__list">' +
-          '<li>the Web Content Accessibility Guidelines (WCAG) 2.1 at conformance levels A and AA</li>' +
-          '<li>the European standard EN 301 549</li>' +
-          '<li>the requirements of the German Accessibility Strengthening Act (BFSG)</li>' +
-          '<li>the requirements of the German Accessibility Strengthening Ordinance (BFSGV)</li>' +
-          '</ul>' +
-          '<p>The review has included HTML validation, Google Lighthouse, code-based checks and manual testing of keyboard and focus behaviour.</p>' +
+          '<p>For development and internal review, we are guided in particular by the Web Content Accessibility Guidelines (WCAG), relevant principles of the European standard EN 301 549 for digital services, and generally recognised requirements for digital accessibility.</p>' +
+          '<p>Internal checks have included HTML validation, Google Lighthouse, code-based checks, and manual testing of keyboard and focus behaviour.</p>' +
           '<p>Automated testing tools cannot identify all accessibility barriers and do not replace comprehensive testing with different assistive technologies.</p>',
-        accessibilityUpdated: 'Created and last reviewed: June 2026',
+        accessibilityUpdated: 'Last reviewed: October 2026',
         supportMeta: 'Support | SPOTSTAGE',
         supportTitle: 'Support',
         supportPurposeHeading: 'How we can help',
@@ -693,14 +683,15 @@
         supportContactHeading: 'Contact',
         supportContactBody:
           '<p>For questions or problems, you can reach us by email:</p>' +
-          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>',
+          '<p><a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a></p>' +
+          '<p>Please never send us your password or a password-reset link.</p>',
         supportExpectationsHeading: 'What to expect',
         supportExpectationsBody:
           '<p>We handle requests as quickly as possible. There is currently no guaranteed response time, support hotline, or fixed support hours.</p>',
         supportHelpHeading: 'Common topics',
         supportHelpBody:
-          '<p><strong>Forgot password</strong><br>Open the app, tap “Forgot password?”, and follow the instructions in the email. Further details are available in our privacy notice.</p>' +
-          '<p><strong>Delete account</strong><br>Deletion is performed in the app under Profile → Account → “Delete account”. For detailed information, see the <a class="legal-page__link" href="account-loeschen.html">Delete account</a> page.</p>' +
+          '<p><strong>Forgot password</strong><br>Open the app, tap “Forgot password?”, and follow the instructions in the email. Further information about how your data is processed during a password reset is available in our <a class="legal-page__link" href="datenschutz.html">privacy notice</a>.</p>' +
+          '<p><strong>Delete account</strong><br>Deletion is performed in the app under Profile → Account → “Delete account”. Detailed information, including what to do if you no longer have access to the app, is available on the <a class="legal-page__link" href="account-loeschen.html">Delete account</a> page.</p>' +
           '<p><strong>Report technical issues</strong><br>Email us at <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>. The following details help us investigate:</p>' +
           '<ul class="legal-page__list">' +
           '<li>Device and model</li>' +
@@ -708,23 +699,24 @@
           '<li>App version</li>' +
           '<li>Affected screen or feature</li>' +
           '<li>Steps to reproduce the issue</li>' +
-          '<li>Screenshot without sensitive data (no passwords, no private messages)</li>' +
-          '</ul>',
-        supportUpdated: 'Last updated: June 2026',
+          '<li>if helpful, a screenshot; personal or sensitive information should be removed or obscured where possible</li>' +
+          '</ul>' +
+          '<p>Please do not send passwords, password-reset links, or other credentials.</p>',
+        supportUpdated: 'Last updated: October 2026',
         accountDeletionMeta: 'Delete account | SPOTSTAGE',
         accountDeletionTitle: 'Delete account',
         accountDeletionIntroHeading: 'Information about account deletion',
         accountDeletionIntroBody:
-          '<p>This page explains how to delete your SPOTSTAGE account in the app and what happens when you do. This is an information page only — deletion itself takes place exclusively in the app.</p>',
+          '<p>This page explains how to delete your SPOTSTAGE account through the regular in-app process and what happens when you do. If you no longer have access to the app, you can contact our support team.</p>',
         accountDeletionStepsHeading: 'How to delete your account in the app',
         accountDeletionStepsBody:
           '<ol class="legal-page__list">' +
-          '<li>Open SPOTSTAGE</li>' +
-          '<li>Open Profile</li>' +
-          '<li>Go to the “Account” section</li>' +
-          '<li>Select “Delete account”</li>' +
-          '<li>Re-enter your password</li>' +
-          '<li>Confirm with “DELETE”</li>' +
+          '<li>Open SPOTSTAGE and go to your profile.</li>' +
+          '<li>Scroll to the “Account” section.</li>' +
+          '<li>Select “Delete account”.</li>' +
+          '<li>Enter your password and confirm it using “Confirm password”.</li>' +
+          '<li>Type “LÖSCHEN” to confirm.</li>' +
+          '<li>Select “Delete account permanently”.</li>' +
           '</ol>',
         accountDeletionDeletedHeading: 'What is deleted',
         accountDeletionDeletedBody:
