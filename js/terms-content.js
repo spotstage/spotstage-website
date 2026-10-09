@@ -20,6 +20,7 @@
       termsS2Title: '2. Registrierung und Nutzerkonto',
       termsS2Body:
         '<p>Für die Nutzung wesentlicher Funktionen ist ein persönliches Nutzerkonto erforderlich. Bei der Registrierung sind wahrheitsgemäße und aktuelle Angaben zu machen.</p>' +
+        '<p>Die Registrierung und Nutzung eines eigenen Nutzerkontos ist Personen ab 16 Jahren gestattet. Bei minderjährigen Nutzerinnen und Nutzern bleiben gesetzliche Anforderungen an die Zustimmung der Erziehungsberechtigten, insbesondere für außerhalb von SPOTSTAGE geschlossene Vereinbarungen über Auftritte oder Vergütungen, unberührt.</p>' +
         '<p>Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Nutzerinnen und Nutzer sind dafür verantwortlich, ihre Zugangsdaten angemessen zu schützen und SPOTSTAGE unverzüglich zu informieren, wenn ein Missbrauch des Kontos vermutet wird.</p>' +
         '<p>Es wird dringend empfohlen, für SPOTSTAGE ein individuelles Passwort zu verwenden, das nicht gleichzeitig für andere Dienste genutzt wird. Die Wiederverwendung von Passwörtern kann insbesondere sogenannte Credential-Stuffing-Angriffe erleichtern, bei denen bei anderen Diensten bekannt gewordene Zugangsdaten automatisiert bei SPOTSTAGE ausprobiert werden.</p>',
 
@@ -110,6 +111,7 @@
       termsS2Title: '2. Registration and user accounts',
       termsS2Body:
         '<p>A personal user account is required for essential functions. Registration information must be accurate and kept up to date.</p>' +
+        '<p>Registration and use of a personal user account are permitted from the age of 16. For users who are still minors, statutory requirements for parental consent, in particular for agreements concerning performances or fees concluded outside SPOTSTAGE, remain unaffected.</p>' +
         '<p>Credentials must not be disclosed to third parties. Users are responsible for reasonably protecting their credentials and must notify SPOTSTAGE without undue delay if they suspect account misuse.</p>' +
         '<p>Users are strongly encouraged to use a password that is unique to SPOTSTAGE and is not reused for other services. Password reuse can facilitate credential-stuffing attacks in which credentials exposed by other services are automatically tried against SPOTSTAGE.</p>',
 
