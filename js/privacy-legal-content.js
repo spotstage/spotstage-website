@@ -20,7 +20,7 @@
 
       privacyS2Title: '2. Allgemeine Hinweise',
       privacyS2Body:
-        '<p>Wir verarbeiten personenbezogene Daten nur, soweit dies zur Bereitstellung einer sicheren und funktionsfähigen Website, zur Bereitstellung der SPOTSTAGE-App, zur Bearbeitung von Kontaktanfragen oder zur Erfüllung gesetzlicher Pflichten erforderlich ist.</p>' +
+        '<p>Wir verarbeiten personenbezogene Daten nur im Rahmen der in dieser Datenschutzerklärung beschriebenen Zwecke und auf Grundlage der jeweils einschlägigen gesetzlichen Rechtsgrundlage. Dies umfasst insbesondere die Bereitstellung und Sicherheit der Website und der SPOTSTAGE-App, die Bearbeitung von Kontaktanfragen, freiwillig bereitgestellte Funktionen sowie die Erfüllung gesetzlicher Pflichten.</p>' +
         '<p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Hierzu können insbesondere IP-Adressen, Kontaktdaten, Profil- und Kontodaten sowie Inhalte von Nachrichten gehören.</p>' +
         '<p>Website und App werden in dieser Datenschutzerklärung getrennt beschrieben, gelten aber unter demselben Verantwortlichen.</p>',
 
@@ -48,19 +48,19 @@
         '<p>Die Zugriffsdaten werden nur so lange verarbeitet, wie dies für die Bereitstellung, Sicherheit und Fehleranalyse erforderlich ist. Auf die konkrete Speicherdauer technisch bedingter Protokolldaten bei Netlify haben wir nur begrenzten Einfluss.</p>' +
         '<p>Netlify Web Analytics ist auf dieser Website nicht aktiviert.</p>',
 
-      privacyS4Title: '4. Lokale Speicherung der Zielgruppenauswahl',
+      privacyS4Title: '4. Lokale Speicherung von Einstellungen',
       privacyS4Body:
-        '<p>Auf der Website können Besucher zwischen einer Ansicht für Künstlerinnen und Künstler und einer Ansicht für Veranstalterinnen und Veranstalter wechseln.</p>' +
-        '<p>Die gewählte Ansicht wird im lokalen Speicher des Browsers, dem sogenannten Local Storage, gespeichert. Dadurch kann die zuletzt ausgewählte Ansicht bei einem späteren Besuch erneut angezeigt werden.</p>' +
-        '<p>Gespeichert wird ausschließlich die Auswahl:</p>' +
+        '<p>Auf der Website können Besucher zwischen einer Ansicht für Comedians und einer Ansicht für Veranstalterinnen und Veranstalter wechseln sowie die Sprache der Website zwischen Deutsch und Englisch auswählen.</p>' +
+        '<p>Diese Einstellungen werden im lokalen Speicher des Browsers („Local Storage“) gespeichert. Dadurch können die zuletzt ausgewählte Zielgruppe und Sprache bei einem späteren Besuch erneut verwendet werden.</p>' +
+        '<p>Gespeichert werden ausschließlich:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>„artist“ oder</li>' +
-        '<li>„organizer“</li>' +
+        '<li>die Zielgruppenauswahl („artist“ oder „organizer“)</li>' +
+        '<li>die Sprachauswahl („de“ oder „en“)</li>' +
         '</ul>' +
-        '<p>Die gespeicherte Information enthält nach unserer Ausgestaltung keinen Namen, keine E-Mail-Adresse und keine anderen unmittelbar identifizierenden Angaben. Sie wird nicht an uns oder an Dritte übertragen.</p>' +
-        '<p>Die Speicherung erfolgt, um die vom Besucher ausdrücklich ausgewählte Darstellung der Website bereitzustellen.</p>' +
-        '<p>Rechtsgrundlage für die Speicherung im Endgerät ist § 25 Abs. 2 Nr. 2 TDDDG. Soweit die gespeicherte Auswahl als personenbezogenes Datum einzuordnen ist, erfolgt die weitere Verarbeitung auf Grundlage von Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in einer nutzerfreundlichen und einheitlichen Darstellung der Website.</p>' +
-        '<p>Die Auswahl bleibt im Browser gespeichert, bis sie durch den Besucher über die Browser-Einstellungen beziehungsweise durch das Löschen der Website-Daten entfernt oder durch eine neue Auswahl ersetzt wird.</p>',
+        '<p>Diese Informationen enthalten nach unserer Ausgestaltung keinen Namen, keine E-Mail-Adresse und keine anderen unmittelbar identifizierenden Angaben. Sie werden nicht an SPOTSTAGE oder an Dritte übertragen.</p>' +
+        '<p>Die Speicherung dient ausschließlich dazu, die vom Besucher gewählte Darstellung und Sprache der Website beizubehalten.</p>' +
+        '<p>Die Speicherung erfolgt, um ausdrücklich ausgewählte Darstellungs- und Spracheinstellungen für weitere Seitenaufrufe bereitzuhalten. Soweit hierfür § 25 Abs. 2 Nr. 2 TDDDG anwendbar ist, ist keine Einwilligung erforderlich. Soweit die gespeicherten Informationen als personenbezogene Daten einzuordnen sind, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 Buchst. f DSGVO. Unser berechtigtes Interesse liegt in einer nutzerfreundlichen und konsistenten Darstellung der Website.</p>' +
+        '<p>Die Einstellungen bleiben im Browser gespeichert, bis sie durch den Besucher über die Browser-Einstellungen beziehungsweise durch das Löschen der Website-Daten entfernt oder durch eine neue Auswahl ersetzt werden.</p>',
 
       privacyS5Title: '5. Keine Analyse- oder Trackingdienste',
       privacyS5Body:
@@ -79,7 +79,7 @@
         '<li>Netlify Web Analytics</li>' +
         '</ul>' +
         '<p>Es findet keine Profilbildung zu Werbe- oder Analysezwecken statt.</p>' +
-        '<p>Dies gilt auch für die SPOTSTAGE-App. Wir setzen derzeit insbesondere kein Analytics-Tool, kein Crash-Reporting-SDK, keinen Chat-Dienst und keine Zahlungsdienste ein.</p>',
+        '<p>Dies gilt auch für die SPOTSTAGE-App. Wir setzen derzeit insbesondere keine externen Analytics- oder Trackingdienste, kein Crash-Reporting-SDK, keinen externen Chat-Dienst und keine Zahlungsdienste ein. Die innerhalb von SPOTSTAGE angebotenen Chat-Funktionen werden über die eigene Plattforminfrastruktur bereitgestellt.</p>',
 
       privacyS6Title: '6. Kontaktaufnahme per E-Mail',
       privacyS6Body:
@@ -98,7 +98,7 @@
         '<p>Die geschäftliche E-Mail-Adresse wird über die united-domains GmbH bereitgestellt. Bei der Übermittlung, Bereitstellung und Speicherung von E-Mails verarbeitet united-domains personenbezogene Daten in unserem Auftrag.</p>' +
         '<p>Empfänger beziehungsweise Auftragsverarbeiter ist:</p>' +
         '<p>united-domains GmbH<br>Gautinger Straße 10<br>82319 Starnberg<br>Deutschland</p>' +
-        '<p>Mit united-domains besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO. Nach Angaben des Anbieters erfolgt die Auftragsverarbeitung ausschließlich innerhalb der Europäischen Union.</p>' +
+        '<p>Mit united-domains besteht ein Vertrag über Auftragsverarbeitung gemäß Art. 28 DSGVO. Nach Angaben von united-domains befinden sich die für E-Mail- und Webspace-Hosting eingesetzten Server in Deutschland.</p>' +
         '<p>Die Daten einer Kontaktanfrage werden gelöscht, sobald die Anfrage abschließend bearbeitet wurde und keine gesetzlichen Aufbewahrungspflichten, vertraglichen Gründe oder berechtigten Interessen einer Löschung entgegenstehen.</p>' +
         '<p>Geschäftliche Kommunikation kann länger gespeichert werden, wenn dies zur Vertragsabwicklung, zur Erfüllung gesetzlicher Aufbewahrungspflichten oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen erforderlich ist.</p>',
 
@@ -111,8 +111,8 @@
 
       privacyS8Title: '8. Links zu externen Websites und App Stores',
       privacyS8Body:
-        '<p>Diese Website enthält Links zu externen Websites, insbesondere zu den App Stores von Apple und Google.</p>' +
-        '<p>Beim bloßen Aufruf unserer Website werden aufgrund dieser Links keine Daten an Apple oder Google übertragen. Eine Verbindung zu dem jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn ein Besucher den entsprechenden Link anklickt.</p>' +
+        '<p>Diese Website kann Links zu externen Websites enthalten, insbesondere zu den App Stores von Apple und Google.</p>' +
+        '<p>Beim bloßen Aufruf unserer Website werden aufgrund solcher Links keine Daten an Apple oder Google übertragen. Eine Verbindung zu dem jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn ein Besucher den entsprechenden Link anklickt.</p>' +
         '<p>Nach dem Anklicken gelten die Datenschutzbestimmungen des jeweiligen externen Anbieters. Auf die anschließende Datenverarbeitung durch den jeweiligen Anbieter haben wir keinen Einfluss.</p>',
 
       privacyS17Title: '17. Empfänger personenbezogener Daten',
@@ -201,7 +201,7 @@
 
       privacyS2Title: '2. General information',
       privacyS2Body:
-        '<p>We process personal data only to the extent necessary to provide a secure and functional website, provide the SPOTSTAGE app, handle contact requests, or comply with legal obligations.</p>' +
+        '<p>We process personal data only for the purposes described in this privacy policy and on the basis of the applicable legal basis. This includes in particular providing and securing the website and the SPOTSTAGE app, handling contact requests, providing optional functions selected by users, and complying with legal obligations.</p>' +
         '<p>Personal data means any information relating to an identified or identifiable natural person. This may include IP addresses, contact details, profile and account data, and the content of messages.</p>' +
         '<p>The website and app are described separately in this privacy policy but are operated under the same controller.</p>',
 
@@ -229,19 +229,19 @@
         '<p>Access data is processed only for as long as necessary for provision, security, and error analysis. We have only limited influence over the specific retention period of technical log data at Netlify.</p>' +
         '<p>Netlify Web Analytics is not enabled on this website.</p>',
 
-      privacyS4Title: '4. Local storage of audience selection',
+      privacyS4Title: '4. Local storage of settings',
       privacyS4Body:
-        '<p>Visitors can switch between a view for artists and a view for organizers on the website.</p>' +
-        '<p>The selected view is stored in the browser’s local storage so that the last selected view can be displayed again on a later visit.</p>' +
-        '<p>Only the following selection is stored:</p>' +
+        '<p>Visitors can switch between a view for comedians and a view for organizers and can select the website language between German and English.</p>' +
+        '<p>These settings are stored in the browser’s local storage. This allows the most recently selected audience and language to be used again on a later visit.</p>' +
+        '<p>Only the following settings are stored:</p>' +
         '<ul class="legal-page__list">' +
-        '<li>“artist” or</li>' +
-        '<li>“organizer”</li>' +
+        '<li>the audience selection (“artist” or “organizer”)</li>' +
+        '<li>the language selection (“de” or “en”)</li>' +
         '</ul>' +
-        '<p>As implemented by us, the stored information does not contain a name, email address, or other directly identifying details. It is not transmitted to us or to third parties.</p>' +
-        '<p>Storage serves to provide the display explicitly chosen by the visitor.</p>' +
-        '<p>The legal basis for storage on the device is Section 25(2) No. 2 TDDDG (German Telecommunications Digital Services Data Protection Act). Where the stored selection qualifies as personal data, further processing is based on Art. 6(1)(f) GDPR. Our legitimate interest lies in a user-friendly and consistent presentation of the website.</p>' +
-        '<p>The selection remains stored in the browser until it is removed by the visitor via browser settings or by clearing website data, or until it is replaced by a new selection.</p>',
+        '<p>As implemented by us, this information does not contain a name, email address, or other directly identifying details. It is not transmitted to SPOTSTAGE or to third parties.</p>' +
+        '<p>Storage is used solely to retain the display and language selected by the visitor.</p>' +
+        '<p>The settings are stored so that expressly selected display and language preferences can be retained for subsequent page views. Where Section 25(2) No. 2 TDDDG applies, consent is not required. Where the stored information qualifies as personal data, processing is based on Art. 6(1)(f) GDPR. Our legitimate interest lies in a user-friendly and consistent presentation of the website.</p>' +
+        '<p>The settings remain stored in the browser until they are removed by the visitor through the browser settings or by clearing website data, or until they are replaced by a new selection.</p>',
 
       privacyS5Title: '5. No Analytics or Tracking Services',
       privacyS5Body:
@@ -260,7 +260,7 @@
         '<li>Netlify Web Analytics</li>' +
         '</ul>' +
         '<p>No profiling for advertising or analytics purposes takes place.</p>' +
-        '<p>This also applies to the SPOTSTAGE app. We currently do not use an analytics tool, crash reporting SDK, chat service, or payment services.</p>',
+        '<p>This also applies to the SPOTSTAGE app. We currently do not use external analytics or tracking services, a crash-reporting SDK, an external chat service, or payment services. Chat functions offered within SPOTSTAGE are provided through the platform’s own infrastructure.</p>',
 
       privacyS6Title: '6. Contact by email',
       privacyS6Body:
@@ -279,7 +279,7 @@
         '<p>Our business email address is provided via united-domains GmbH. united-domains processes personal data on our behalf when transmitting, providing, and storing emails.</p>' +
         '<p>Recipient and processor:</p>' +
         '<p>united-domains GmbH<br>Gautinger Straße 10<br>82319 Starnberg<br>Germany</p>' +
-        '<p>We have a data processing agreement with united-domains pursuant to Art. 28 GDPR. According to the provider, processing takes place exclusively within the European Union.</p>' +
+        '<p>We have a data processing agreement with united-domains pursuant to Art. 28 GDPR. According to united-domains, the servers used for email and webspace hosting are located in Germany.</p>' +
         '<p>Personal data relating to a contact request is deleted once the request has been fully handled and no statutory retention obligations, contractual reasons, or legitimate interests prevent deletion.</p>' +
         '<p>Business communication may be stored longer if required for contract performance, compliance with statutory retention obligations, or the establishment, exercise, or defence of legal claims.</p>',
 
@@ -292,8 +292,8 @@
 
       privacyS8Title: '8. Links to external websites and app stores',
       privacyS8Body:
-        '<p>This website contains links to external websites, in particular the Apple and Google app stores.</p>' +
-        '<p>Simply visiting our website does not transfer data to Apple or Google because of these links. A connection to the respective provider is generally established only when a visitor clicks the relevant link.</p>' +
+        '<p>This website may contain links to external websites, in particular the Apple and Google app stores.</p>' +
+        '<p>Simply visiting our website does not transfer data to Apple or Google as a result of such links. A connection to the respective provider is generally established only when a visitor clicks the relevant link.</p>' +
         '<p>After clicking, the privacy policies of the respective external provider apply. We have no influence over subsequent processing by that provider.</p>',
 
       privacyS17Title: '17. Recipients of personal data',
