@@ -115,7 +115,7 @@
         '<p>Beim bloßen Aufruf unserer Website werden aufgrund solcher Links keine Daten an Apple oder Google übertragen. Eine Verbindung zu dem jeweiligen Anbieter wird grundsätzlich erst hergestellt, wenn ein Besucher den entsprechenden Link anklickt.</p>' +
         '<p>Nach dem Anklicken gelten die Datenschutzbestimmungen des jeweiligen externen Anbieters. Auf die anschließende Datenverarbeitung durch den jeweiligen Anbieter haben wir keinen Einfluss.</p>',
 
-            privacyS17Title: '17. Empfänger personenbezogener Daten',
+      privacyS17Title: '17. Empfänger personenbezogener Daten',
       privacyS17Body:
         '<p>Personenbezogene Daten können an technische Dienstleister übermittelt oder von diesen in unserem Auftrag verarbeitet werden, soweit dies zur Bereitstellung der Website, der SPOTSTAGE-App oder zur Bearbeitung von Anfragen erforderlich ist.</p>' +
         '<p>Hierzu gehören insbesondere:</p>' +
@@ -134,7 +134,7 @@
         '<p>Beim Abruf von App-Updates über EAS Update können insbesondere Informationen zum Betriebssystem, die SPOTSTAGE-Projektkennung, ein zufällig erzeugter Installationstoken sowie technisch erforderliche Verbindungsdaten verarbeitet werden.</p>' +
         '<p>Eine Weitergabe personenbezogener Daten zu Werbezwecken findet nicht statt. Derzeit setzen wir insbesondere keine externen Analytics- oder Trackingdienste, kein externes Crash-Reporting, keine Zahlungsdienste, keinen externen Chat-Dienst und keine Social-Login-Anbieter ein.</p>',
 
-            privacyS18Title: '18. Speicherdauer',
+      privacyS18Title: '18. Speicherdauer',
       privacyS18Body:
         '<p>Wir speichern personenbezogene Daten grundsätzlich nur so lange, wie dies für den jeweiligen Verarbeitungszweck erforderlich ist oder eine gesetzliche beziehungsweise sonstige zulässige Grundlage für die weitere Speicherung besteht.</p>' +
         '<p>Die konkrete Speicherdauer richtet sich insbesondere nach der Art der Daten und dem jeweiligen Nutzungskontext. Beispielsweise können Kontodaten grundsätzlich bis zur Löschung des Nutzerkontos verarbeitet werden, während Daten zu Shows, Bewerbungen, Besetzungen oder Kommunikation länger gespeichert werden können, soweit dies für die Durchführung, Dokumentation oder nachvollziehbare Historie der jeweiligen Show erforderlich ist.</p>' +
@@ -142,7 +142,7 @@
         '<p>Technische Protokoll-, Sicherheits- oder Zustelldaten können für einen begrenzten Zeitraum gespeichert werden, soweit dies für Betrieb, Sicherheit, Fehleranalyse oder Missbrauchsprävention erforderlich ist. Bei eingesetzten technischen Dienstleistern können zusätzlich deren technisch erforderliche Speicher- und Löschfristen gelten.</p>' +
         '<p>Gesetzliche Aufbewahrungsfristen können insbesondere für handels- und steuerrechtlich relevante Unterlagen gelten. Nach Wegfall des jeweiligen Speicherzwecks und etwaiger Aufbewahrungspflichten werden personenbezogene Daten gelöscht oder anonymisiert.</p>',
 
-            privacyS19Title: '19. Datensicherheit',
+      privacyS19Title: '19. Datensicherheit',
       privacyS19Body:
         '<p>Wir treffen angemessene technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Manipulation, Zerstörung und unberechtigtem Zugriff zu schützen.</p>' +
         '<p>Die Übertragung der Website erfolgt verschlüsselt über HTTPS beziehungsweise TLS. Auch die Kommunikation zwischen der SPOTSTAGE-App und den eingesetzten Backend-Diensten erfolgt verschlüsselt.</p>' +
@@ -151,7 +151,7 @@
         '<p>Die Wiederverwendung von Zugangsdaten kann sogenannte Credential-Stuffing-Angriffe begünstigen. Dabei werden Zugangsdaten, die beispielsweise durch einen Sicherheitsvorfall bei einem anderen Anbieter bekannt geworden sind, automatisiert bei weiteren Diensten ausprobiert.</p>' +
         '<p>Trotz der eingesetzten Schutzmaßnahmen kann ein vollständiger Schutz von Daten und IT-Systemen vor sämtlichen Risiken nicht garantiert werden.</p>',
 
-            privacyS20Title: '20. Rechte betroffener Personen',
+      privacyS20Title: '20. Rechte betroffener Personen',
       privacyS20Body:
         '<p>Sie haben im Rahmen der gesetzlichen Voraussetzungen insbesondere folgende Rechte:</p>' +
         '<ul class="legal-page__list">' +
@@ -168,14 +168,14 @@
         '<p>Zur Ausübung Ihrer Rechte können Sie uns unter folgender Adresse kontaktieren:</p>' +
         '<p>E-Mail: ' + mailLink + '</p>',
 
-            privacyS21Title: '21. Widerspruchsrecht',
+      privacyS21Title: '21. Widerspruchsrecht',
       privacyS21Body:
         '<p>Soweit wir personenbezogene Daten auf Grundlage von Art. 6 Abs. 1 Buchst. f DSGVO verarbeiten, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen.</p>' +
         '<p>Wir verarbeiten die betreffenden personenbezogenen Daten anschließend nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre Interessen, Rechte und Freiheiten überwiegen.</p>' +
         '<p>Eine weitere Verarbeitung kann außerdem erfolgen, wenn sie der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.</p>' +
         '<p>Zur Ausübung Ihres Widerspruchsrechts können Sie uns unter ' + mailLink + ' kontaktieren.</p>',
 
-            privacyS22Title: '22. Beschwerderecht bei einer Aufsichtsbehörde',
+      privacyS22Title: '22. Beschwerderecht bei einer Aufsichtsbehörde',
       privacyS22Body:
         '<p>Sie haben nach Art. 77 DSGVO das Recht, sich bei einer Datenschutzaufsichtsbehörde über die Verarbeitung Ihrer personenbezogenen Daten zu beschweren.</p>' +
         '<p>Für nicht öffentliche Unternehmen mit Sitz in Bayern ist grundsätzlich folgende Aufsichtsbehörde zuständig:</p>' +
@@ -186,7 +186,7 @@
       privacyS23Body:
         '<p>Eine ausschließlich automatisierte Entscheidungsfindung einschließlich Profiling im Sinne von Art. 22 DSGVO findet weder auf dieser Website noch in der SPOTSTAGE-App statt.</p>',
 
-            privacyS24Title: '24. Minderjährige',
+      privacyS24Title: '24. Minderjährige',
       privacyS24Body:
         '<p>Die SPOTSTAGE-App richtet sich nicht an Personen unter 16 Jahren. Personen unter 16 Jahren dürfen kein eigenes Nutzerkonto bei SPOTSTAGE registrieren oder nutzen.</p>' +
         '<p>Sollten wir konkrete Kenntnis davon erhalten, dass personenbezogene Daten einer Person unter 16 Jahren entgegen dieser Vorgabe über ein Nutzerkonto verarbeitet werden, werden wir den Sachverhalt prüfen und erforderliche Maßnahmen ergreifen.</p>' +
@@ -306,7 +306,7 @@
         '<p>Simply visiting our website does not transfer data to Apple or Google as a result of such links. A connection to the respective provider is generally established only when a visitor clicks the relevant link.</p>' +
         '<p>After clicking, the privacy policies of the respective external provider apply. We have no influence over subsequent processing by that provider.</p>',
 
-            privacyS17Title: '17. Recipients of personal data',
+      privacyS17Title: '17. Recipients of personal data',
       privacyS17Body:
         '<p>Personal data may be transferred to technical service providers or processed by them on our behalf where necessary to operate the website, provide the SPOTSTAGE app, or handle requests.</p>' +
         '<p>This includes in particular:</p>' +
@@ -325,7 +325,7 @@
         '<p>When retrieving app updates via EAS Update, information such as the operating system, the SPOTSTAGE project identifier, a randomly generated installation token, and technically necessary connection data may be processed.</p>' +
         '<p>Personal data is not disclosed for advertising purposes. We currently do not use external analytics or tracking services, external crash reporting, payment services, an external chat service, or social-login providers.</p>',
 
-            privacyS18Title: '18. Storage period',
+      privacyS18Title: '18. Storage period',
       privacyS18Body:
         '<p>We generally store personal data only for as long as necessary for the relevant processing purpose or where another statutory or otherwise permissible basis for continued storage applies.</p>' +
         '<p>The specific storage period depends in particular on the type of data and the relevant usage context. For example, account data may generally be processed until the user account is deleted, while data relating to shows, applications, casting, or communications may be stored for longer where necessary to operate, document, or maintain a traceable history of the relevant show.</p>' +
@@ -333,7 +333,7 @@
         '<p>Technical log, security, or delivery data may be stored for a limited period where necessary for operation, security, error analysis, or abuse prevention. Technical service providers may additionally apply their own technically required storage and deletion periods.</p>' +
         '<p>Statutory retention periods may apply in particular to records relevant under commercial and tax law. Once the relevant storage purpose and any applicable retention obligations cease to apply, personal data is deleted or anonymized.</p>',
 
-            privacyS19Title: '19. Data security',
+      privacyS19Title: '19. Data security',
       privacyS19Body:
         '<p>We implement appropriate technical and organizational measures to protect personal data against loss, manipulation, destruction, and unauthorized access.</p>' +
         '<p>Transmission of the website is encrypted via HTTPS/TLS. Communication between the SPOTSTAGE app and the backend services used is also encrypted.</p>' +
@@ -342,7 +342,7 @@
         '<p>Reusing credentials can facilitate so-called credential-stuffing attacks. In such attacks, credentials exposed, for example, through a security incident at another provider are automatically tried against other services.</p>' +
         '<p>Despite the safeguards used, complete protection of data and IT systems against all risks cannot be guaranteed.</p>',
 
-            privacyS20Title: '20. Rights of data subjects',
+      privacyS20Title: '20. Rights of data subjects',
       privacyS20Body:
         '<p>Subject to the statutory requirements, you have in particular the following rights:</p>' +
         '<ul class="legal-page__list">' +
@@ -359,14 +359,14 @@
         '<p>To exercise your rights, you can contact us at:</p>' +
         '<p>Email: ' + mailLink + '</p>',
 
-            privacyS21Title: '21. Right to object',
+      privacyS21Title: '21. Right to object',
       privacyS21Body:
         '<p>Where we process personal data on the basis of Art. 6(1)(f) GDPR, you have the right to object at any time to such processing for reasons arising from your particular situation.</p>' +
         '<p>We will then no longer process the relevant personal data unless we can demonstrate compelling legitimate grounds for processing that override your interests, rights, and freedoms.</p>' +
         '<p>Processing may also continue if it is necessary for the establishment, exercise, or defence of legal claims.</p>' +
         '<p>To exercise your right to object, you can contact us at ' + mailLink + '.</p>',
 
-            privacyS22Title: '22. Right to lodge a complaint with a supervisory authority',
+      privacyS22Title: '22. Right to lodge a complaint with a supervisory authority',
       privacyS22Body:
         '<p>Under Art. 77 GDPR, you have the right to lodge a complaint with a data protection supervisory authority about the processing of your personal data.</p>' +
         '<p>For non-public companies based in Bavaria, the following authority is generally responsible:</p>' +
@@ -377,7 +377,7 @@
       privacyS23Body:
         '<p>No solely automated decision-making, including profiling within the meaning of Art. 22 GDPR, takes place on this website or in the SPOTSTAGE app.</p>',
 
-            privacyS24Title: '24. Minors',
+      privacyS24Title: '24. Minors',
       privacyS24Body:
         '<p>The SPOTSTAGE app is not directed at persons under 16 years of age. Persons under 16 may not register or use their own SPOTSTAGE user account.</p>' +
         '<p>If we become specifically aware that personal data of a person under 16 is being processed through a user account contrary to this requirement, we will review the circumstances and take the necessary measures.</p>' +
