@@ -348,42 +348,40 @@
         accountDeletionDeletedBody:
           '<p>Bei einer erfolgreichen Account-Löschung werden insbesondere folgende Daten entfernt:</p>' +
           '<ul class="legal-page__list">' +
-          '<li>dein Account-Zugang</li>' +
-          '<li>persönliche Profildaten</li>' +
-          '<li>Rollenprofile</li>' +
-          '<li>Avatare</li>' +
+          '<li>dein Account-Zugang und der zugehörige Authentifizierungsaccount</li>' +
+          '<li>persönliche Profil- und Rollenprofildaten</li>' +
+          '<li>Profilbilder</li>' +
           '<li>Push Token</li>' +
-          '<li>Benachrichtigungseinstellungen</li>' +
-          '<li>offene Bewerbungen</li>' +
-          '<li>unverbindliche zukünftige Einladungen</li>' +
+          '<li>Benachrichtigungseinstellungen und In-App-Benachrichtigungen</li>' +
+          '<li>offene oder noch nicht abgeschlossene Bewerbungen</li>' +
           '</ul>',
-        accountDeletionRetainedHeading: 'Was anonymisiert erhalten bleiben kann',
+        accountDeletionRetainedHeading: 'Was nach Entfernung direkter Profilangaben erhalten bleiben kann',
         accountDeletionRetainedBody:
-          '<p>Aus sachlichen Gründen können bestimmte historische Bezüge anonymisiert erhalten bleiben, zum Beispiel:</p>' +
+          '<p>Bestimmte Daten können bestehen bleiben, wenn sie der Organisation beziehungsweise der Durchführung oder Dokumentation von Shows dienen und nicht ausschließlich deinem persönlichen Profil zuzuordnen sind. Dazu können insbesondere gehören:</p>' +
           '<ul class="legal-page__list">' +
-          '<li>vergangene Shows</li>' +
-          '<li>historische Line-ups</li>' +
-          '<li>vergangene Auftritte</li>' +
-          '<li>sachlich notwendige Showhistorie</li>' +
+          '<li>Daten von Organisationen und Veranstaltungsorten</li>' +
+          '<li>vergangene Shows und historische Line-ups</li>' +
+          '<li>vergangene Auftritte und Besetzungsbezüge</li>' +
+          '<li>historische Show-Kommunikation</li>' +
           '</ul>' +
-          '<p>In solchen Fällen kann dein Name durch „Gelöschtes Mitglied“ ersetzt werden.</p>',
+          '<p>Direkte Profilangaben werden entfernt; dein Name kann in historischen Zusammenhängen durch „Gelöschtes Mitglied“ ersetzt werden. Soweit dennoch ein Personenbezug fortbesteht, gelten deine gesetzlichen Datenschutzrechte unverändert fort.</p>',
         accountDeletionBlockersHeading: 'Mögliche Blocker',
         accountDeletionBlockersBody:
-          '<p>Eine Löschung kann vorübergehend nicht möglich sein, wenn unter anderem folgende Umstände vorliegen:</p>' +
+          '<p>Die technische Account-Löschung in der App kann vorübergehend nicht möglich sein, wenn noch aktive Verpflichtungen oder organisatorische Abhängigkeiten bestehen, zum Beispiel:</p>' +
           '<ul class="legal-page__list">' +
           '<li>zukünftiger bestätigter Auftritt</li>' +
-          '<li>aktive Host-Zuordnung</li>' +
-          '<li>aktive oder geplante Shows</li>' +
+          '<li>aktive oder noch offene Host-Zuordnung</li>' +
           '<li>Organisations-Eigentümerschaft</li>' +
-          '<li>du bist das einzige Organisationsmitglied</li>' +
+          '<li>du bist das einzige aktive Mitglied einer Organisation</li>' +
+          '<li>eine Organisation könnte ohne vorherige Übertragung der erforderlichen Rechte und Verantwortlichkeiten nicht weitergeführt werden</li>' +
           '<li>Admin-Self-Delete ist nicht möglich</li>' +
           '</ul>' +
-          '<p>In diesen Fällen musst du zuerst die jeweilige Verpflichtung auflösen oder abwickeln.</p>',
+          '<p>In diesen Fällen musst du zunächst die jeweilige Verpflichtung beziehungsweise organisatorische Abhängigkeit auflösen. Gesetzliche Datenschutzrechte, insbesondere ein gegebenenfalls bestehendes Recht auf Löschung nach Art. 17 DSGVO, bleiben hiervon unberührt.</p>',
         accountDeletionHelpHeading: 'Hilfe ohne App-Zugriff',
         accountDeletionHelpBody:
           '<p>Wenn du keinen Zugang mehr zur App hast, kontaktiere uns unter <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>.</p>' +
           '<p>Zum Schutz deiner Daten kann eine Identitätsprüfung erforderlich sein. Wir können keine sofortige Löschung allein aufgrund einer ungeprüften E-Mail zusagen. Eine Löschung fremder Accounts ist aus Sicherheitsgründen nicht möglich.</p>',
-        accountDeletionUpdated: 'Stand: Juni 2026',
+        accountDeletionUpdated: 'Stand: Oktober 2026',
       },
     },
     en: {
@@ -732,42 +730,40 @@
         accountDeletionDeletedBody:
           '<p>When account deletion is successful, the following data is removed in particular:</p>' +
           '<ul class="legal-page__list">' +
-          '<li>your account access</li>' +
-          '<li>personal profile data</li>' +
-          '<li>role profiles</li>' +
-          '<li>avatars</li>' +
-          '<li>push token</li>' +
-          '<li>notification settings</li>' +
-          '<li>open applications</li>' +
-          '<li>non-binding future invitations</li>' +
+          '<li>your account access and the associated authentication account</li>' +
+          '<li>personal profile and role-profile data</li>' +
+          '<li>profile images</li>' +
+          '<li>push tokens</li>' +
+          '<li>notification settings and in-app notifications</li>' +
+          '<li>open or otherwise unfinished applications</li>' +
           '</ul>',
-        accountDeletionRetainedHeading: 'What may remain anonymized',
+        accountDeletionRetainedHeading: 'What may remain after direct profile information is removed',
         accountDeletionRetainedBody:
-          '<p>For factual reasons, certain historical references may remain anonymized, for example:</p>' +
+          '<p>Certain data may remain where it serves the organization or the operation or documentation of shows and is not attributable solely to your personal profile. This may include in particular:</p>' +
           '<ul class="legal-page__list">' +
-          '<li>past shows</li>' +
-          '<li>historical line-ups</li>' +
-          '<li>past performances</li>' +
-          '<li>factually necessary show history</li>' +
+          '<li>organization and venue data</li>' +
+          '<li>past shows and historical line-ups</li>' +
+          '<li>past performances and casting references</li>' +
+          '<li>historical show communications</li>' +
           '</ul>' +
-          '<p>In such cases, your name may be replaced with “Deleted member”.</p>',
+          '<p>Direct profile information is removed; your name may be replaced with “Deleted member” in historical contexts. Where a personal-data link nevertheless remains, your statutory data-protection rights continue to apply unchanged.</p>',
         accountDeletionBlockersHeading: 'Possible blockers',
         accountDeletionBlockersBody:
-          '<p>Deletion may temporarily not be possible if, among other things, the following circumstances apply:</p>' +
+          '<p>Technical account deletion in the app may temporarily be unavailable where active obligations or organizational dependencies remain, for example:</p>' +
           '<ul class="legal-page__list">' +
           '<li>confirmed future performance</li>' +
-          '<li>active host assignment</li>' +
-          '<li>active or planned shows</li>' +
+          '<li>active or pending host assignment</li>' +
           '<li>organization ownership</li>' +
-          '<li>you are the only organization member</li>' +
+          '<li>you are the only active member of an organization</li>' +
+          '<li>an organization could not continue without first transferring the necessary rights and responsibilities</li>' +
           '<li>admin self-deletion is not possible</li>' +
           '</ul>' +
-          '<p>In these cases, you must first resolve or complete the relevant obligation.</p>',
+          '<p>In these cases, you must first resolve the relevant obligation or organizational dependency. Statutory data-protection rights, including any applicable right to erasure under Art. 17 GDPR, remain unaffected.</p>',
         accountDeletionHelpHeading: 'Help without app access',
         accountDeletionHelpBody:
           '<p>If you no longer have access to the app, contact us at <a class="legal-page__link" href="mailto:hello@spotstage.app">hello@spotstage.app</a>.</p>' +
           '<p>To protect your data, identity verification may be required. We cannot promise immediate deletion based on an unverified email alone. Deletion of third-party accounts is not possible for security reasons.</p>',
-        accountDeletionUpdated: 'Last updated: June 2026',
+        accountDeletionUpdated: 'Last updated: October 2026',
       },
     },
   };
