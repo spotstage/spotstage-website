@@ -117,9 +117,11 @@
       privacyS16Title: '16. Passwort-Reset',
       privacyS16Body:
         '<p>Wenn Sie Ihr Passwort vergessen haben, können Sie in der App einen Passwort-Reset anfordern.</p>' +
-        '<p>Dabei wird an Ihre registrierte E-Mail-Adresse eine Nachricht mit einem Link zum Zurücksetzen des Passworts versendet. Der Link führt zu einer Recovery-Funktion, über die Sie ein neues Passwort festlegen können.</p>' +
-        '<p>Passwörter werden nicht im Klartext gespeichert. Die Verarbeitung erfolgt über Supabase Auth.</p>' +
-        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit der Passwort-Reset für die Fortführung Ihres Nutzerkontos erforderlich ist.</p>',
+        '<p>Dabei wird an die angegebene beziehungsweise registrierte E-Mail-Adresse eine Nachricht mit einem Link zum Zurücksetzen des Passworts versendet. Der Link führt zu einer Recovery-Funktion, über die Sie ein neues Passwort festlegen können.</p>' +
+        '<p>Zur Prüfung des Reset-Links und zur Einrichtung einer temporären Recovery-Sitzung werden technisch erforderliche Authentifizierungsinformationen, beispielsweise ein Recovery-Code beziehungsweise Token und Sitzungsinformationen, verarbeitet.</p>' +
+        '<p>Das neu gewählte Passwort wird vor der Änderung zusätzlich wie in Abschnitt 10 beschrieben gegen bekannte kompromittierte Passwörter geprüft.</p>' +
+        '<p>Passwörter werden nicht im Klartext gespeichert. Die Durchführung des Passwort-Resets und die Änderung des Passworts erfolgen über Supabase Auth.</p>' +
+        '<p>Rechtsgrundlage ist Art. 6 Abs. 1 Buchst. b DSGVO, soweit der Passwort-Reset zur Wiederherstellung beziehungsweise Fortführung des Nutzerkontos erforderlich ist.</p>',
     },
 
     en: {
@@ -226,9 +228,11 @@
       privacyS16Title: '16. Password reset',
       privacyS16Body:
         '<p>If you forget your password, you can request a password reset in the app.</p>' +
-        '<p>An email with a link to reset your password is sent to your registered email address. The link leads to a recovery function where you can set a new password.</p>' +
-        '<p>Passwords are not stored in plain text. Processing is handled via Supabase Auth.</p>' +
-        '<p>The legal basis is Art. 6(1)(b) GDPR where the password reset is necessary to continue your user account.</p>',
+        '<p>An email containing a password-reset link is sent to the email address entered or registered for the account. The link opens a recovery function through which you can set a new password.</p>' +
+        '<p>To validate the reset link and establish a temporary recovery session, technically required authentication information, such as a recovery code or token and session information, is processed.</p>' +
+        '<p>Before the password is changed, the newly selected password is also checked against known compromised passwords as described in section 10.</p>' +
+        '<p>Passwords are not stored in plain text. The password-reset process and password change are handled via Supabase Auth.</p>' +
+        '<p>The legal basis is Art. 6(1)(b) GDPR where the password reset is necessary to restore or continue the user account.</p>',
     },
   };
 })();
