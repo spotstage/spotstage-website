@@ -20,7 +20,7 @@
       termsS2Title: '2. Registrierung und Nutzerkonto',
       termsS2Body:
         '<p>Für die Nutzung wesentlicher Funktionen ist ein persönliches Nutzerkonto erforderlich. Bei der Registrierung sind wahrheitsgemäße und aktuelle Angaben zu machen.</p>' +
-        '<p>Die Registrierung und Nutzung eines eigenen Nutzerkontos ist Personen ab 16 Jahren gestattet. Bei minderjährigen Nutzerinnen und Nutzern bleiben gesetzliche Anforderungen an die Zustimmung der Erziehungsberechtigten, insbesondere für außerhalb von SPOTSTAGE geschlossene Vereinbarungen über Auftritte oder Vergütungen, unberührt.</p>' +
+        '<p>Die Registrierung und Nutzung eines eigenen Nutzerkontos ist Personen ab 16 Jahren gestattet. Bei minderjährigen Nutzerinnen und Nutzern bleiben gesetzliche Anforderungen an die Zustimmung der Erziehungsberechtigten, insbesondere im Zusammenhang mit Vereinbarungen über Auftritte, Vergütungen oder sonstige Leistungen, unberührt.</p>' +
         '<p>Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Nutzerinnen und Nutzer sind dafür verantwortlich, ihre Zugangsdaten angemessen zu schützen und SPOTSTAGE unverzüglich zu informieren, wenn ein Missbrauch des Kontos vermutet wird.</p>' +
         '<p>Es wird dringend empfohlen, für SPOTSTAGE ein individuelles Passwort zu verwenden, das nicht gleichzeitig für andere Dienste genutzt wird. Die Wiederverwendung von Passwörtern kann insbesondere sogenannte Credential-Stuffing-Angriffe erleichtern, bei denen bei anderen Diensten bekannt gewordene Zugangsdaten automatisiert bei SPOTSTAGE ausprobiert werden.</p>',
 
@@ -62,8 +62,8 @@
 
       termsS7Title: '7. Sperrung und Beendigung',
       termsS7Body:
-        '<p>Nutzerinnen und Nutzer können ihr Konto nach Maßgabe der in der App vorgesehenen Funktionen löschen. Eine sofortige Kontoschließung kann vorübergehend eingeschränkt sein, wenn zunächst bestehende organisatorische oder vertragliche Verpflichtungen innerhalb der Plattform geklärt werden müssen oder gesetzliche Aufbewahrungspflichten einer vollständigen Löschung bestimmter Daten entgegenstehen.</p>' +
-        '<p>Gesetzliche Datenschutzrechte, insbesondere ein gegebenenfalls bestehendes Recht auf Löschung personenbezogener Daten, bleiben hiervon unberührt.</p>' +
+        '<p>Nutzerinnen und Nutzer können ihr Konto nach Maßgabe der in der App vorgesehenen Funktionen löschen. Eine sofortige technische Kontoschließung kann vorübergehend eingeschränkt sein, wenn zunächst bestehende organisatorische oder vertragliche Verpflichtungen innerhalb der Plattform geklärt werden müssen.</p>' +
+        '<p>Gesetzliche Aufbewahrungspflichten oder andere zulässige Speichergründe können dazu führen, dass bestimmte Daten auch nach der Kontoschließung für den jeweils erforderlichen Zeitraum weiter gespeichert werden. Gesetzliche Datenschutzrechte, insbesondere ein gegebenenfalls bestehendes Recht auf Löschung personenbezogener Daten, bleiben hiervon unberührt.</p>' +
         '<p>SPOTSTAGE kann Konten oder einzelne Funktionen vorübergehend einschränken oder sperren, wenn konkrete Anhaltspunkte für Missbrauch, Sicherheitsrisiken oder erhebliche Verstöße gegen diese Nutzungsbedingungen bestehen. Soweit zumutbar, werden Betroffene über den Grund und mögliche Abhilfemaßnahmen informiert.</p>' +
         '<p>Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt.</p>',
 
@@ -111,7 +111,7 @@
       termsS2Title: '2. Registration and user accounts',
       termsS2Body:
         '<p>A personal user account is required for essential functions. Registration information must be accurate and kept up to date.</p>' +
-        '<p>Registration and use of a personal user account are permitted from the age of 16. For users who are still minors, statutory requirements for parental consent, in particular for agreements concerning performances or fees concluded outside SPOTSTAGE, remain unaffected.</p>' +
+        '<p>Registration and use of a personal user account are permitted from the age of 16. For users who are still minors, statutory requirements for parental consent, in particular in connection with agreements concerning performances, fees or other services, remain unaffected.</p>' +
         '<p>Credentials must not be disclosed to third parties. Users are responsible for reasonably protecting their credentials and must notify SPOTSTAGE without undue delay if they suspect account misuse.</p>' +
         '<p>Users are strongly encouraged to use a password that is unique to SPOTSTAGE and is not reused for other services. Password reuse can facilitate credential-stuffing attacks in which credentials exposed by other services are automatically tried against SPOTSTAGE.</p>',
 
@@ -153,8 +153,8 @@
 
       termsS7Title: '7. Suspension and termination',
       termsS7Body:
-        '<p>Users may delete their account using the functions provided in the app. Immediate account closure may be temporarily restricted where existing organizational or contractual obligations within the platform first need to be resolved or where statutory retention obligations prevent the complete deletion of certain data.</p>' +
-        '<p>Statutory data-protection rights, including any applicable right to erasure of personal data, remain unaffected.</p>' +
+        '<p>Users may delete their account using the functions provided in the app. Immediate technical account closure may be temporarily restricted where existing organizational or contractual obligations within the platform first need to be resolved.</p>' +
+        '<p>Statutory retention obligations or other permissible grounds for storage may require certain data to be retained for the relevant period even after account closure. Statutory data-protection rights, including any applicable right to erasure of personal data, remain unaffected.</p>' +
         '<p>SPOTSTAGE may temporarily restrict or suspend accounts or functions where there are concrete indications of abuse, security risks or material breaches of these terms. Where reasonable, affected users will be informed of the reason and possible remedial steps.</p>' +
         '<p>The right to terminate for cause remains unaffected.</p>',
 
