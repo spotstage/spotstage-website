@@ -1,36 +1,36 @@
-# Homepage: Screenshot-Briefing
+# Homepage: UI-Kompositionen
 
-Die Feature-Section zeigt ein Carousel mit vier unabhängigen Features je Zielgruppe,
-von denen jeweils eines sichtbar ist. Alle Bildbereiche
-verwenden vorläufig den vorhandenen neutralen `images/placeholders/hero-phone.svg`.
-Es werden keine neuen App-Oberflächen simuliert. Die Hero-Mockups bleiben vorläufig bestehen.
+Der Feature-Slider nutzt unveränderte WebP-Ausschnitte unter `images/screenshots/`.
+Keine Geräteumrandung oder nachgebauten App-Controls. Hero-Mockups bleiben separat.
 
-## Benötigte Aufnahmen
+## Reihenfolge und Zuordnung
 
-Alle folgenden Dateien gehören nach `images/screenshots/`. Die Dateinamen entsprechen
-den Feature-IDs in `js/how-it-works.js`.
+- Organizer: Show erstellen (slide01), Showübersicht (02), Bewerbungen (03), Line-up & Warteliste (04), Aufgaben (05), Organisation (06).
+- Comedian: Shows entdecken (slide01), Bewerben (02), Bewerbungen (04), Kalender (03), Nachrichten (05), Terminkonflikte (06).
+- Comedian slide06 nutzt `showcard.webp`, `bottomSheet.webp` und zuletzt `overlay.webp`. Der Hinweis betrifft denselben Kalendertag; keine Aussage über sichere zeitliche Überschneidungserkennung, Fahrzeiten oder verhinderte Doppelbuchungen.
+- Organizer Show erstellen verwendet Spots, Spotlänge, Serie und Gage. Format wird nur im Text erwähnt.
+- SPOTLIGHT ist eine Website-Annotation direkt an den überlappenden Bewerbungskarten, keine nachgebaute App-UI.
+- Die Originalbilder zeigen deutsche App-Texte; Website-Texte und Bildbeschreibungen sind DE/EN lokalisiert.
 
-| Dateiname | App-Seite und sichtbarer Zustand | Sinnvolle Testdaten |
-|---|---|---|
-| `organizer-applications.webp` | Bewerbungen einer Show; mehrere Bewerbungen und die tatsächlich vorhandenen Status/Aktionen sichtbar. | Eine klar benannte Comedy-Show; 4–6 Test-Comedians; angenommen, Warteliste und ausstehend. Absage nur zeigen, wenn dieser Zustand in derselben Ansicht wirklich angezeigt wird. |
-| `organizer-lineup.webp` | Line-up derselben Show mit besetzten Spots in nachvollziehbarer Reihenfolge. | 3–4 angenommene Test-Comedians, ein freier Spot; plausibel kurze Set-Zeiten. Host separat halten, sofern sichtbar. |
-| `organizer-show-organization.webp` | Die reale Showübersicht mit Host, Aufgaben oder Kommunikation. Keine künstlich kombinierte Ansicht. | Zugeordneter Test-Host; kurze Aufgabe wie „Mikrofone prüfen“; nur tatsächlich auf dieser App-Seite sichtbare Informationen aufnehmen. |
-| `organizer-team.webp` | Organisation-/Teamseite mit mehreren Mitgliedern. | Neutrale Testorganisation, z. B. „Bühnenrunde“; 2–3 Testmitglieder. Nur existierende Rollenbezeichnungen verwenden. Keine echten Einladungslinks zeigen. |
-| `comedian-discover.webp` | Entdecken-/Showsuche mit offenen Comedy-Shows. | 3–4 fiktive Testshows mit zukünftigen Terminen und realistischen Orten; keine Erfolgsaussage oder regionale Nutzungsbeschränkung ableiten. |
-| `comedian-apply.webp` | Reale Showdetail- oder Bewerbungsansicht unmittelbar vor dem Bewerben. | Dieselbe Testshow; erkennbare Showinformationen und echte Bewerben-Aktion. Keine zusätzlichen Formularfelder erfinden. |
-| `comedian-application-status.webp` | Bewerbungsübersicht mit klar lesbaren Status. | Vier Testbewerbungen: angenommen, Warteliste, ausstehend, abgelehnt; nur Status zeigen, die die App in dieser Ansicht unterstützt. |
-| `comedian-calendar.webp` | Kalender/Terminübersicht mit bestätigtem Auftritt und relevanten Bewerbungen. | Ein bestätigter Auftritt und eine weitere relevante Bewerbung am selben Tag. Überschneidungshinweis nur aufnehmen, wenn die App ihn dort tatsächlich anzeigt. |
+## Integration
 
-## Aufnahme und Integration
+`FEATURE_COMPOSITIONS` in `js/how-it-works.js` definiert Quellen, natürliche Maße,
+Position, relative Breite, Rotation und Timing. Prozentwerte beziehen sich auf eine
+kompakte Fläche im Verhältnis 500 × 450. Neue Features brauchen dort eine Komposition sowie passende
+Einträge unter `howItWorks.organizers` oder `artists` in beiden Sprachen.
+Seitliche 44-Pixel-Chevrons, Dots darunter, zyklische Navigation und End-Taste richten sich nach der tatsächlichen Anzahl.
+Der statische HTML-Fallback entspricht dem ersten Organizer-Feature.
 
-- Ausschließlich Testkonten und fiktive Namen verwenden; keine privaten Nachrichten, Tokens oder personenbezogenen Echtdaten.
-- Einheitliches Gerät, Hochformat und Auflösung; etwa 1080 px Breite als Ausgangspunkt. Lesbare Schrift, keine abgeschnittenen Inhalte.
-- Keine zusätzliche Geräteumrandung in das Bild einbauen: Der Bildbereich stellt die Aufnahme unverzerrt mit `object-fit: contain` dar.
-- Die acht Dateien sind die deutsche Basis. Bei lokalisierten Aufnahmen zusätzlich `*-en.webp` erstellen und die Bildzuordnung um die Locale erweitern; aktuell werden keine nicht vorhandenen Sprachvarianten referenziert.
-- In `FEATURE_IMAGES` in `js/how-it-works.js` die passende Quelle von `PLACEHOLDER` auf `images/screenshots/<dateiname>` ändern.
-- Danach verschwindet die Platzhalter-Beschriftung für dieses Bild automatisch; Feature-Label und Titel dienen als Caption/Alt-Text. Den Alt-Text anhand des tatsächlichen Bildes prüfen und bei Bedarf präzisieren.
-- Die statischen Organizer-Fallbacks in `index.html` ebenfalls auf die echten Dateien sowie passende Alt-Texte/Captions umstellen.
-- Hero später vorzugsweise mit Showentdeckung und Organizer-Showübersicht aktualisieren. Dafür zusätzlich `hero-comedian.webp` und `hero-organizer.webp` aufnehmen.
+Die CSS-Animation läuft beim Einblenden einmal (900 ms je Layer, Gruppenstarts bei 0/400/800 ms, insgesamt bis 1700 ms), ausschließlich
+über opacity/transform. Verstecken entfernt die Animation; Zurücknavigation startet
+sie neu. Bei reduced motion stehen alle Ebenen sofort an ihrer finalen Position.
+Die Visuals sind auf Desktop maximal 500 statt 650 Pixel breit (rund 23 % kleiner). Die Stage verzichtet auf den früheren 14-%-Abstand unterhalb. SPOTLIGHT ist ein gedrehter redaktioneller Callout mit feinen Linien, liegt im Winkel der vorderen Card über deren Oberkante, erscheint zuletzt und bleibt bei reduced motion sofort sichtbar.
+Jede Ebene hat einen transparenzgerechten doppelten drop-shadow. Sekundäre Bilder
+haben leere Alt-Texte; das Hauptbild beschreibt die gesamte Komposition.
+
+Textblöcke reservieren per `min-height` und `lh` Zeilenraum pro Breakpoint; keine feste Höhe oder Textbeschneidung. Der Kalender bleibt ein einzelnes Bild. Der rote Datumsindikator im Terminkonflikt-Slide bleibt frei.
+
+Der vorhandene Anchor-Offset ist ausreichend: Native Anker nutzen `scroll-margin-top`; der Smooth-Scroll-Handler zieht die tatsächliche Header-Höhe ab. Navigation zu `#how-it-works` wurde auf Desktop und Mobile geprüft; die Section-Headline bleibt unterhalb des Headers.
 
 ## Store-Links vor Launch
 

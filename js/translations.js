@@ -43,7 +43,6 @@
         "ariaLabel": "Hauptnavigation",
         "open": "Menü öffnen",
         "close": "Menü schließen",
-        "benefits": "Vorteile",
         "howItWorks": "So funktioniert's",
         "download": "App herunterladen"
       },
@@ -51,9 +50,10 @@
         ariaHome: 'SPOTSTAGE Startseite',
       },
       hero: {
+        "availability": "Demnächst verfügbar!",
         "slogan": "Deine Show. Deine Bühne. Dein Moment.",
-        "headline": "<span class=\"hero-section__accent hero-section__accent--purple\">Comedy-Shows organisieren.</span><br><span class=\"hero-section__accent hero-section__accent--gold\">Auftritte finden.</span>",
-        "subheadline": "SPOTSTAGE bringt Veranstalter und Comedians zusammen – von der Ausschreibung und Bewerbung bis zum Line-up und Auftritt.",
+        "headline": "Die App für<br><span class=\"hero-section__accent hero-section__accent--purple\">Veranstalter</span><br>& <span class=\"hero-section__accent hero-section__accent--gold\">Comedians</span>",
+        "subheadline": "SPOTSTAGE bringt Veranstalter und Comedians zusammen.<br>Von der Show-Ausschreibung und Bewerbung bis zum Line-up und Auftritt.",
         "phoneArtistAlt": "Illustratives SPOTSTAGE-Mockup für Comedians",
         "phoneOrganizerAlt": "Illustratives SPOTSTAGE-Mockup für Veranstalter",
         "phoneArtistCaption": "Für Comedians",
@@ -82,56 +82,6 @@
           "alt": "Jetzt bei Google Play"
         }
       },
-      comparison: {
-        "heading": "Eine App. <span class=\"comparison__accent comparison__accent--organizers\">Deine Show.</span> <span class=\"comparison__accent comparison__accent--artists\">Dein Auftritt.</span>",
-        "subline": "Shows, Bewerbungen und Auftritte. In einer App.",
-        "artistTitle": "Für Comedians",
-        "artistSubline": "Von der offenen Show zum bestätigten Auftritt.",
-        "organizerTitle": "Für Veranstalter",
-        "organizerSubline": "Von der Veröffentlichung bis zum fertigen Line-up."
-      },
-      benefits: {
-        "artist": {
-          "accent": "gold",
-          "items": [
-            {
-              "title": "Shows entdecken",
-              "text": "Finde offene Comedy-Shows, die zu dir passen.",
-              "icon": "search"
-            },
-            {
-              "title": "Direkt bewerben",
-              "text": "Sende deine Bewerbung direkt bei der Show.",
-              "icon": "send"
-            },
-            {
-              "title": "Auftritte organisieren",
-              "text": "Behalte Bewerbungen und bestätigte Termine im Blick.",
-              "icon": "calendar"
-            }
-          ]
-        },
-        "organizer": {
-          "accent": "purple",
-          "items": [
-            {
-              "title": "Shows veröffentlichen",
-              "text": "Veröffentliche deine Show und sammle Bewerbungen.",
-              "icon": "mic"
-            },
-            {
-              "title": "Bewerbungen verwalten",
-              "text": "Prüfe Bewerbungen und gib klare Rückmeldungen.",
-              "icon": "users"
-            },
-            {
-              "title": "Line-ups organisieren",
-              "text": "Besetze Spots und ordne dein Line-up.",
-              "icon": "lineup"
-            }
-          ]
-        }
-      },
       howItWorks: {
         "carouselLabel": "Produktfunktionen",
         "carouselRole": "Karussell",
@@ -145,68 +95,107 @@
         "switchAria": "Funktionen nach Zielgruppe auswählen",
         "switchArtists": "Für Comedians",
         "switchOrganizers": "Für Veranstalter",
-        "placeholder": "Platzhalter · App-Screenshot folgt",
-        "placeholderAlt": "Vorhandener Smartphone-Platzhalter, noch kein Screenshot dieser Funktion",
         "organizerStatus": "Funktionen für Veranstalter werden angezeigt.",
         "artistStatus": "Funktionen für Comedians werden angezeigt.",
         "organizers": [
           {
+            "id": "organizer-create",
+            "label": "Show erstellen",
+            "title": "Erstelle deine Show mit allen Details",
+            "text": "Lege Format, Spotanzahl und -länge, Gage, Extras und weitere Rahmenbedingungen fest. Wiederkehrende Shows planst du direkt als Serie.",
+            "benefit": "Einzelshows und Serien schnell mit allen Rahmenbedingungen anlegen.",
+            "imageAlt": "Show-Konfiguration mit Spots, Spotlänge, Event-Serie und Gage"
+          },
+          {
+            "id": "organizer-shows",
+            "label": "Showübersicht",
+            "title": "Alle Shows und ihren Status im Blick",
+            "text": "Plane und besetze deine Shows im Casting. Sobald das Line-up steht, organisierst du die Show weiter und stimmst dich im Show-Chat direkt mit den Comedians ab.",
+            "benefit": "Von der Planung bis zur Abstimmung – alles in einer App.",
+            "imageAlt": "Showkarten mit Besetzung und offenen Entscheidungen, Casting-Status und Chat"
+          },
+          {
             "id": "organizer-applications",
             "label": "Bewerbungen",
-            "title": "Bewerbungen an einem Ort verwalten",
-            "text": "Comedians bewerben sich direkt auf deine Show. Prüfe ihre Bewerbungen, nimm sie an, setze sie auf die Warteliste oder sage ab.",
-            "benefit": "Statt Bewerbungen aus Instagram-DMs, Messengern und eigenen Listen zusammenzusuchen."
+            "title": "Bewerbungen besser einordnen. Zusagen sicherer planen.",
+            "text": "Sieh Profil, Auftrittswünsche und SPOTLIGHT-Hinweise wie weite Anreise oder bereits gebuchte Shows am selben Tag. Entscheide anschließend über Zusage, Warteliste oder Absage.",
+            "benefit": "Mehr Kontext für bessere Entscheidungen und verlässlichere Zusagen.",
+            "imageAlt": "Zwei Bewerbungen mit Profil, Auftrittswünschen und Hinweisen zu erster Bewerbung und Anreise",
+            "annotation": "Mehr Kontext für deine Besetzung."
           },
           {
             "id": "organizer-lineup",
-            "label": "Line-up",
-            "title": "Aus Bewerbungen wird dein Line-up",
-            "text": "Ordne angenommene Comedians den verfügbaren Spots zu und bringe dein Line-up in die passende Reihenfolge.",
-            "benefit": "Kein manuelles Übertragen zwischen Bewerberliste, Notizen und separatem Ablaufplan."
+            "label": "Line-up & Warteliste",
+            "title": "Schnell zum Line-up. Warteliste als Backup.",
+            "text": "Aus deinen Zusagen entsteht direkt das Line-up. Reihenfolge und Spots kannst du bei Bedarf anpassen. Mit der Warteliste hast du bei kurzfristigen Absagen schnell Ersatz parat.",
+            "benefit": "Schneller zum Line-up. Flexibler bei Absagen.",
+            "imageAlt": "Line-up mit belegten und freien Spots sowie eine separate Warteliste"
           },
           {
-            "id": "organizer-show-organization",
-            "label": "Showorganisation",
-            "title": "Alles rund um deine Show im Blick",
-            "text": "Host, Aufgaben, Kommunikation und wichtige Informationen bleiben direkt mit der jeweiligen Show verbunden.",
-            "benefit": "Weniger Suchen in einzelnen Chats, Notizen und anderen Tools."
+            "id": "organizer-tasks",
+            "label": "Aufgaben",
+            "title": "Sieh, was als Nächstes wichtig ist",
+            "text": "Behalte offene Aufgaben rund um Shows, Bewerbungen, Planung und Updates im Blick.",
+            "benefit": "Weniger suchen. Klarer wissen, was als Nächstes ansteht.",
+            "imageAlt": "Aufgabenfilter und Hinweise auf ein unvollständiges Line-up und neue Bewerbungen"
           },
           {
             "id": "organizer-team",
-            "label": "Team",
-            "title": "Shows gemeinsam organisieren",
-            "text": "Arbeite innerhalb deiner Organisation mit weiteren Teammitgliedern an euren Shows zusammen.",
-            "benefit": "Ein gemeinsamer Ort für die Organisation statt getrennter Abstimmungswege."
+            "label": "Organisation",
+            "title": "Einzeln oder als Team",
+            "text": "Organisiere Shows allein oder gemeinsam. Teammitglieder können planen und unterstützen, während wichtige Organisationsstatistiken für euch im Blick bleiben.",
+            "benefit": "Eine gemeinsame Basis für eure Shows.",
+            "imageAlt": "Organisationsmenü mit Team, Rollen und Einladungen sowie eine Statistik"
           }
         ],
         "artists": [
           {
             "id": "comedian-discover",
             "label": "Shows entdecken",
-            "title": "Finde Shows, auf die du dich bewerben kannst",
-            "text": "Entdecke offene Comedy-Shows und finde passende Auftritte anhand von Standort und Umgebung.",
-            "benefit": "Weniger einzelne Veranstalterprofile, Posts und Ausschreibungen durchsuchen."
+            "title": "Finde Shows, die zu dir passen",
+            "text": "Grenze deine Suche nach Datum, Auftrittsgebiet und Format ein. Vergleiche Shows und ihre offenen Spots.",
+            "benefit": "Schneller zur passenden Bühne.",
+            "imageAlt": "Showfilter für Datum, Auftrittsgebiet und Format sowie drei offene Comedy-Shows"
           },
           {
             "id": "comedian-apply",
             "label": "Bewerben",
-            "title": "Direkt über Spotstage bewerben",
-            "text": "Sende deine Bewerbung direkt aus einer Show über SPOTSTAGE. Die relevanten Showinformationen hast du dabei im Blick.",
-            "benefit": "Ein direkter Weg statt einzelner DMs und unterschiedlicher Bewerbungsabläufe."
+            "title": "Bewirb dich schnell und flexibel",
+            "text": "Alle wichtigen Showinfos auf einen Blick. Gib deinen Wunsch für frühe oder späte Slots an und signalisiere, ob du auch als Host verfügbar bist.",
+            "benefit": "Show prüfen, Wunsch angeben, Bewerbung senden.",
+            "imageAlt": "Showdetails, Line-up-Wunsch und Bewerbungsoptionen"
           },
           {
             "id": "comedian-application-status",
-            "label": "Bewerbungsstatus",
-            "title": "Weiß jederzeit, wo du stehst",
-            "text": "Angenommen, Warteliste, ausstehend oder abgelehnt: Der Status deiner Bewerbung ist in der App eindeutig sichtbar.",
-            "benefit": "Kein Nachfragen und kein Suchen nach dem letzten Stand in Chatverläufen."
+            "label": "Bewerbungen",
+            "title": "Behalte jede Bewerbung im Blick",
+            "text": "Ausstehend, Warteliste, angenommen oder abgelehnt: Filter und Statusfarben zeigen dir jederzeit den aktuellen Stand.",
+            "benefit": "Alle Bewerbungen und Status auf einen Blick.",
+            "imageAlt": "Bewerbungsfilter und Showkarten für die vier Bewerbungszustände"
           },
           {
             "id": "comedian-calendar",
             "label": "Kalender",
-            "title": "Deine Auftritte im Blick",
-            "text": "Behalte bestätigte Auftritte und relevante Bewerbungen in deiner Terminübersicht im Blick. SPOTSTAGE kann auf Überschneidungen am gleichen Tag hinweisen.",
-            "benefit": "Damit parallele Bewerbungen und bestätigte Auftritte nicht durcheinandergeraten."
+            "title": "Deine nächsten Auftritte auf einen Blick",
+            "text": "Sieh bestätigte Auftritte und relevante Bewerbungen direkt in deinem Show-Kalender und plane deine nächsten Termine einfacher.",
+            "benefit": "Deine nächsten Termine an einem Ort.",
+            "imageAlt": "Kalender mit einem bestätigten Auftritt und einer ausstehenden Bewerbung"
+          },
+          {
+            "id": "comedian-messages",
+            "label": "Nachrichten",
+            "title": "Updates und Chats direkt im Blick",
+            "text": "Updates und neue Nachrichten erreichen dich per Push. In der App findest du Änderungen und Show-Chats direkt an einem Ort.",
+            "benefit": "Wichtige Änderungen und Nachrichten schneller mitbekommen.",
+            "imageAlt": "Nachrichten-Navigation, Updates zur Warteliste und Moderation sowie ein Show-Chat"
+          },
+          {
+            "id": "comedian-conflicts",
+            "label": "Terminkonflikte",
+            "title": "Mehrere Shows am selben Tag? Du siehst es vorher.",
+            "text": "SPOTSTAGE weist dich auf bestehende Buchungen am gleichen Tag hin, damit du Bewerbungen und Zusagen besser einschätzen kannst.",
+            "benefit": "Besser planen, bevor du zusagst.",
+            "imageAlt": "Showkarte, Buchungsbestätigung und Hinweis auf eine bereits bestehende Buchung am selben Kalendertag"
           }
         ]
       },
@@ -219,7 +208,7 @@
       launchCta: {
         "title": "Bereit für deine nächste Show?",
         "text": "Comedy-Shows organisieren. Auftritte finden. Mit SPOTSTAGE.",
-        "availability": "Die Store-Links werden zum App-Launch freigeschaltet."
+        "availability": "Demnächst verfügbar!"
       },
       footer: {
         claim: 'Deine Show. Deine Bühne. Dein Moment.',
@@ -434,7 +423,6 @@
         "ariaLabel": "Main navigation",
         "open": "Open menu",
         "close": "Close menu",
-        "benefits": "Benefits",
         "howItWorks": "How it works",
         "download": "Download the app"
       },
@@ -442,9 +430,10 @@
         ariaHome: 'SPOTSTAGE home',
       },
       hero: {
+        "availability": "Coming soon!",
         "slogan": "Your Show. Your Stage. Your Moment.",
-        "headline": "<span class=\"hero-section__accent hero-section__accent--purple\">Organise comedy shows.</span><br><span class=\"hero-section__accent hero-section__accent--gold\">Find gigs.</span>",
-        "subheadline": "SPOTSTAGE brings organisers and comedians together – from publishing a show and applying to the line-up and the gig.",
+        "headline": "The App for<br><span class=\"hero-section__accent hero-section__accent--purple\">organisers</span><br>& <span class=\"hero-section__accent hero-section__accent--gold\">comedians</span>",
+        "subheadline": "SPOTSTAGE brings organisers and comedians together.<br>From posting a show and applying for a spot to the line-up and the gig.",
         "phoneArtistAlt": "Illustrative SPOTSTAGE mockup for comedians",
         "phoneOrganizerAlt": "Illustrative SPOTSTAGE mockup for organisers",
         "phoneArtistCaption": "For comedians",
@@ -473,56 +462,6 @@
           "alt": "Get it on Google Play"
         }
       },
-      comparison: {
-        "heading": "One app. <span class=\"comparison__accent comparison__accent--organizers\">Your show.</span> <span class=\"comparison__accent comparison__accent--artists\">Your gig.</span>",
-        "subline": "Shows, applications and gigs. In one app.",
-        "artistTitle": "For comedians",
-        "artistSubline": "From an open show to a confirmed gig.",
-        "organizerTitle": "For organisers",
-        "organizerSubline": "From publishing your show to completing the line-up."
-      },
-      benefits: {
-        "artist": {
-          "accent": "gold",
-          "items": [
-            {
-              "title": "Discover shows",
-              "text": "Find open comedy shows that suit you.",
-              "icon": "search"
-            },
-            {
-              "title": "Apply directly",
-              "text": "Send your application directly from the show.",
-              "icon": "send"
-            },
-            {
-              "title": "Organise your gigs",
-              "text": "Keep applications and confirmed dates in view.",
-              "icon": "calendar"
-            }
-          ]
-        },
-        "organizer": {
-          "accent": "purple",
-          "items": [
-            {
-              "title": "Publish shows",
-              "text": "Publish your show and collect applications.",
-              "icon": "mic"
-            },
-            {
-              "title": "Manage applications",
-              "text": "Review applications and give clear answers.",
-              "icon": "users"
-            },
-            {
-              "title": "Organise line-ups",
-              "text": "Fill spots and arrange your line-up.",
-              "icon": "lineup"
-            }
-          ]
-        }
-      },
       howItWorks: {
         "carouselLabel": "Product features",
         "carouselRole": "Carousel",
@@ -536,68 +475,107 @@
         "switchAria": "Choose features by audience",
         "switchArtists": "For comedians",
         "switchOrganizers": "For organisers",
-        "placeholder": "Placeholder · App screenshot to follow",
-        "placeholderAlt": "Existing phone placeholder, not a screenshot of this feature",
         "organizerStatus": "Showing features for organisers.",
         "artistStatus": "Showing features for comedians.",
         "organizers": [
           {
+            "id": "organizer-create",
+            "label": "Create a show",
+            "title": "Create your show with every detail covered",
+            "text": "Set the format, number and length of spots, fee, extras and other key details. Plan recurring shows as a series.",
+            "benefit": "Set up one-off shows and series with all the details in place.",
+            "imageAlt": "Show setup with spots, set length, event series and fee"
+          },
+          {
+            "id": "organizer-shows",
+            "label": "Show overview",
+            "title": "Every show and its status at a glance",
+            "text": "Plan and cast your shows in Casting. Once the line-up is ready, keep organizing your show and coordinate directly with comedians in the show chat.",
+            "benefit": "From planning to coordination, all in one app.",
+            "imageAlt": "Show cards with line-up progress, pending decisions, Casting status and chat"
+          },
+          {
             "id": "organizer-applications",
             "label": "Applications",
-            "title": "Manage applications in one place",
-            "text": "Comedians apply directly to your show. Review applications, accept, waitlist or decline them.",
-            "benefit": "Instead of piecing together applications from Instagram DMs, messengers and your own lists."
+            "title": "Understand applications. Plan offers with more confidence.",
+            "text": "See profiles, performance preferences and SPOTLIGHT context such as long journeys or existing bookings on the same day. Then accept, waitlist or decline.",
+            "benefit": "More context for better decisions and more reliable commitments.",
+            "imageAlt": "Two applications with profiles, performance preferences and notes about first-time applicants and travel",
+            "annotation": "More context for your line-up."
           },
           {
             "id": "organizer-lineup",
-            "label": "Line-up",
-            "title": "Turn applications into your line-up",
-            "text": "Assign accepted comedians to available spots and arrange your running order.",
-            "benefit": "No manual copying between application lists, notes and a separate running order."
+            "label": "Line-up & waitlist",
+            "title": "Build your line-up. Keep a waitlist as backup.",
+            "text": "Accepted applications form your line-up. Adjust the order and spots as needed, and turn to your waitlist for replacements when someone cancels at short notice.",
+            "benefit": "Build your line-up faster. Stay flexible when plans change.",
+            "imageAlt": "Line-up with filled and open spots alongside a separate waitlist"
           },
           {
-            "id": "organizer-show-organization",
-            "label": "Show organisation",
-            "title": "Keep everything around your show in view",
-            "text": "Keep the host, tasks, communication and important information connected to the show they belong to.",
-            "benefit": "Less searching through separate chats, notes and other tools."
+            "id": "organizer-tasks",
+            "label": "Tasks",
+            "title": "See what needs your attention next",
+            "text": "Keep track of outstanding tasks across shows, applications, planning and updates.",
+            "benefit": "Less searching. A clearer view of what comes next.",
+            "imageAlt": "Task filters and notices about an incomplete line-up and new applications"
           },
           {
             "id": "organizer-team",
-            "label": "Team",
-            "title": "Organise shows together",
-            "text": "Work on your shows with other team members within your organisation.",
-            "benefit": "One shared place to organise, instead of separate coordination channels."
+            "label": "Organization",
+            "title": "On your own or as a team",
+            "text": "Organize shows solo or together. Team members can help with planning and support while key organization statistics stay in view.",
+            "benefit": "A shared foundation for your shows.",
+            "imageAlt": "Organization menu with team, roles and invitations alongside statistics"
           }
         ],
         "artists": [
           {
             "id": "comedian-discover",
             "label": "Discover shows",
-            "title": "Find shows you can apply to",
-            "text": "Discover open comedy shows and find suitable gigs by location and nearby area.",
-            "benefit": "Spend less time searching individual organiser profiles, posts and open calls."
+            "title": "Find shows that suit you",
+            "text": "Narrow your search by date, area and format. Compare shows and their open spots.",
+            "benefit": "Find the right stage faster.",
+            "imageAlt": "Filters for date, area and format alongside three open comedy shows"
           },
           {
             "id": "comedian-apply",
             "label": "Apply",
-            "title": "Apply directly through Spotstage",
-            "text": "Send your application directly from a show in SPOTSTAGE, with the relevant show details at hand.",
-            "benefit": "One direct route instead of separate DMs and different application processes."
+            "title": "Apply quickly, with room for your preferences",
+            "text": "See all the key show details at a glance. Share your preference for early or late spots and let organizers know if you are also available to host.",
+            "benefit": "Check the show, share your preferences, send your application.",
+            "imageAlt": "Show details, preferred line-up position and application options"
           },
           {
             "id": "comedian-application-status",
-            "label": "Application status",
-            "title": "Always know where you stand",
-            "text": "Accepted, waitlisted, pending or declined: your application status is clearly shown in the app.",
-            "benefit": "No chasing updates or searching chat histories for the latest decision."
+            "label": "Applications",
+            "title": "Keep track of every application",
+            "text": "Pending, waitlisted, accepted or declined: filters and status colors keep you up to date on each application.",
+            "benefit": "Every application and its status at a glance.",
+            "imageAlt": "Application filters and show cards illustrating the four application statuses"
           },
           {
             "id": "comedian-calendar",
             "label": "Calendar",
-            "title": "Keep your gigs in view",
-            "text": "See confirmed gigs and relevant applications in your schedule. SPOTSTAGE can flag clashes on the same day.",
-            "benefit": "Keep parallel applications and confirmed gigs from getting mixed up."
+            "title": "Your upcoming gigs at a glance",
+            "text": "See confirmed gigs and relevant applications in your show calendar, making it easier to plan your upcoming dates.",
+            "benefit": "Your upcoming dates, all in one place.",
+            "imageAlt": "Calendar showing a confirmed gig and a pending application"
+          },
+          {
+            "id": "comedian-messages",
+            "label": "Messages",
+            "title": "Keep updates and chats in view",
+            "text": "Receive updates and new messages via push notifications. Find changes and show chats together in the app.",
+            "benefit": "Catch important changes and messages sooner.",
+            "imageAlt": "Messages navigation, waitlist and hosting updates alongside a show chat"
+          },
+          {
+            "id": "comedian-conflicts",
+            "label": "Same-day bookings",
+            "title": "More than one show on the same day? Know before you commit.",
+            "text": "SPOTSTAGE flags existing bookings on the same day, helping you make informed decisions about applications and offers.",
+            "benefit": "Plan ahead before you commit.",
+            "imageAlt": "Show card, booking confirmation and a notice about an existing booking on the same calendar day"
           }
         ]
       },
@@ -610,7 +588,7 @@
       launchCta: {
         "title": "Ready for your next show?",
         "text": "Organise comedy shows. Find gigs. With SPOTSTAGE.",
-        "availability": "Store links will be activated for the app launch."
+        "availability": "Coming soon!"
       },
       footer: {
         claim: 'Your show. Your stage. Your moment.',

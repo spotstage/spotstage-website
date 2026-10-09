@@ -10,22 +10,90 @@
   var activeIndex = 0;
   var SWIPE_THRESHOLD = 48;
   var touchStart = null;
-  var PLACEHOLDER = 'images/placeholders/hero-phone.svg';
-  // Replace sources with the reviewed captures from docs/homepage-screenshots.md.
-  var FEATURE_IMAGES = {
-    'organizer-applications': PLACEHOLDER,
-    'organizer-lineup': PLACEHOLDER,
-    'organizer-show-organization': PLACEHOLDER,
-    'organizer-team': PLACEHOLDER,
-    'comedian-discover': PLACEHOLDER,
-    'comedian-apply': PLACEHOLDER,
-    'comedian-application-status': PLACEHOLDER,
-    'comedian-calendar': PLACEHOLDER,
+  // Original cut-outs; positions are percentages of the compact 500 × 450 canvas.
+  // Add a composition and matching DE/EN feature to extend either audience.
+  var FEATURE_COMPOSITIONS = {
+    "organizer-create": [
+      {"src": "images/screenshots/Organizer/slide01/spots.webp", "width": 1134, "height": 643, "x": 8, "y": 5, "size": 64, "rotation": -2, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide01/serie.webp", "width": 1083, "height": 606, "x": 13, "y": 44, "size": 55, "rotation": -1, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Organizer/slide01/gage.webp", "width": 1083, "height": 594, "x": 43, "y": 62, "size": 50, "rotation": 1, "delay": 800, "duration": 900, "z": 3}
+    ],
+    "organizer-shows": [
+      {"src": "images/screenshots/Organizer/slide02/show01.webp", "width": 1083, "height": 537, "x": 6, "y": 16, "size": 64, "rotation": -2, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide02/show02.webp", "width": 1083, "height": 552, "x": 15, "y": 38, "size": 66, "rotation": 1, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Organizer/slide02/castingReady.webp", "width": 1083, "height": 138, "x": 13, "y": 5, "size": 62, "rotation": 0, "delay": 400, "duration": 900, "z": 3},
+      {"src": "images/screenshots/Organizer/slide02/chat.webp", "width": 1179, "height": 1341, "x": 52, "y": 28, "size": 42, "rotation": 2, "delay": 800, "duration": 900, "z": 4}
+    ],
+    "organizer-applications": [
+      {"src": "images/screenshots/Organizer/slide03/bewerbung01.webp", "width": 1083, "height": 849, "x": 8, "y": 3, "size": 64, "rotation": -2, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide03/bewerbung02.webp", "width": 1083, "height": 819, "x": 28, "y": 27, "size": 64, "rotation": 2, "delay": 400, "duration": 900, "z": 2}
+    ],
+    "organizer-lineup": [
+      {"src": "images/screenshots/Organizer/slide04/lineup.webp", "width": 1083, "height": 1605, "x": 12, "y": 4, "size": 49, "rotation": -1, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide04/warteliste.webp", "width": 1083, "height": 601, "x": 42, "y": 48, "size": 49, "rotation": 2, "delay": 400, "duration": 900, "z": 2}
+    ],
+    "organizer-tasks": [
+      {"src": "images/screenshots/Organizer/slide05/todoFilter.webp", "width": 1126, "height": 324, "x": 12, "y": 10, "size": 70, "rotation": -1, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide05/todo01.webp", "width": 1083, "height": 258, "x": 8, "y": 37, "size": 75, "rotation": -2, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Organizer/slide05/todo02.webp", "width": 1083, "height": 258, "x": 17, "y": 62, "size": 76, "rotation": 1, "delay": 800, "duration": 900, "z": 3}
+    ],
+    "organizer-team": [
+      {"src": "images/screenshots/Organizer/slide06/orga.webp", "width": 1083, "height": 631, "x": 9, "y": 6, "size": 77, "rotation": -1, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Organizer/slide06/statistik.webp", "width": 1083, "height": 276, "x": 22, "y": 58, "size": 71, "rotation": 2, "delay": 400, "duration": 900, "z": 2}
+    ],
+    "comedian-discover": [
+      {"src": "images/screenshots/Comedian/slide01/filter.webp", "width": 1169, "height": 557, "x": 12, "y": 2, "size": 60, "rotation": -1, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Comedian/slide01/show01.webp", "width": 1152, "height": 597, "x": 7, "y": 23, "size": 63, "rotation": -2, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Comedian/slide01/show02.webp", "width": 1152, "height": 597, "x": 24, "y": 39, "size": 64, "rotation": 2, "delay": 400, "duration": 900, "z": 3},
+      {"src": "images/screenshots/Comedian/slide01/show03.webp", "width": 1152, "height": 627, "x": 13, "y": 54, "size": 72, "rotation": -1, "delay": 800, "duration": 900, "z": 4}
+    ],
+    "comedian-apply": [
+      {"src": "images/screenshots/Comedian/slide02/detail.webp", "width": 1083, "height": 906, "x": 8, "y": 3, "size": 60, "rotation": -2, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Comedian/slide02/wunsch.webp", "width": 1112, "height": 861, "x": 42, "y": 20, "size": 52, "rotation": 0, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Comedian/slide02/bewerbung.webp", "width": 1083, "height": 729, "x": 20, "y": 49, "size": 60, "rotation": 2, "delay": 800, "duration": 900, "z": 3}
+    ],
+    "comedian-application-status": [
+      {"src": "images/screenshots/Comedian/slide04/filter.webp", "width": 1171, "height": 349, "x": 14, "y": 2, "size": 70, "rotation": 0, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Comedian/slide04/ausstehend.webp", "width": 1131, "height": 627, "x": 8, "y": 25, "size": 57, "rotation": 2, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Comedian/slide04/warteliste.webp", "width": 1131, "height": 627, "x": 32, "y": 40, "size": 60, "rotation": -1, "delay": 400, "duration": 900, "z": 3},
+      {"src": "images/screenshots/Comedian/slide04/angenommen.webp", "width": 1131, "height": 627, "x": 27, "y": 55, "size": 65, "rotation": 1, "delay": 800, "duration": 900, "z": 4}
+    ],
+    "comedian-calendar": [
+      {"src": "images/screenshots/Comedian/slide03/kalender.webp", "width": 1179, "height": 1117, "x": 8, "y": 4, "size": 84, "rotation": 0, "delay": 0, "duration": 900, "z": 1}
+    ],
+    "comedian-messages": [
+      {"src": "images/screenshots/Comedian/slide05/nachrichten.webp", "width": 1083, "height": 138, "x": 10, "y": 9, "size": 75, "rotation": 0, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Comedian/slide05/update01.webp", "width": 1083, "height": 270, "x": 7, "y": 25, "size": 60, "rotation": -1, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Comedian/slide05/update02.webp", "width": 1083, "height": 324, "x": 12, "y": 41, "size": 60, "rotation": 1, "delay": 400, "duration": 900, "z": 3},
+      {"src": "images/screenshots/Comedian/slide05/chat.webp", "width": 1179, "height": 1341, "x": 46, "y": 35, "size": 48, "rotation": 2, "delay": 800, "duration": 900, "z": 4}
+    ],
+    "comedian-conflicts": [
+      {"src": "images/screenshots/Comedian/slide06/showcard.webp", "width": 1131, "height": 627, "x": 30, "y": 3, "size": 63, "rotation": 2, "delay": 0, "duration": 900, "z": 1},
+      {"src": "images/screenshots/Comedian/slide06/bottomSheet.webp", "width": 1128, "height": 1201, "x": 4, "y": 18, "size": 48, "rotation": -2, "delay": 400, "duration": 900, "z": 2},
+      {"src": "images/screenshots/Comedian/slide06/overlay.webp", "width": 1035, "height": 714, "x": 27, "y": 47, "size": 66, "rotation": 1, "delay": 800, "duration": 900, "z": 3}
+    ]
   };
 
   function escapeHtml(value) {
     return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;')
       .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function renderComposition(feature) {
+    var layers = FEATURE_COMPOSITIONS[feature.id];
+    return '<figure class="product-feature__visual"><div class="feature-composition">' +
+      layers.map(function (layer, index) {
+        return '<img class="feature-composition__layer" src="' + layer.src +
+          '" width="' + layer.width + '" height="' + layer.height +
+          '" loading="eager" decoding="async" draggable="false" alt="' +
+          escapeHtml(index === 0 ? feature.imageAlt : '') + '" style="--x:' + layer.x +
+          '%;--y:' + layer.y + '%;--size:' + layer.size + '%;--rotation:' + layer.rotation +
+          'deg;--z:' + layer.z + ';--delay:' + layer.delay + 'ms;--duration:' + layer.duration +
+          'ms;--enter-x:' + (layers.length === 1 || index === layers.length - 1 ? 0 : index % 2 ? 30 : -20) +
+          'px;--enter-y:' + (layers.length === 1 ? 10 : index === layers.length - 1 ? 40 : 20) + 'px">';
+      }).join('') + '</div>' + (feature.annotation ?
+        '<figcaption class="feature-annotation"><strong>SPOTLIGHT</strong> ' +
+        escapeHtml(feature.annotation) + '</figcaption>' : '') + '</figure>';
   }
 
   function renderFeatures() {
@@ -36,19 +104,13 @@
     var features = currentAudience === 'organizer' ? data.organizers : data.artists;
     container.setAttribute('data-audience', currentAudience);
     container.innerHTML = features.map(function (feature) {
-      var src = FEATURE_IMAGES[feature.id] || PLACEHOLDER;
-      var isPlaceholder = src === PLACEHOLDER;
-      var caption = isPlaceholder ? data.placeholder : feature.label;
-      var alt = isPlaceholder ? data.placeholderAlt : feature.title;
       return '<article class="product-feature" data-feature="' + escapeHtml(feature.id) +
         '" aria-labelledby="' + escapeHtml(feature.id) + '-heading">' +
         '<div class="product-feature__copy"><p class="product-feature__label">' + escapeHtml(feature.label) +
         '</p><h3 id="' + escapeHtml(feature.id) + '-heading">' + escapeHtml(feature.title) +
-        '</h3><p class="product-feature__description">' + escapeHtml(feature.text) +
-        '</p><p class="product-feature__benefit">' + escapeHtml(feature.benefit) + '</p></div>' +
-        '<figure class="product-feature__visual"><img src="' + escapeHtml(src) +
-        '" width="320" height="640" loading="lazy" alt="' + escapeHtml(alt) + '">' +
-        '<figcaption>' + escapeHtml(caption) + '</figcaption></figure></article>';
+        '</h3><div class="product-feature__details"><p class="product-feature__description">' + escapeHtml(feature.text) +
+        '</p><p class="product-feature__benefit">' + escapeHtml(feature.benefit) + '</p></div></div>' +
+        renderComposition(feature) + '</article>';
     }).join('');
     document.querySelectorAll('.howto__switch-btn').forEach(function (button) {
       var active = button.getAttribute('data-audience') === currentAudience;
@@ -105,7 +167,7 @@
       if (event.key === 'ArrowRight') index = activeIndex + 1;
       else if (event.key === 'ArrowLeft') index = activeIndex - 1;
       else if (event.key === 'Home') index = 0;
-      else if (event.key === 'End') index = 3;
+      else if (event.key === 'End') index = document.querySelectorAll('#feature-list .product-feature').length - 1;
       else return;
       event.preventDefault();
       showSlide(index, event.target.matches('button[data-slide]'));
