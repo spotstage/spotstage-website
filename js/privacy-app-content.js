@@ -91,10 +91,12 @@
 
       privacyS15Title: '15. Account-Löschung',
       privacyS15Body:
-        '<p>Sie können Ihren Account in der App selbst löschen. Nähere Informationen finden Sie auf unserer Seite ' + accountDeletionLink + '.</p>' +
-        '<p>Bei einer Account-Löschung werden insbesondere Ihr Account-Zugang, persönliche Profildaten, Rollenprofile, Avatare, Push Token, Benachrichtigungseinstellungen und offene Bewerbungen gelöscht.</p>' +
-        '<p>Historische Showbezüge, vergangene Line-ups oder Auftritte können aus sachlichen Gründen anonymisiert erhalten bleiben, etwa unter der Anzeige „Gelöschtes Mitglied“. Ein Anspruch auf vollständige Löschung solcher anonymisierter historischer Datensätze besteht nicht, soweit deren Aufbewahrung für eine nachvollziehbare Showhistorie erforderlich ist.</p>' +
-        '<p>Eine Löschung kann vorübergehend blockiert sein, wenn beispielsweise ein zukünftiger bestätigter Auftritt, eine aktive Host-Zuordnung, geplante Shows, Organisations-Eigentümerschaft oder andere aktive Verpflichtungen entgegenstehen.</p>' +
+        '<p>Sie können Ihren Account grundsätzlich direkt in der App löschen. Nähere Informationen finden Sie auf unserer Seite ' + accountDeletionLink + '.</p>' +
+        '<p>Bei einer erfolgreichen Account-Löschung werden insbesondere der Zugang zum Benutzerkonto, persönliche Profil- und Rollenprofildaten, Profilbilder, Push Token, Benachrichtigungseinstellungen, In-App-Benachrichtigungen sowie noch offene oder nicht abgeschlossene Bewerbungen entfernt. Der zugehörige Authentifizierungsaccount wird gelöscht.</p>' +
+        '<p>Daten von Organisationen, Shows oder Veranstaltungsorten können bestehen bleiben, soweit diese nicht ausschließlich dem gelöschten Nutzer persönlich zuzuordnen sind, sondern der Organisation beziehungsweise der Durchführung und Dokumentation von Shows dienen.</p>' +
+        '<p>Bestimmte historische Bezüge, beispielsweise zu vergangenen Besetzungen, Line-ups, Auftritten oder Show-Kommunikation, können nach Entfernung der direkten Profilangaben bestehen bleiben. Der Name kann dabei beispielsweise durch „Gelöschtes Mitglied“ ersetzt werden. Soweit solche Daten keinen Personenbezug mehr aufweisen, unterliegen sie nicht mehr der DSGVO. Soweit ein Personenbezug fortbesteht, werden die Daten nur weiterverarbeitet, soweit hierfür eine gesetzliche Rechtsgrundlage besteht. Ihre gesetzlichen Datenschutzrechte bleiben hiervon unberührt.</p>' +
+        '<p>Die Account-Löschung innerhalb der App kann vorübergehend nicht möglich sein, wenn noch aktive Verpflichtungen oder organisatorische Abhängigkeiten bestehen, beispielsweise ein zukünftiger bestätigter Auftritt oder eine aktive Host-Zuordnung oder wenn eine Organisation ohne vorherige Übertragung der erforderlichen Rechte und Verantwortlichkeiten nicht weitergeführt werden könnte.</p>' +
+        '<p>Eine Einschränkung der technischen Account-Löschung innerhalb der App lässt gesetzliche Datenschutzrechte, insbesondere ein gegebenenfalls bestehendes Recht auf Löschung nach Art. 17 DSGVO, unberührt.</p>' +
         '<p>Bei Problemen mit der Account-Löschung können Sie uns unter ' + mailLink + ' kontaktieren.</p>',
 
       privacyS16Title: '16. Passwort-Reset',
@@ -183,10 +185,12 @@
 
       privacyS15Title: '15. Account deletion',
       privacyS15Body:
-        '<p>You can delete your account yourself in the app. Further information is available on our page ' + accountDeletionLinkEn + '.</p>' +
-        '<p>When an account is deleted, your account access, personal profile data, role profiles, avatars, push tokens, notification settings, and open applications are deleted in particular.</p>' +
-        '<p>Historical show references, past line-ups, or performances may remain anonymized for factual reasons, for example displayed as “Deleted member”. There is no entitlement to complete erasure of such anonymized historical records where retention is necessary for a traceable show history.</p>' +
-        '<p>Deletion may be temporarily blocked if, for example, a confirmed future performance, an active host assignment, planned shows, organization ownership, or other active obligations prevent deletion.</p>' +
+        '<p>You can generally delete your account directly in the app. Further information is available on our page ' + accountDeletionLinkEn + '.</p>' +
+        '<p>When account deletion is completed successfully, access to the user account, personal profile and role-profile data, profile images, push tokens, notification settings, in-app notifications, and open or otherwise unfinished applications are removed in particular. The associated authentication account is deleted.</p>' +
+        '<p>Data relating to organizations, shows, or venues may remain where it is not attributable solely to the deleted user personally but serves the organization or the operation and documentation of shows.</p>' +
+        '<p>Certain historical references, for example to past line-ups, performances, casting decisions, or show communications, may remain after direct profile information has been removed. The name may, for example, be replaced by “Deleted member”. Where such data no longer relates to an identifiable person, the GDPR no longer applies to it. Where a personal-data link remains, the data is processed further only where a legal basis permits this. Your statutory data-protection rights remain unaffected.</p>' +
+        '<p>Technical account deletion within the app may temporarily be unavailable where active obligations or organizational dependencies remain, for example a confirmed future performance, an active host assignment, or where an organization could not continue without first transferring the necessary rights and responsibilities.</p>' +
+        '<p>Any restriction of the technical account-deletion process within the app does not affect statutory data-protection rights, including any applicable right to erasure under Art. 17 GDPR.</p>' +
         '<p>If you encounter problems with account deletion, you can contact us at ' + mailLink + '.</p>',
 
       privacyS16Title: '16. Password reset',
