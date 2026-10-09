@@ -23,9 +23,12 @@
         '<p>Zugangsdaten dürfen nicht an Dritte weitergegeben werden. Nutzerinnen und Nutzer sind dafür verantwortlich, ihre Zugangsdaten angemessen zu schützen und SPOTSTAGE unverzüglich zu informieren, wenn ein Missbrauch des Kontos vermutet wird.</p>' +
         '<p>Es wird dringend empfohlen, für SPOTSTAGE ein individuelles Passwort zu verwenden, das nicht gleichzeitig für andere Dienste genutzt wird. Die Wiederverwendung von Passwörtern kann insbesondere sogenannte Credential-Stuffing-Angriffe erleichtern, bei denen bei anderen Diensten bekannt gewordene Zugangsdaten automatisiert bei SPOTSTAGE ausprobiert werden.</p>',
 
-      termsS3Title: '3. Rollen und Plattformfunktion',
+      termsS3Title: '3. Rollen, Organisationen und Plattformfunktion',
       termsS3Body:
         '<p>SPOTSTAGE richtet sich insbesondere an Künstlerinnen und Künstler sowie Veranstalterinnen und Veranstalter. Je nach Rolle können Shows erstellt, Bewerbungen eingereicht, Besetzungen vorgenommen und weitere Organisationsfunktionen genutzt werden.</p>' +
+        '<p>Veranstalterinnen und Veranstalter können innerhalb von SPOTSTAGE Organisationen anlegen oder ihnen über eine Einladung beitreten. Mitglieder einer Organisation können abhängig von den ihnen innerhalb der Plattform eingeräumten Berechtigungen Handlungen für diese Organisation vornehmen. Nutzerinnen und Nutzer, die Personen zu einer Organisation einladen oder Rollen und Berechtigungen vergeben, sind dafür verantwortlich, Zugriffe nur geeigneten Personen einzuräumen und nicht mehr benötigte Zugriffe zu entfernen.</p>' +
+        '<p>Bewerbungen, Zusagen, Wartelistenstatus, Line-up- und Host-Zuweisungen sowie vergleichbare Statusangaben in SPOTSTAGE dienen der Organisation und Dokumentation von Shows und Auftritten. Die Anzeige oder Änderung eines solchen Status legt nicht eigenständig fest, ob und zu welchem Zeitpunkt zwischen beteiligten Nutzerinnen und Nutzern ein rechtsverbindlicher Vertrag zustande kommt. Dies richtet sich nach den Erklärungen der Beteiligten und den gesetzlichen Vorschriften.</p>' +
+        '<p>Angaben zu Gage, Extras, Auftrittszeit, Veranstaltungsort und sonstigen Showbedingungen werden grundsätzlich von den jeweiligen Nutzerinnen und Nutzern bereitgestellt. Für deren Richtigkeit sowie für die Erfüllung untereinander getroffener Vereinbarungen sind die beteiligten Nutzerinnen und Nutzer verantwortlich.</p>' +
         '<p>SPOTSTAGE stellt die technische Plattform bereit. Soweit Nutzerinnen und Nutzer untereinander Vereinbarungen über Auftritte, Vergütungen, Durchführung einer Veranstaltung oder sonstige Leistungen treffen, wird SPOTSTAGE nicht allein durch die Bereitstellung der Plattform Partei dieser Vereinbarungen.</p>' +
         '<p>SPOTSTAGE garantiert weder das Zustandekommen einer Buchung noch die Durchführung einer Veranstaltung oder einen bestimmten wirtschaftlichen Erfolg.</p>',
 
@@ -46,6 +49,8 @@
       termsS5Body:
         '<p>Nutzerinnen und Nutzer bleiben für die von ihnen eingestellten Inhalte verantwortlich und müssen über die hierfür erforderlichen Rechte verfügen.</p>' +
         '<p>Soweit dies zur vertragsgemäßen Bereitstellung der Plattform erforderlich ist, räumen Nutzerinnen und Nutzer SPOTSTAGE ein einfaches, nicht ausschließliches und auf die Dauer der jeweiligen Bereitstellung beschränktes Recht ein, eingestellte Inhalte technisch zu speichern, zu vervielfältigen und innerhalb der Plattform an berechtigte Nutzer anzuzeigen.</p>' +
+        '<p>SPOTSTAGE kann Inhalte prüfen und ihre Sichtbarkeit einschränken oder sie entfernen, wenn konkrete Anhaltspunkte dafür bestehen, dass sie rechtswidrig sind oder gegen diese Nutzungsbedingungen verstoßen. Eine Prüfung kann insbesondere aufgrund eigener Feststellungen oder aufgrund von Hinweisen anderer Nutzerinnen und Nutzer erfolgen.</p>' +
+        '<p>Hinweise auf möglicherweise rechtswidrige oder unzulässige Inhalte sowie Fragen oder Einwände zu einer Maßnahme können an ' + mailLink + ' gerichtet werden.</p>' +
         '<p>Eine darüber hinausgehende Nutzung für Werbung oder außerhalb des Plattformzwecks erfolgt nicht allein aufgrund dieser Klausel.</p>',
 
       termsS6Title: '6. Verfügbarkeit und Weiterentwicklung',
@@ -56,7 +61,8 @@
 
       termsS7Title: '7. Sperrung und Beendigung',
       termsS7Body:
-        '<p>Nutzerinnen und Nutzer können ihr Konto nach Maßgabe der in der App vorgesehenen Funktionen löschen, soweit keine sachlichen oder rechtlichen Gründe einer sofortigen Löschung entgegenstehen.</p>' +
+        '<p>Nutzerinnen und Nutzer können ihr Konto nach Maßgabe der in der App vorgesehenen Funktionen löschen. Eine sofortige Kontoschließung kann vorübergehend eingeschränkt sein, wenn zunächst bestehende organisatorische oder vertragliche Verpflichtungen innerhalb der Plattform geklärt werden müssen oder gesetzliche Aufbewahrungspflichten einer vollständigen Löschung bestimmter Daten entgegenstehen.</p>' +
+        '<p>Gesetzliche Datenschutzrechte, insbesondere ein gegebenenfalls bestehendes Recht auf Löschung personenbezogener Daten, bleiben hiervon unberührt.</p>' +
         '<p>SPOTSTAGE kann Konten oder einzelne Funktionen vorübergehend einschränken oder sperren, wenn konkrete Anhaltspunkte für Missbrauch, Sicherheitsrisiken oder erhebliche Verstöße gegen diese Nutzungsbedingungen bestehen. Soweit zumutbar, werden Betroffene über den Grund und mögliche Abhilfemaßnahmen informiert.</p>' +
         '<p>Das Recht zur außerordentlichen Kündigung aus wichtigem Grund bleibt unberührt.</p>',
 
@@ -107,9 +113,12 @@
         '<p>Credentials must not be disclosed to third parties. Users are responsible for reasonably protecting their credentials and must notify SPOTSTAGE without undue delay if they suspect account misuse.</p>' +
         '<p>Users are strongly encouraged to use a password that is unique to SPOTSTAGE and is not reused for other services. Password reuse can facilitate credential-stuffing attacks in which credentials exposed by other services are automatically tried against SPOTSTAGE.</p>',
 
-      termsS3Title: '3. Roles and platform function',
+      termsS3Title: '3. Roles, organizations and platform function',
       termsS3Body:
         '<p>SPOTSTAGE is primarily intended for performers and organizers. Depending on the role, users can create shows, submit applications, select performers and use other organization features.</p>' +
+        '<p>Organizers can create organizations within SPOTSTAGE or join them through an invitation. Members of an organization may act for that organization depending on the permissions granted to them within the platform. Users who invite people to an organization or assign roles and permissions are responsible for granting access only to suitable persons and for removing access that is no longer needed.</p>' +
+        '<p>Applications, acceptances, waitlist status, line-up and host assignments, and comparable status information in SPOTSTAGE are used to organize and document shows and performances. Displaying or changing such a status does not by itself determine whether or when a legally binding contract is formed between the users involved. This is governed by the users’ declarations and applicable law.</p>' +
+        '<p>Information on fees, extras, performance times, venues and other show conditions is generally provided by the respective users. The users involved are responsible for the accuracy of that information and for fulfilling agreements made between them.</p>' +
         '<p>SPOTSTAGE provides the technical platform. Where users enter into agreements with each other concerning performances, fees, event execution or other services, SPOTSTAGE does not become a party to those agreements merely by providing the platform.</p>' +
         '<p>SPOTSTAGE does not guarantee that a booking will be concluded, that an event will take place or that any particular economic outcome will be achieved.</p>',
 
@@ -130,6 +139,8 @@
       termsS5Body:
         '<p>Users remain responsible for content they submit and must have the rights required to provide it.</p>' +
         '<p>To the extent necessary to provide the platform as agreed, users grant SPOTSTAGE a simple, non-exclusive right, limited to the period of the relevant provision, to technically store and reproduce submitted content and display it to authorized users within the platform.</p>' +
+        '<p>SPOTSTAGE may review content and restrict its visibility or remove it where there are concrete indications that it is unlawful or violates these terms. A review may take place in particular on SPOTSTAGE’s own findings or following reports from other users.</p>' +
+        '<p>Reports concerning potentially unlawful or impermissible content, as well as questions or objections regarding a measure, can be sent to ' + mailLink + '.</p>' +
         '<p>This clause alone does not permit use for advertising or outside the purpose of the platform.</p>',
 
       termsS6Title: '6. Availability and development',
@@ -140,7 +151,8 @@
 
       termsS7Title: '7. Suspension and termination',
       termsS7Body:
-        '<p>Users may delete their account using the functions provided in the app, subject to factual or legal reasons that may prevent immediate deletion.</p>' +
+        '<p>Users may delete their account using the functions provided in the app. Immediate account closure may be temporarily restricted where existing organizational or contractual obligations within the platform first need to be resolved or where statutory retention obligations prevent the complete deletion of certain data.</p>' +
+        '<p>Statutory data-protection rights, including any applicable right to erasure of personal data, remain unaffected.</p>' +
         '<p>SPOTSTAGE may temporarily restrict or suspend accounts or functions where there are concrete indications of abuse, security risks or material breaches of these terms. Where reasonable, affected users will be informed of the reason and possible remedial steps.</p>' +
         '<p>The right to terminate for cause remains unaffected.</p>',
 
