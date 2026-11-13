@@ -4626,3 +4626,13 @@ body.not-found-page .site-footer {
   .product-feature:not([hidden]) .feature-annotation,
   .product-feature:not([hidden]) .product-feature__details { animation: none; opacity: 1; transform: none; }
 }
+
+.site-footer .site-footer__social {
+  gap: var(--space-sm);
+  min-height: 2.75rem;
+}
+.site-footer__social img {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
